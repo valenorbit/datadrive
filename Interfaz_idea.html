@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DataDrive — Kits de Accesorios Automotrices</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --c-bg: #F7F5F0;
+    --c-surface: #FFFFFF;
+    --c-surface2: #F0EDE6;
+    --c-border: #DDD9D0;
+    --c-text: #1A1816;
+    --c-muted: #6B6660;
+    --c-accent: #C4611A;
+    --c-accent2: #1A5C8A;
+    --c-accent-light: #F5E8DC;
+    --c-accent2-light: #DCE9F5;
+    --c-success: #1A6B3A;
+    --c-success-light: #DCF0E5;
+    --c-warn: #7A4A10;
+    --c-warn-light: #F5E5CC;
+    --c-danger: #8A1A1A;
+    --c-danger-light: #F5DCDC;
+    --shadow: 0 1px 3px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.05);
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--c-bg);
+    color: var(--c-text);
+    min-height: 100vh;
+    display: flex;
+  }
+
+  /* SIDEBAR */
+  .sidebar {
+    width: 220px;
+    min-height: 100vh;
+    background: var(--c-text);
+    color: #F7F5F0;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 100;
+  }
+  .sidebar-logo {
+    padding: 28px 20px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .sidebar-logo .brand {
+    font-family: 'DM Serif Display', serif;
+    font-size: 22px;
+    color: #FFFFFF;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+  }
+  .sidebar-logo .sub {
+    font-size: 11px;
+    color: rgba(255,255,255,0.45);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-top: 4px;
+  }
+  .nav {
+    padding: 16px 0;
+    flex: 1;
+  }
+  .nav-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    font-size: 13.5px;
+    color: rgba(255,255,255,0.55);
+    cursor: pointer;
+    border-left: 2px solid transparent;
+    transition: all 0.15s;
+    text-decoration: none;
+  }
+  .nav-item:hover { color: rgba(255,255,255,0.85); background: rgba(255,255,255,0.04); }
+  .nav-item.active { color: #FFFFFF; border-left-color: var(--c-accent); background: rgba(196,97,26,0.12); }
+  .nav-item .icon { font-size: 16px; width: 18px; text-align: center; }
+  .nav-section {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: rgba(255,255,255,0.25);
+    padding: 16px 20px 6px;
+  }
+
+  /* MAIN */
+  .main {
+    margin-left: 220px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .topbar {
+    background: var(--c-surface);
+    border-bottom: 1px solid var(--c-border);
+    padding: 0 32px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+  }
+  .page-title { font-size: 15px; font-weight: 500; }
+  .topbar-right { display: flex; align-items: center; gap: 16px; }
+  .badge-veh {
+    display: flex;
+    gap: 6px;
+  }
+  .veh-btn {
+    font-size: 12px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    border: 1px solid var(--c-border);
+    cursor: pointer;
+    background: transparent;
+    color: var(--c-muted);
+    font-family: 'DM Sans', sans-serif;
+    transition: all 0.15s;
+  }
+  .veh-btn.active-car { background: var(--c-accent-light); color: var(--c-accent); border-color: var(--c-accent); font-weight: 500; }
+  .veh-btn.active-moto { background: var(--c-accent2-light); color: var(--c-accent2); border-color: var(--c-accent2); font-weight: 500; }
+  .veh-btn:hover:not(.active-car):not(.active-moto) { background: var(--c-surface2); }
+
+  .content { padding: 32px; }
+
+  /* SECTIONS */
+  .section { display: none; }
+  .section.active { display: block; }
+
+  /* METRICS */
+  .metrics-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 28px; }
+  .metric-card {
+    background: var(--c-surface);
+    border: 1px solid var(--c-border);
+    border-radius: 12px;
+    padding: 18px 20px;
+    box-shadow: var(--shadow);
+  }
+  .metric-label { font-size: 12px; color: var(--c-muted); text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 8px; }
+  .metric-value { font-size: 28px; font-weight: 600; letter-spacing: -1px; color: var(--c-text); }
+  .metric-delta { font-size: 12px; margin-top: 4px; }
+  .delta-up { color: var(--c-success); }
+  .delta-down { color: var(--c-danger); }
+
+  /* PANELS */
+  .panel {
+    background: var(--c-surface);
+    border: 1px solid var(--c-border);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    margin-bottom: 24px;
+  }
+  .panel-header {
+    padding: 18px 24px;
+    border-bottom: 1px solid var(--c-border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .panel-title { font-size: 14px; font-weight: 500; }
+  .panel-body { padding: 24px; }
+
+  /* GRID 2-col */
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; }
+
+  /* BUNDLES GRID */
+  .bundles-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+  .bundle-card {
+    background: var(--c-surface);
+    border: 1px solid var(--c-border);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  .bundle-card:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.1); }
+  .bundle-type {
+    display: inline-block;
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .type-car { background: var(--c-accent-light); color: var(--c-accent); }
+  .type-moto { background: var(--c-accent2-light); color: var(--c-accent2); }
+  .bundle-name { font-size: 15px; font-weight: 500; margin-bottom: 6px; }
+  .bundle-items { font-size: 13px; color: var(--c-muted); margin-bottom: 14px; line-height: 1.6; }
+  .bundle-footer { display: flex; align-items: center; justify-content: space-between; }
+  .bundle-price { font-size: 16px; font-weight: 600; color: var(--c-text); }
+  .bundle-original { font-size: 12px; color: var(--c-muted); text-decoration: line-through; }
+  .bundle-discount { font-size: 12px; font-weight: 500; color: var(--c-success); background: var(--c-success-light); padding: 2px 8px; border-radius: 12px; }
+  .bundle-stats { display: flex; gap: 12px; margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--c-border); }
+  .stat-item { font-size: 12px; color: var(--c-muted); }
+  .stat-item strong { color: var(--c-text); font-weight: 500; }
+
+  /* FILTER BAR */
+  .filter-bar { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; align-items: center; }
+  .filter-btn {
+    font-size: 12px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1px solid var(--c-border);
+    cursor: pointer;
+    background: transparent;
+    color: var(--c-muted);
+    font-family: 'DM Sans', sans-serif;
+    transition: all 0.15s;
+  }
+  .filter-btn:hover { background: var(--c-surface2); }
+  .filter-btn.active { background: var(--c-text); color: #FFF; border-color: var(--c-text); }
+  .filter-input {
+    flex: 1;
+    min-width: 160px;
+    padding: 6px 12px;
+    border: 1px solid var(--c-border);
+    border-radius: 8px;
+    font-size: 13px;
+    font-family: 'DM Sans', sans-serif;
+    background: var(--c-surface);
+    color: var(--c-text);
+  }
+  .filter-input:focus { outline: none; border-color: var(--c-accent); }
+
+  /* TABLE */
+  .data-table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  .data-table th { padding: 10px 16px; text-align: left; font-weight: 500; font-size: 11px; text-transform: uppercase; letter-spacing: 0.8px; color: var(--c-muted); border-bottom: 1px solid var(--c-border); }
+  .data-table td { padding: 12px 16px; border-bottom: 1px solid var(--c-border); }
+  .data-table tr:last-child td { border-bottom: none; }
+  .data-table tr:hover td { background: var(--c-surface2); }
+  .status-badge { font-size: 11px; padding: 3px 10px; border-radius: 20px; font-weight: 500; display: inline-block; }
+  .status-ok { background: var(--c-success-light); color: var(--c-success); }
+  .status-warn { background: var(--c-warn-light); color: var(--c-warn); }
+  .status-danger { background: var(--c-danger-light); color: var(--c-danger); }
+  .stock-bar-wrap { display: flex; align-items: center; gap: 8px; }
+  .stock-bar { height: 6px; border-radius: 4px; background: var(--c-surface2); flex: 1; min-width: 60px; }
+  .stock-fill { height: 6px; border-radius: 4px; }
+
+  /* FORMS */
+  .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .form-group { display: flex; flex-direction: column; gap: 6px; }
+  .form-group label { font-size: 12px; font-weight: 500; color: var(--c-muted); text-transform: uppercase; letter-spacing: 0.5px; }
+  .form-group input, .form-group select, .form-group textarea {
+    padding: 10px 12px;
+    border: 1px solid var(--c-border);
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--c-text);
+    background: var(--c-surface);
+    transition: border-color 0.15s;
+  }
+  .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: var(--c-accent);
+  }
+  .form-group input:invalid { border-color: var(--c-danger); }
+  .form-group.full { grid-column: 1 / -1; }
+  .btn {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid var(--c-border);
+    font-size: 14px;
+    font-family: 'DM Sans', sans-serif;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.15s;
+  }
+  .btn-primary { background: var(--c-accent); color: #FFF; border-color: var(--c-accent); }
+  .btn-primary:hover { background: #A84E12; border-color: #A84E12; }
+  .btn-secondary { background: transparent; color: var(--c-text); }
+  .btn-secondary:hover { background: var(--c-surface2); }
+  .btn-danger { background: transparent; color: var(--c-danger); border-color: var(--c-danger); }
+  .btn-danger:hover { background: var(--c-danger-light); }
+  .btn-row { display: flex; gap: 8px; justify-content: flex-end; margin-top: 20px; }
+
+  /* TOAST */
+  .toast { position: fixed; bottom: 24px; right: 24px; background: var(--c-text); color: #FFF; padding: 12px 20px; border-radius: 10px; font-size: 14px; box-shadow: 0 4px 16px rgba(0,0,0,0.2); z-index: 999; opacity: 0; transform: translateY(8px); transition: all 0.25s; pointer-events: none; }
+  .toast.show { opacity: 1; transform: translateY(0); }
+
+  /* CHART BARS */
+  .bar-chart { display: flex; flex-direction: column; gap: 10px; }
+  .bar-row { display: flex; align-items: center; gap: 10px; }
+  .bar-label { font-size: 12px; color: var(--c-muted); width: 120px; text-align: right; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .bar-track { flex: 1; height: 28px; background: var(--c-surface2); border-radius: 6px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 6px; display: flex; align-items: center; padding-left: 10px; font-size: 12px; font-weight: 500; color: #FFF; transition: width 0.6s cubic-bezier(0.4,0,0.2,1); }
+  .bar-val { font-size: 12px; font-weight: 500; color: var(--c-text); width: 70px; }
+
+  /* LIFT INDICATOR */
+  .lift-box { display: inline-flex; align-items: center; gap: 4px; font-size: 12px; font-weight: 500; padding: 2px 8px; border-radius: 12px; }
+  .lift-high { background: var(--c-success-light); color: var(--c-success); }
+  .lift-med { background: var(--c-warn-light); color: var(--c-warn); }
+
+  /* CLIENTES FORM */
+  .search-row { display: flex; gap: 8px; margin-bottom: 16px; }
+  .search-row input { flex: 1; padding: 9px 12px; border: 1px solid var(--c-border); border-radius: 8px; font-size: 13.5px; font-family: 'DM Sans', sans-serif; color: var(--c-text); background: var(--c-surface); }
+  .search-row input:focus { outline: none; border-color: var(--c-accent); }
+
+  /* SCROLLBAR */
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: var(--c-border); border-radius: 4px; }
+
+  @media (max-width: 900px) {
+    .sidebar { width: 56px; }
+    .sidebar-logo .brand, .sidebar-logo .sub, .nav-item span, .nav-section { display: none; }
+    .nav-item { padding: 12px; justify-content: center; }
+    .main { margin-left: 56px; }
+    .metrics-grid { grid-template-columns: 1fr 1fr; }
+    .grid-2, .grid-3 { grid-template-columns: 1fr; }
+    .form-grid { grid-template-columns: 1fr; }
+    .bundles-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+  <div class="sidebar-logo">
+    <div class="brand">DataDrive</div>
+    <div class="sub">Kits Automotrices</div>
+  </div>
+  <nav class="nav">
+    <div class="nav-section">Principal</div>
+    <a class="nav-item active" onclick="navTo('dashboard',this)">
+      <span class="icon">📊</span><span>Dashboard</span>
+    </a>
+    <a class="nav-item" onclick="navTo('bundles',this)">
+      <span class="icon">📦</span><span>Kits / Bundles</span>
+    </a>
+    <div class="nav-section">Gestión</div>
+    <a class="nav-item" onclick="navTo('productos',this)">
+      <span class="icon">🔧</span><span>Productos</span>
+    </a>
+    <a class="nav-item" onclick="navTo('clientes',this)">
+      <span class="icon">👤</span><span>Clientes</span>
+    </a>
+    <a class="nav-item" onclick="navTo('ventas',this)">
+      <span class="icon">💰</span><span>Ventas</span>
+    </a>
+    <div class="nav-section">Control</div>
+    <a class="nav-item" onclick="navTo('inventario',this)">
+      <span class="icon">🏭</span><span>Inventario</span>
+    </a>
+    <a class="nav-item" onclick="navTo('facturas',this)">
+      <span class="icon">🧾</span><span>Facturas</span>
+    </a>
+  </nav>
+</aside>
+
+<!-- MAIN -->
+<main class="main">
+  <div class="topbar">
+    <div class="page-title" id="page-title">Dashboard</div>
+    <div class="topbar-right">
+      <div class="badge-veh">
+        <button class="veh-btn active-car" onclick="filterVeh('carro',this)">🚗 Carros</button>
+        <button class="veh-btn" onclick="filterVeh('moto',this)">🏍 Motos</button>
+        <button class="veh-btn" onclick="filterVeh('todos',this)">Todos</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+
+    <!-- DASHBOARD -->
+    <section class="section active" id="section-dashboard">
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-label">Ventas del mes</div>
+          <div class="metric-value">$48.2M</div>
+          <div class="metric-delta delta-up">↑ 28% vs mes anterior</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">Kits vendidos</div>
+          <div class="metric-value">347</div>
+          <div class="metric-delta delta-up">↑ 41 este mes</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">Ticket promedio</div>
+          <div class="metric-value">$139K</div>
+          <div class="metric-delta delta-up">↑ 22% con bundle</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">Stock bajo alerta</div>
+          <div class="metric-value">7</div>
+          <div class="metric-delta delta-down">↓ productos</div>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="panel">
+          <div class="panel-header">
+            <span class="panel-title">Bundles más vendidos</span>
+            <span style="font-size:12px;color:var(--c-muted)">Este mes</span>
+          </div>
+          <div class="panel-body">
+            <div class="bar-chart">
+              <div class="bar-row">
+                <div class="bar-label">Kit Interior Premium</div>
+                <div class="bar-track"><div class="bar-fill" style="width:88%;background:var(--c-accent)">88</div></div>
+                <div class="bar-val">88 ventas</div>
+              </div>
+              <div class="bar-row">
+                <div class="bar-label">Kit Seguridad Moto</div>
+                <div class="bar-track"><div class="bar-fill" style="width:72%;background:var(--c-accent2)">72</div></div>
+                <div class="bar-val">72 ventas</div>
+              </div>
+              <div class="bar-row">
+                <div class="bar-label">Kit Touring Moto</div>
+                <div class="bar-track"><div class="bar-fill" style="width:60%;background:var(--c-accent2)">60</div></div>
+                <div class="bar-val">60 ventas</div>
+              </div>
+              <div class="bar-row">
+                <div class="bar-label">Kit Seguridad Vial Car</div>
+                <div class="bar-track"><div class="bar-fill" style="width:55%;background:var(--c-accent)">55</div></div>
+                <div class="bar-val">55 ventas</div>
+              </div>
+              <div class="bar-row">
+                <div class="bar-label">Kit Visual Auto</div>
+                <div class="bar-track"><div class="bar-fill" style="width:42%;background:var(--c-accent)">42</div></div>
+                <div class="bar-val">42 ventas</div>
+              </div>
+              <div class="bar-row">
+                <div class="bar-label">Kit Custom Moto</div>
+                <div class="bar-track"><div class="bar-fill" style="width:30%;background:var(--c-accent2)">30</div></div>
+                <div class="bar-val">30 ventas</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-header">
+            <span class="panel-title">Pares de co-compra más frecuentes</span>
+            <span style="font-size:12px;color:var(--c-muted)">Algoritmo Apriori</span>
+          </div>
+          <div class="panel-body">
+            <table class="data-table">
+              <thead><tr><th>Producto A</th><th>Producto B</th><th>Lift</th><th>Confianza</th></tr></thead>
+              <tbody>
+                <tr><td>Tapetes silicona</td><td>Forros asientos</td><td><span class="lift-box lift-high">2.41</span></td><td>68%</td></tr>
+                <tr><td>Cámara reversa HD</td><td>Sensores reversa</td><td><span class="lift-box lift-high">2.18</span></td><td>61%</td></tr>
+                <tr><td>Casco modular</td><td>Guantes cuero</td><td><span class="lift-box lift-high">1.97</span></td><td>54%</td></tr>
+                <tr><td>Alarma GPS moto</td><td>Baúl trasero</td><td><span class="lift-box lift-high">1.84</span></td><td>49%</td></tr>
+                <tr><td>Intercomunicador</td><td>Soporte GPS moto</td><td><span class="lift-box lift-med">1.52</span></td><td>43%</td></tr>
+                <tr><td>Luces LED RGB</td><td>Cargador USB</td><td><span class="lift-box lift-med">1.38</span></td><td>38%</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-header">
+          <span class="panel-title">Ventas por canal (últimos 6 meses)</span>
+        </div>
+        <div class="panel-body">
+          <div style="display:flex;gap:24px;flex-wrap:wrap">
+            <div style="flex:1;min-width:200px">
+              <div style="font-size:12px;color:var(--c-muted);margin-bottom:8px">Tienda física</div>
+              <div class="bar-chart">
+                <div class="bar-row"><div class="bar-label">Nov</div><div class="bar-track"><div class="bar-fill" style="width:60%;background:#7A4A10">$28M</div></div></div>
+                <div class="bar-row"><div class="bar-label">Dic</div><div class="bar-track"><div class="bar-fill" style="width:80%;background:#7A4A10">$38M</div></div></div>
+                <div class="bar-row"><div class="bar-label">Ene</div><div class="bar-track"><div class="bar-fill" style="width:55%;background:#7A4A10">$26M</div></div></div>
+                <div class="bar-row"><div class="bar-label">Feb</div><div class="bar-track"><div class="bar-fill" style="width:65%;background:#7A4A10">$31M</div></div></div>
+                <div class="bar-row"><div class="bar-label">Mar</div><div class="bar-track"><div class="bar-fill" style="width:72%;background:#7A4A10">$34M</div></div></div>
+                <div class="bar-row"><div class="bar-label">Abr</div><div class="bar-track"><div class="bar-fill" style="width:88%;background:#7A4A10">$42M</div></div></div>
+              </div>
+            </div>
+            <div style="flex:1;min-width:200px">
+              <div style="font-size:12px;color:var(--c-muted);margin-bottom:8px">Web</div>
+              <div class="bar-chart">
+                <div class="bar-row"><div class="bar-label">Nov</div><div class="bar-track"><div class="bar-fill" style="width:30%;background:var(--c-accent2)">$14M</div></div></div>
+                <div class="bar-row"><div class="bar-label">Dic</div><div class="bar-track"><div class="bar-fill" style="width:40%;background:var(--c-accent2)">$19M</div></div></div>
+                <div class="bar-row"><div class="bar-label">Ene</div><div class="bar-track"><div class="bar-fill" style="width:45%;background:var(--c-accent2)">$21M</div></div></div>
+                <div class="bar-row"><div class="bar-label">Feb</div><div class="bar-track"><div class="bar-fill" style="width:50%;background:var(--c-accent2)">$24M</div></div></div>
+                <div class="bar-row"><div class="bar-label">Mar</div><div class="bar-track"><div class="bar-fill" style="width:60%;background:var(--c-accent2)">$28M</div></div></div>
+                <div class="bar-row"><div class="bar-label">Abr</div><div class="bar-track"><div class="bar-fill" style="width:70%;background:var(--c-accent2)">$33M</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BUNDLES -->
+    <section class="section" id="section-bundles">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px">
+        <div>
+          <h2 style="font-size:18px;font-weight:500">Kits &amp; Bundles</h2>
+          <p style="font-size:13px;color:var(--c-muted);margin-top:2px">35 kits activos — generados por motor de recomendación Apriori</p>
+        </div>
+        <button class="btn btn-primary" onclick="openModal('modal-bundle')">+ Nuevo kit</button>
+      </div>
+
+      <div class="filter-bar">
+        <button class="filter-btn active" onclick="filterBundle('todos',this)">Todos</button>
+        <button class="filter-btn" onclick="filterBundle('carro',this)">🚗 Automóvil</button>
+        <button class="filter-btn" onclick="filterBundle('moto',this)">🏍 Motocicleta</button>
+        <button class="filter-btn" onclick="filterBundle('Seguridad',this)">Seguridad</button>
+        <button class="filter-btn" onclick="filterBundle('Confort',this)">Confort &amp; Interior</button>
+        <input class="filter-input" placeholder="Buscar kit..." oninput="searchBundle(this.value)">
+      </div>
+
+      <div class="bundles-grid" id="bundles-grid"></div>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section class="section" id="section-productos">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px">
+        <div>
+          <h2 style="font-size:18px;font-weight:500">Catálogo de Productos</h2>
+          <p style="font-size:13px;color:var(--c-muted);margin-top:2px">28 productos activos · 14 automóvil · 14 moto</p>
+        </div>
+        <button class="btn btn-primary" onclick="openModal('modal-producto')">+ Nuevo producto</button>
+      </div>
+
+      <div class="filter-bar">
+        <button class="filter-btn active" onclick="filterProd('todos',this)">Todos</button>
+        <button class="filter-btn" onclick="filterProd('carro',this)">🚗 Carros</button>
+        <button class="filter-btn" onclick="filterProd('moto',this)">🏍 Motos</button>
+        <button class="filter-btn" onclick="filterProd('Seguridad',this)">Seguridad</button>
+        <button class="filter-btn" onclick="filterProd('Proteccion',this)">Protección</button>
+        <button class="filter-btn" onclick="filterProd('Electronica',this)">Electrónica</button>
+        <input class="filter-input" placeholder="Buscar producto..." oninput="searchProd(this.value)" id="prod-search">
+      </div>
+
+      <div class="panel">
+        <div class="panel-body" style="padding:0">
+          <table class="data-table" id="prod-table">
+            <thead>
+              <tr>
+                <th>Código</th>
+                <th>Nombre</th>
+                <th>Categoría</th>
+                <th>Vehículo</th>
+                <th>Marca</th>
+                <th>Precio costo</th>
+                <th>Precio venta</th>
+                <th>Margen</th>
+                <th>Estado</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="prod-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLIENTES -->
+    <section class="section" id="section-clientes">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px">
+        <div>
+          <h2 style="font-size:18px;font-weight:500">Gestión de Clientes</h2>
+          <p style="font-size:13px;color:var(--c-muted);margin-top:2px">Registro y seguimiento de compradores</p>
+        </div>
+        <button class="btn btn-primary" onclick="openModal('modal-cliente')">+ Nuevo cliente</button>
+      </div>
+      <div class="search-row">
+        <input placeholder="Buscar por nombre, ciudad o email..." oninput="searchCliente(this.value)" id="cli-search">
+        <button class="btn btn-secondary">🔍 Buscar</button>
+      </div>
+      <div class="panel">
+        <div class="panel-body" style="padding:0">
+          <table class="data-table">
+            <thead><tr><th>Nombre</th><th>Email</th><th>Teléfono</th><th>Ciudad</th><th>Vehículo</th><th>Registro</th><th></th></tr></thead>
+            <tbody id="cli-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- VENTAS -->
+    <section class="section" id="section-ventas">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px">
+        <div>
+          <h2 style="font-size:18px;font-weight:500">Registro de Ventas</h2>
+          <p style="font-size:13px;color:var(--c-muted);margin-top:2px">Historial de transacciones</p>
+        </div>
+        <button class="btn btn-primary" onclick="openModal('modal-venta')">+ Nueva venta</button>
+      </div>
+      <div class="panel">
+        <div class="panel-body" style="padding:0">
+          <table class="data-table">
+            <thead><tr><th>#Venta</th><th>Cliente</th><th>Fecha</th><th>Canal</th><th>Kit aplicado</th><th>Subtotal</th><th>Descuento</th><th>Total</th></tr></thead>
+            <tbody id="ventas-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- INVENTARIO -->
+    <section class="section" id="section-inventario">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px">
+        <div>
+          <h2 style="font-size:18px;font-weight:500">Control de Inventario</h2>
+          <p style="font-size:13px;color:var(--c-muted);margin-top:2px">Stock por producto y bodega</p>
+        </div>
+      </div>
+      <div class="metrics-grid" style="grid-template-columns:repeat(3,1fr)">
+        <div class="metric-card"><div class="metric-label">Productos ok</div><div class="metric-value" style="color:var(--c-success)">21</div><div class="metric-delta">Stock sobre mínimo</div></div>
+        <div class="metric-card"><div class="metric-label">Alertas stock</div><div class="metric-value" style="color:var(--c-warn)">4</div><div class="metric-delta">Cerca del mínimo</div></div>
+        <div class="metric-card"><div class="metric-label">Stock crítico</div><div class="metric-value" style="color:var(--c-danger)">3</div><div class="metric-delta">Por debajo del mínimo</div></div>
+      </div>
+      <div class="panel" style="margin-top:0">
+        <div class="panel-body" style="padding:0">
+          <table class="data-table">
+            <thead><tr><th>Código</th><th>Producto</th><th>Vehículo</th><th>Stock actual</th><th>Mín / Máx</th><th>Ocupación</th><th>Bodega</th><th>Estado</th></tr></thead>
+            <tbody id="inv-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- FACTURAS -->
+    <section class="section" id="section-facturas">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px">
+        <div>
+          <h2 style="font-size:18px;font-weight:500">Facturación</h2>
+          <p style="font-size:13px;color:var(--c-muted);margin-top:2px">Estado de documentos de venta</p>
+        </div>
+        <button class="btn btn-primary" onclick="openModal('modal-factura')">+ Nueva factura</button>
+      </div>
+      <div class="panel">
+        <div class="panel-body" style="padding:0">
+          <table class="data-table">
+            <thead><tr><th>#Factura</th><th>Venta ID</th><th>Fecha emisión</th><th>Método pago</th><th>Total</th><th>Estado</th><th></th></tr></thead>
+            <tbody id="fact-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /content -->
+</main>
+
+<!-- MODALS -->
+<div id="modal-overlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.4);z-index:200;align-items:center;justify-content:center;">
+  <!-- Bundle Modal -->
+  <div id="modal-bundle" class="modal-box" style="display:none;background:var(--c-surface);border-radius:16px;padding:28px;width:540px;max-width:95vw;max-height:90vh;overflow-y:auto;">
+    <h3 style="font-size:16px;font-weight:500;margin-bottom:20px">Nuevo Kit / Bundle</h3>
+    <div class="form-grid">
+      <div class="form-group"><label>ID del kit *</label><input id="b-id" placeholder="Ej: BK_001" required></div>
+      <div class="form-group"><label>Tipo vehículo *</label><select id="b-veh"><option value="">Seleccionar</option><option>carro</option><option>moto</option></select></div>
+      <div class="form-group full"><label>Nombre del kit *</label><input id="b-nombre" placeholder="Ej: Kit Interior Premium" required></div>
+      <div class="form-group"><label>Descuento % *</label><input id="b-desc" type="number" min="0" max="50" placeholder="15" required></div>
+      <div class="form-group"><label>Lift (fuerza asociación)</label><input id="b-lift" type="number" step="0.001" placeholder="1.850"></div>
+      <div class="form-group"><label>Confianza (0-1)</label><input id="b-conf" type="number" step="0.001" min="0" max="1" placeholder="0.640"></div>
+    </div>
+    <div class="btn-row">
+      <button class="btn btn-secondary" onclick="closeModal()">Cancelar</button>
+      <button class="btn btn-primary" onclick="saveBundle()">Guardar kit</button>
+    </div>
+  </div>
+
+  <!-- Producto Modal -->
+  <div id="modal-producto" class="modal-box" style="display:none;background:var(--c-surface);border-radius:16px;padding:28px;width:560px;max-width:95vw;max-height:90vh;overflow-y:auto;">
+    <h3 style="font-size:16px;font-weight:500;margin-bottom:20px">Nuevo Producto</h3>
+    <div class="form-grid">
+      <div class="form-group"><label>Código *</label><input id="p-cod" placeholder="Ej: C_TAP" required></div>
+      <div class="form-group"><label>Tipo vehículo *</label><select id="p-veh"><option value="">Seleccionar</option><option>carro</option><option>moto</option></select></div>
+      <div class="form-group full"><label>Nombre *</label><input id="p-nom" placeholder="Ej: Tapetes premium silicona" required></div>
+      <div class="form-group"><label>Categoría *</label><select id="p-cat"><option value="">Seleccionar</option><option>Proteccion</option><option>Seguridad</option><option>Confort</option><option>Electronica</option><option>Iluminacion</option><option>Herramientas</option><option>Carga</option><option>Navegacion</option></select></div>
+      <div class="form-group"><label>Marca</label><input id="p-marca" placeholder="Ej: AutoPro"></div>
+      <div class="form-group"><label>Precio costo (COP) *</label><input id="p-costo" type="number" min="0" placeholder="65000" required></div>
+      <div class="form-group"><label>Precio venta (COP) *</label><input id="p-venta" type="number" min="0" placeholder="120000" required></div>
+      <div class="form-group"><label>Estado</label><select id="p-activo"><option value="1">Activo</option><option value="0">Inactivo</option></select></div>
+    </div>
+    <div class="btn-row">
+      <button class="btn btn-secondary" onclick="closeModal()">Cancelar</button>
+      <button class="btn btn-primary" onclick="saveProducto()">Guardar producto</button>
+    </div>
+  </div>
+
+  <!-- Cliente Modal -->
+  <div id="modal-cliente" class="modal-box" style="display:none;background:var(--c-surface);border-radius:16px;padding:28px;width:540px;max-width:95vw;max-height:90vh;overflow-y:auto;">
+    <h3 style="font-size:16px;font-weight:500;margin-bottom:20px">Nuevo Cliente</h3>
+    <div class="form-grid">
+      <div class="form-group"><label>Nombres *</label><input id="c-nom" placeholder="Valentina" required></div>
+      <div class="form-group"><label>Apellidos *</label><input id="c-ape" placeholder="Pérez Mendoza" required></div>
+      <div class="form-group"><label>Email</label><input id="c-email" type="email" placeholder="correo@ejemplo.com"></div>
+      <div class="form-group"><label>Teléfono</label><input id="c-tel" type="tel" placeholder="3001234567"></div>
+      <div class="form-group"><label>Ciudad *</label><input id="c-ciudad" placeholder="Bogotá" required></div>
+      <div class="form-group"><label>Tipo vehículo</label><select id="c-veh"><option value="">Seleccionar</option><option>carro</option><option>moto</option><option>ambos</option></select></div>
+    </div>
+    <div class="btn-row">
+      <button class="btn btn-secondary" onclick="closeModal()">Cancelar</button>
+      <button class="btn btn-primary" onclick="saveCliente()">Guardar cliente</button>
+    </div>
+  </div>
+
+  <!-- Venta Modal -->
+  <div id="modal-venta" class="modal-box" style="display:none;background:var(--c-surface);border-radius:16px;padding:28px;width:540px;max-width:95vw;max-height:90vh;overflow-y:auto;">
+    <h3 style="font-size:16px;font-weight:500;margin-bottom:20px">Nueva Venta</h3>
+    <div class="form-grid">
+      <div class="form-group full"><label>Cliente ID *</label><input id="v-cli" type="number" placeholder="ID del cliente" required></div>
+      <div class="form-group"><label>Fecha *</label><input id="v-fecha" type="date" required></div>
+      <div class="form-group"><label>Canal *</label><select id="v-canal"><option value="">Seleccionar</option><option>tienda</option><option>web</option><option>telefono</option></select></div>
+      <div class="form-group"><label>Subtotal (COP) *</label><input id="v-sub" type="number" min="0" required></div>
+      <div class="form-group"><label>Descuento (COP)</label><input id="v-dsc" type="number" min="0" value="0"></div>
+      <div class="form-group"><label>Total (COP) *</label><input id="v-total" type="number" min="0" required></div>
+      <div class="form-group full"><label>Kit aplicado (opcional)</label><input id="v-kit" placeholder="Ej: BK_001"></div>
+    </div>
+    <div class="btn-row">
+      <button class="btn btn-secondary" onclick="closeModal()">Cancelar</button>
+      <button class="btn btn-primary" onclick="saveVenta()">Registrar venta</button>
+    </div>
+  </div>
+
+  <!-- Factura Modal -->
+  <div id="modal-factura" class="modal-box" style="display:none;background:var(--c-surface);border-radius:16px;padding:28px;width:540px;max-width:95vw;max-height:90vh;overflow-y:auto;">
+    <h3 style="font-size:16px;font-weight:500;margin-bottom:20px">Nueva Factura</h3>
+    <div class="form-grid">
+      <div class="form-group"><label>Número factura *</label><input id="f-num" placeholder="FAC-2026-001" required></div>
+      <div class="form-group"><label>ID Venta *</label><input id="f-vid" type="number" placeholder="ID de la venta" required></div>
+      <div class="form-group"><label>Fecha emisión *</label><input id="f-fecha" type="date" required></div>
+      <div class="form-group"><label>Método de pago *</label><select id="f-pago"><option value="">Seleccionar</option><option>efectivo</option><option>tarjeta</option><option>transferencia</option><option>datafono</option></select></div>
+      <div class="form-group"><label>Total factura (COP) *</label><input id="f-total" type="number" min="0" required></div>
+      <div class="form-group"><label>Estado *</label><select id="f-estado"><option>pagada</option><option>pendiente</option><option>anulada</option></select></div>
+    </div>
+    <div class="btn-row">
+      <button class="btn btn-secondary" onclick="closeModal()">Cancelar</button>
+      <button class="btn btn-primary" onclick="saveFactura()">Emitir factura</button>
+    </div>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<script>
+// ─── DATA ───────────────────────────────────────────────
+const PRODUCTOS = [
+  {codigo:'C_TAP',nombre:'Tapetes premium silicona',categoria:'Proteccion',tipo_vehiculo:'carro',precio_costo:65000,precio_venta:120000,marca:'AutoPro',activo:1},
+  {codigo:'C_SEN',nombre:'Sensores de reversa 4pts',categoria:'Seguridad',tipo_vehiculo:'carro',precio_costo:45000,precio_venta:85000,marca:'SensoTech',activo:1},
+  {codigo:'C_FOR',nombre:'Forros de asientos cuero eco',categoria:'Confort',tipo_vehiculo:'carro',precio_costo:110000,precio_venta:200000,marca:'ComfortDrive',activo:1},
+  {codigo:'C_CAM',nombre:'Cámara de reversa HD',categoria:'Seguridad',tipo_vehiculo:'carro',precio_costo:80000,precio_venta:150000,marca:'VisionCar',activo:1},
+  {codigo:'C_LUC',nombre:'Luces LED interiores RGB',categoria:'Iluminacion',tipo_vehiculo:'carro',precio_costo:22000,precio_venta:45000,marca:'LedAuto',activo:1},
+  {codigo:'C_CAR',nombre:'Cargador USB doble 3.1A',categoria:'Electronica',tipo_vehiculo:'carro',precio_costo:18000,precio_venta:35000,marca:'PowerDrive',activo:1},
+  {codigo:'C_ALA',nombre:'Sistema de alarma con GPS',categoria:'Seguridad',tipo_vehiculo:'carro',precio_costo:130000,precio_venta:250000,marca:'SecureCar',activo:1},
+  {codigo:'C_PAR',nombre:'Parasol delantero XL',categoria:'Proteccion',tipo_vehiculo:'carro',precio_costo:15000,precio_venta:30000,marca:'SolarShield',activo:1},
+  {codigo:'C_ARO',nombre:'Aromatizante premium 3pack',categoria:'Confort',tipo_vehiculo:'carro',precio_costo:12000,precio_venta:25000,marca:'FreshCar',activo:1},
+  {codigo:'C_LIM',nombre:'Limpiaparabrisas premium',categoria:'Proteccion',tipo_vehiculo:'carro',precio_costo:28000,precio_venta:55000,marca:'ClearView',activo:1},
+  {codigo:'C_HUD',nombre:'Pantalla HUD velocidad',categoria:'Electronica',tipo_vehiculo:'carro',precio_costo:95000,precio_venta:180000,marca:'DigiDrive',activo:1},
+  {codigo:'C_NEU',nombre:'Inflador portátil 12V',categoria:'Herramientas',tipo_vehiculo:'carro',precio_costo:35000,precio_venta:65000,marca:'AirPro',activo:1},
+  {codigo:'C_EXT',nombre:'Extintor cabina 1kg',categoria:'Seguridad',tipo_vehiculo:'carro',precio_costo:20000,precio_venta:40000,marca:'SafeCar',activo:1},
+  {codigo:'C_CUS',nombre:'Cojines lumbar ergonómicos',categoria:'Confort',tipo_vehiculo:'carro',precio_costo:38000,precio_venta:70000,marca:'SpineCare',activo:1},
+  {codigo:'M_CAS',nombre:'Casco modular premium',categoria:'Seguridad',tipo_vehiculo:'moto',precio_costo:240000,precio_venta:450000,marca:'MotoShield',activo:1},
+  {codigo:'M_GUA',nombre:'Guantes cuero touring',categoria:'Proteccion',tipo_vehiculo:'moto',precio_costo:52000,precio_venta:95000,marca:'GripPro',activo:1},
+  {codigo:'M_CHA',nombre:'Chaleco reflectivo alta vis',categoria:'Seguridad',tipo_vehiculo:'moto',precio_costo:40000,precio_venta:75000,marca:'SafeRider',activo:1},
+  {codigo:'M_INT',nombre:'Intercomunicador Bluetooth',categoria:'Electronica',tipo_vehiculo:'moto',precio_costo:150000,precio_venta:280000,marca:'TalkMoto',activo:1},
+  {codigo:'M_BAU',nombre:'Baúl trasero rígido 45L',categoria:'Carga',tipo_vehiculo:'moto',precio_costo:120000,precio_venta:220000,marca:'CargoMoto',activo:1},
+  {codigo:'M_CAR',nombre:'Cargador USB moto imperme.',categoria:'Electronica',tipo_vehiculo:'moto',precio_costo:24000,precio_venta:45000,marca:'PowerMoto',activo:1},
+  {codigo:'M_GPS',nombre:'Soporte GPS celular moto',categoria:'Navegacion',tipo_vehiculo:'moto',precio_costo:32000,precio_venta:60000,marca:'NaviMoto',activo:1},
+  {codigo:'M_CUB',nombre:'Cubierta impermeable moto',categoria:'Proteccion',tipo_vehiculo:'moto',precio_costo:28000,precio_venta:55000,marca:'RainShield',activo:1},
+  {codigo:'M_MAN',nombre:'Manoplas calefactoras',categoria:'Confort',tipo_vehiculo:'moto',precio_costo:70000,precio_venta:130000,marca:'WarmRide',activo:1},
+  {codigo:'M_EXT',nombre:'Extintor moto 500g',categoria:'Seguridad',tipo_vehiculo:'moto',precio_costo:19000,precio_venta:38000,marca:'SafeMoto',activo:1},
+  {codigo:'M_CEL',nombre:'Alarma GPS antirrobo',categoria:'Seguridad',tipo_vehiculo:'moto',precio_costo:105000,precio_venta:195000,marca:'TrackMoto',activo:1},
+  {codigo:'M_ROD',nombre:'Rodilleras articuladas',categoria:'Proteccion',tipo_vehiculo:'moto',precio_costo:46000,precio_venta:85000,marca:'KneeGuard',activo:1},
+  {codigo:'M_BOT',nombre:'Botas moto touring impermeables',categoria:'Proteccion',tipo_vehiculo:'moto',precio_costo:205000,precio_venta:380000,marca:'BootPro',activo:1},
+  {codigo:'M_ALF',nombre:'Alfombra taller antidesliz',categoria:'Herramientas',tipo_vehiculo:'moto',precio_costo:18000,precio_venta:35000,marca:'WorkMat',activo:1},
+];
+
+const BUNDLES_DATA = [
+  {id:'BK_C01',nombre:'Kit Interior Premium',tipo:'carro',items:'Tapetes 3D + Forros asientos + Protector tablero',desc:15,lift:2.41,conf:0.68,ventas:88},
+  {id:'BK_C02',nombre:'Kit Seguridad Vial Car',tipo:'carro',items:'Sensores reversa + Cámara trasera + Soporte celular',desc:18,lift:2.18,conf:0.61,ventas:55},
+  {id:'BK_C03',nombre:'Kit Visual Auto',tipo:'carro',items:'Luces LED interior + Luces cortesía + Luz maletero LED',desc:20,lift:1.87,conf:0.52,ventas:42},
+  {id:'BK_C04',nombre:'Kit Emergencias Auto',tipo:'carro',items:'Inflador portátil + Kit herramientas + Extintor cabina',desc:12,lift:1.64,conf:0.44,ventas:31},
+  {id:'BK_C05',nombre:'Kit Alarma + HUD Car',tipo:'carro',items:'Alarma GPS + Pantalla HUD + Cargador USB',desc:14,lift:1.52,conf:0.39,ventas:24},
+  {id:'BK_C06',nombre:'Kit Confort Premium Car',tipo:'carro',items:'Cojines lumbar + Aromatizante 3pack + Parasol XL',desc:10,lift:1.38,conf:0.35,ventas:19},
+  {id:'BK_M01',nombre:'Kit Seguridad Moto Plus',tipo:'moto',items:'Alarma GPS + Rodilleras articuladas + Chaleco reflectivo',desc:20,lift:1.97,conf:0.54,ventas:72},
+  {id:'BK_M02',nombre:'Kit Touring Moto',tipo:'moto',items:'Baúl 45L + Soporte GPS + Cubierta impermeable',desc:22,lift:1.84,conf:0.49,ventas:60},
+  {id:'BK_M03',nombre:'Kit Custom Moto',tipo:'moto',items:'Manoplas calefactoras + Guantes cuero + Intercomunicador',desc:18,lift:1.71,conf:0.47,ventas:30},
+  {id:'BK_M04',nombre:'Kit Rider Completo',tipo:'moto',items:'Casco modular + Guantes cuero + Botas touring',desc:15,lift:1.63,conf:0.43,ventas:25},
+  {id:'BK_M05',nombre:'Kit Tech Moto',tipo:'moto',items:'Intercomunicador BT + Soporte GPS + Cargador USB moto',desc:16,lift:1.52,conf:0.43,ventas:22},
+  {id:'BK_M06',nombre:'Kit Lluvia Moto',tipo:'moto',items:'Cubierta impermeable + Guantes cuero + Botas touring',desc:12,lift:1.41,conf:0.38,ventas:17},
+];
+
+const CLIENTES_DATA = [
+  {id:1,nombres:'Valentina',apellidos:'Pérez Mendoza',email:'v.perez@email.com',telefono:'3001234567',ciudad:'Bogotá',tipo_vehiculo:'carro',fecha_registro:'2025-01-15'},
+  {id:2,nombres:'Carlos',apellidos:'Rodríguez Torres',email:'c.rodriguez@email.com',telefono:'3109876543',ciudad:'Medellín',tipo_vehiculo:'moto',fecha_registro:'2025-02-08'},
+  {id:3,nombres:'Lucía',apellidos:'Gómez Vargas',email:'l.gomez@email.com',telefono:'3204561234',ciudad:'Cali',tipo_vehiculo:'ambos',fecha_registro:'2025-03-22'},
+  {id:4,nombres:'Andrés',apellidos:'Martínez López',email:'a.martinez@email.com',telefono:'3156789012',ciudad:'Barranquilla',tipo_vehiculo:'carro',fecha_registro:'2025-04-10'},
+  {id:5,nombres:'Daniela',apellidos:'Sánchez Ruiz',email:'d.sanchez@email.com',telefono:'3012345678',ciudad:'Bogotá',tipo_vehiculo:'moto',fecha_registro:'2025-05-01'},
+];
+
+const VENTAS_DATA = [
+  {id:1,id_cliente:1,fecha:'2026-04-28',canal:'tienda',subtotal:320000,descuento:48000,total:272000,id_bundle:'BK_C01'},
+  {id:2,id_cliente:2,fecha:'2026-04-29',canal:'web',subtotal:250000,descuento:0,total:250000,id_bundle:null},
+  {id:3,id_cliente:3,fecha:'2026-04-30',canal:'tienda',subtotal:580000,descuento:116000,total:464000,id_bundle:'BK_M01'},
+  {id:4,id_cliente:4,fecha:'2026-05-01',canal:'web',subtotal:195000,descuento:34000,total:161000,id_bundle:'BK_C03'},
+  {id:5,id_cliente:5,fecha:'2026-05-05',canal:'telefono',subtotal:700000,descuento:140000,total:560000,id_bundle:'BK_M02'},
+];
+
+const INVENTARIO_DATA = [
+  {codigo:'C_TAP',stock:45,min:10,max:80,bodega:'Bodega Principal Bogotá'},
+  {codigo:'C_SEN',stock:8,min:10,max:60,bodega:'Sucursal Medellín'},
+  {codigo:'C_FOR',stock:30,min:8,max:50,bodega:'Bodega Principal Bogotá'},
+  {codigo:'C_CAM',stock:22,min:5,max:40,bodega:'Sucursal Cali'},
+  {codigo:'C_LUC',stock:4,min:12,max:70,bodega:'Bodega Principal Bogotá'},
+  {codigo:'C_ALA',stock:18,min:5,max:35,bodega:'Sucursal Medellín'},
+  {codigo:'M_CAS',stock:15,min:6,max:30,bodega:'Bodega Principal Bogotá'},
+  {codigo:'M_GUA',stock:3,min:8,max:45,bodega:'Sucursal Cali'},
+  {codigo:'M_INT',stock:24,min:5,max:40,bodega:'Sucursal Medellín'},
+  {codigo:'M_BAU',stock:11,min:7,max:35,bodega:'Bodega Principal Bogotá'},
+  {codigo:'M_CEL',stock:9,min:10,max:50,bodega:'Sucursal Cali'},
+  {codigo:'M_ROD',stock:18,min:6,max:40,bodega:'Sucursal Medellín'},
+];
+
+const FACTURAS_DATA = [
+  {num:'FAC-2026-001',id_venta:1,fecha:'2026-04-28',metodo:'tarjeta',total:272000,estado:'pagada'},
+  {num:'FAC-2026-002',id_venta:2,fecha:'2026-04-29',metodo:'transferencia',total:250000,estado:'pagada'},
+  {num:'FAC-2026-003',id_venta:3,fecha:'2026-04-30',metodo:'efectivo',total:464000,estado:'pendiente'},
+  {num:'FAC-2026-004',id_venta:4,fecha:'2026-05-01',metodo:'tarjeta',total:161000,estado:'pagada'},
+  {num:'FAC-2026-005',id_venta:5,fecha:'2026-05-05',metodo:'datafono',total:560000,estado:'pendiente'},
+];
+
+// ─── NAV ────────────────────────────────────────────────
+let currentSection = 'dashboard';
+function navTo(id, el) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+  document.getElementById('section-' + id).classList.add('active');
+  el.classList.add('active');
+  document.getElementById('page-title').textContent = el.querySelector('span:last-child').textContent;
+  currentSection = id;
+  renderSection(id);
+}
+
+function renderSection(id) {
+  if (id === 'productos') renderProductos();
+  if (id === 'bundles') renderBundles();
+  if (id === 'clientes') renderClientes();
+  if (id === 'ventas') renderVentas();
+  if (id === 'inventario') renderInventario();
+  if (id === 'facturas') renderFacturas();
+}
+
+// ─── PRODUCTS ────────────────────────────────────────────
+let prodFilter = 'todos', prodSearch = '';
+function filterProd(f, el) {
+  prodFilter = f;
+  document.querySelectorAll('#section-productos .filter-btn').forEach(b => b.classList.remove('active'));
+  el.classList.add('active');
+  renderProductos();
+}
+function searchProd(v) { prodSearch = v.toLowerCase(); renderProductos(); }
+
+function renderProductos() {
+  const tbody = document.getElementById('prod-tbody');
+  let data = PRODUCTOS.filter(p => {
+    const matchVeh = prodFilter === 'todos' || p.tipo_vehiculo === prodFilter || p.categoria === prodFilter;
+    const matchSearch = !prodSearch || p.nombre.toLowerCase().includes(prodSearch) || p.codigo.toLowerCase().includes(prodSearch);
+    return matchVeh && matchSearch;
+  });
+  tbody.innerHTML = data.map(p => {
+    const margen = Math.round((p.precio_venta - p.precio_costo) / p.precio_venta * 100);
+    return `<tr>
+      <td style="font-family:monospace;font-size:12px">${p.codigo}</td>
+      <td>${p.nombre}</td>
+      <td><span class="status-badge" style="background:var(--c-surface2);color:var(--c-muted)">${p.categoria}</span></td>
+      <td>${p.tipo_vehiculo === 'carro' ? '🚗' : '🏍'} ${p.tipo_vehiculo}</td>
+      <td style="color:var(--c-muted)">${p.marca}</td>
+      <td>$${p.precio_costo.toLocaleString()}</td>
+      <td style="font-weight:500">$${p.precio_venta.toLocaleString()}</td>
+      <td><span class="status-badge ${margen >= 45 ? 'status-ok' : margen >= 30 ? 'status-warn' : 'status-danger'}">${margen}%</span></td>
+      <td><span class="status-badge ${p.activo ? 'status-ok' : 'status-danger'}">${p.activo ? 'Activo' : 'Inactivo'}</span></td>
+      <td><button class="btn btn-secondary" style="padding:4px 10px;font-size:12px">Editar</button></td>
+    </tr>`;
+  }).join('');
+}
+
+// ─── BUNDLES ─────────────────────────────────────────────
+let bundleFilter = 'todos', bundleSearch = '';
+function filterBundle(f, el) {
+  bundleFilter = f;
+  document.querySelectorAll('#section-bundles .filter-btn').forEach(b => b.classList.remove('active'));
+  el.classList.add('active');
+  renderBundles();
+}
+function searchBundle(v) { bundleSearch = v.toLowerCase(); renderBundles(); }
+
+function renderBundles() {
+  const grid = document.getElementById('bundles-grid');
+  let data = BUNDLES_DATA.filter(b => {
+    const matchVeh = bundleFilter === 'todos' || b.tipo === bundleFilter || b.items.toLowerCase().includes(bundleFilter.toLowerCase());
+    const matchSearch = !bundleSearch || b.nombre.toLowerCase().includes(bundleSearch) || b.items.toLowerCase().includes(bundleSearch);
+    return matchVeh && matchSearch;
+  });
+  grid.innerHTML = data.map(b => {
+    const precio = [450000, 320000, 280000, 190000, 465000, 125000, 720000, 335000, 505000, 925000, 385000, 290000];
+    const idx = BUNDLES_DATA.indexOf(b);
+    const pBase = precio[idx] || 300000;
+    const pKit = Math.round(pBase * (1 - b.desc/100));
+    return `<div class="bundle-card">
+      <span class="bundle-type ${b.tipo === 'carro' ? 'type-car' : 'type-moto'}">${b.tipo === 'carro' ? '🚗 Automóvil' : '🏍 Motocicleta'}</span>
+      <div class="bundle-name">${b.nombre}</div>
+      <div class="bundle-items">${b.items}</div>
+      <div class="bundle-footer">
+        <div>
+          <div class="bundle-original">$${pBase.toLocaleString()}</div>
+          <div class="bundle-price">$${pKit.toLocaleString()}</div>
+        </div>
+        <span class="bundle-discount">−${b.desc}%</span>
+      </div>
+      <div class="bundle-stats">
+        <div class="stat-item">Lift: <strong>${b.lift}</strong></div>
+        <div class="stat-item">Confianza: <strong>${Math.round(b.conf*100)}%</strong></div>
+        <div class="stat-item">Vendido: <strong>${b.ventas}×</strong></div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// ─── CLIENTES ────────────────────────────────────────────
+let cliData = [...CLIENTES_DATA];
+function searchCliente(v) {
+  const q = v.toLowerCase();
+  const filtered = cliData.filter(c => (c.nombres+' '+c.apellidos).toLowerCase().includes(q) || c.ciudad.toLowerCase().includes(q) || (c.email||'').toLowerCase().includes(q));
+  renderClientesTable(filtered);
+}
+function renderClientes() { renderClientesTable(cliData); }
+function renderClientesTable(data) {
+  document.getElementById('cli-tbody').innerHTML = data.map(c => `<tr>
+    <td><strong>${c.nombres} ${c.apellidos}</strong></td>
+    <td style="color:var(--c-accent2)">${c.email||'—'}</td>
+    <td>${c.telefono||'—'}</td>
+    <td>${c.ciudad}</td>
+    <td>${c.tipo_vehiculo === 'carro' ? '🚗' : c.tipo_vehiculo === 'moto' ? '🏍' : '🚗🏍'} ${c.tipo_vehiculo}</td>
+    <td style="color:var(--c-muted)">${c.fecha_registro}</td>
+    <td><button class="btn btn-secondary" style="padding:4px 10px;font-size:12px">Ver</button></td>
+  </tr>`).join('');
+}
+
+// ─── VENTAS ──────────────────────────────────────────────
+let ventasData = [...VENTAS_DATA];
+function renderVentas() {
+  document.getElementById('ventas-tbody').innerHTML = ventasData.map(v => {
+    const cli = CLIENTES_DATA.find(c => c.id === v.id_cliente);
+    return `<tr>
+      <td style="font-family:monospace">#${v.id}</td>
+      <td>${cli ? cli.nombres+' '+cli.apellidos : '—'}</td>
+      <td>${v.fecha}</td>
+      <td><span class="status-badge" style="background:var(--c-surface2);color:var(--c-muted)">${v.canal}</span></td>
+      <td>${v.id_bundle ? '<span class="status-badge status-ok">'+v.id_bundle+'</span>' : '—'}</td>
+      <td>$${v.subtotal.toLocaleString()}</td>
+      <td style="color:var(--c-danger)">-$${v.descuento.toLocaleString()}</td>
+      <td style="font-weight:500;color:var(--c-success)">$${v.total.toLocaleString()}</td>
+    </tr>`;
+  }).join('');
+}
+
+// ─── INVENTARIO ──────────────────────────────────────────
+function renderInventario() {
+  document.getElementById('inv-tbody').innerHTML = INVENTARIO_DATA.map(i => {
+    const prod = PRODUCTOS.find(p => p.codigo === i.codigo);
+    const pct = Math.round(i.stock / i.max * 100);
+    const estado = i.stock <= i.min ? 'danger' : i.stock <= i.min * 1.5 ? 'warn' : 'ok';
+    const color = estado === 'ok' ? 'var(--c-success)' : estado === 'warn' ? 'var(--c-warn)' : 'var(--c-danger)';
+    return `<tr>
+      <td style="font-family:monospace;font-size:12px">${i.codigo}</td>
+      <td>${prod ? prod.nombre : i.codigo}</td>
+      <td>${prod ? (prod.tipo_vehiculo === 'carro' ? '🚗' : '🏍') : ''} ${prod ? prod.tipo_vehiculo : ''}</td>
+      <td style="font-weight:500">${i.stock}</td>
+      <td style="color:var(--c-muted)">${i.min} / ${i.max}</td>
+      <td><div class="stock-bar-wrap"><div class="stock-bar"><div class="stock-fill" style="width:${pct}%;background:${color}"></div></div><span style="font-size:12px;color:var(--c-muted)">${pct}%</span></div></td>
+      <td style="font-size:12px;color:var(--c-muted)">${i.bodega}</td>
+      <td><span class="status-badge status-${estado}">${estado === 'ok' ? 'Normal' : estado === 'warn' ? 'Atención' : 'Crítico'}</span></td>
+    </tr>`;
+  }).join('');
+}
+
+// ─── FACTURAS ────────────────────────────────────────────
+let facData = [...FACTURAS_DATA];
+function renderFacturas() {
+  document.getElementById('fact-tbody').innerHTML = facData.map(f => `<tr>
+    <td style="font-family:monospace">${f.num}</td>
+    <td>#${f.id_venta}</td>
+    <td>${f.fecha}</td>
+    <td><span class="status-badge" style="background:var(--c-surface2);color:var(--c-muted)">${f.metodo}</span></td>
+    <td style="font-weight:500">$${f.total.toLocaleString()}</td>
+    <td><span class="status-badge ${f.estado === 'pagada' ? 'status-ok' : f.estado === 'pendiente' ? 'status-warn' : 'status-danger'}">${f.estado}</span></td>
+    <td><button class="btn btn-secondary" style="padding:4px 10px;font-size:12px">Ver</button></td>
+  </tr>`).join('');
+}
+
+// ─── MODALS ──────────────────────────────────────────────
+function openModal(id) {
+  document.getElementById('modal-overlay').style.display = 'flex';
+  document.querySelectorAll('.modal-box').forEach(m => m.style.display = 'none');
+  document.getElementById(id).style.display = 'block';
+  const d = new Date(); const dateStr = d.toISOString().split('T')[0];
+  const df = document.getElementById('f-fecha'); if(df) df.value = dateStr;
+  const dv = document.getElementById('v-fecha'); if(dv) dv.value = dateStr;
+}
+function closeModal() {
+  document.getElementById('modal-overlay').style.display = 'none';
+}
+document.getElementById('modal-overlay').addEventListener('click', function(e) {
+  if (e.target === this) closeModal();
+});
+
+// ─── SAVE HANDLERS ───────────────────────────────────────
+function validate(...fields) {
+  for(const f of fields) { if(!f || !f.value.trim()) { f.focus(); return false; } }
+  return true;
+}
+
+function saveBundle() {
+  const id = document.getElementById('b-id'), nom = document.getElementById('b-nombre'), veh = document.getElementById('b-veh'), desc = document.getElementById('b-desc');
+  if(!validate(id, nom) || !veh.value || !desc.value) { showToast('Completa los campos obligatorios'); return; }
+  BUNDLES_DATA.push({id:id.value, nombre:nom.value, tipo:veh.value, items:'Productos por definir', desc:parseInt(desc.value), lift:parseFloat(document.getElementById('b-lift').value)||1.0, conf:parseFloat(document.getElementById('b-conf').value)||0.5, ventas:0});
+  closeModal(); renderBundles(); showToast('✓ Kit guardado correctamente');
+  [id, nom, document.getElementById('b-lift'), document.getElementById('b-conf'), desc].forEach(f => f.value = ''); veh.value='';
+}
+
+function saveProducto() {
+  const cod = document.getElementById('p-cod'), nom = document.getElementById('p-nom'), veh = document.getElementById('p-veh'), cat = document.getElementById('p-cat'), costo = document.getElementById('p-costo'), venta = document.getElementById('p-venta');
+  if(!validate(cod, nom, costo, venta) || !veh.value || !cat.value) { showToast('Completa los campos obligatorios'); return; }
+  PRODUCTOS.push({codigo:cod.value, nombre:nom.value, categoria:cat.value, tipo_vehiculo:veh.value, precio_costo:parseInt(costo.value), precio_venta:parseInt(venta.value), marca:document.getElementById('p-marca').value||'—', activo:parseInt(document.getElementById('p-activo').value)});
+  closeModal(); renderProductos(); showToast('✓ Producto guardado correctamente');
+}
+
+function saveCliente() {
+  const nom = document.getElementById('c-nom'), ape = document.getElementById('c-ape'), ciudad = document.getElementById('c-ciudad');
+  if(!validate(nom, ape, ciudad)) { showToast('Completa los campos obligatorios'); return; }
+  const email = document.getElementById('c-email').value;
+  if(email && !email.includes('@')) { showToast('Formato de email inválido'); return; }
+  const newC = {id: cliData.length+1, nombres:nom.value, apellidos:ape.value, email:email, telefono:document.getElementById('c-tel').value, ciudad:ciudad.value, tipo_vehiculo:document.getElementById('c-veh').value||'carro', fecha_registro:new Date().toISOString().split('T')[0]};
+  cliData.push(newC);
+  closeModal(); renderClientes(); showToast('✓ Cliente registrado');
+}
+
+function saveVenta() {
+  const cli = document.getElementById('v-cli'), fecha = document.getElementById('v-fecha'), canal = document.getElementById('v-canal'), sub = document.getElementById('v-sub'), total = document.getElementById('v-total');
+  if(!validate(cli, fecha, sub, total) || !canal.value) { showToast('Completa los campos obligatorios'); return; }
+  ventasData.push({id:ventasData.length+1, id_cliente:parseInt(cli.value), fecha:fecha.value, canal:canal.value, subtotal:parseInt(sub.value), descuento:parseInt(document.getElementById('v-dsc').value)||0, total:parseInt(total.value), id_bundle:document.getElementById('v-kit').value||null});
+  closeModal(); renderVentas(); showToast('✓ Venta registrada');
+}
+
+function saveFactura() {
+  const num = document.getElementById('f-num'), vid = document.getElementById('f-vid'), fecha = document.getElementById('f-fecha'), pago = document.getElementById('f-pago'), total = document.getElementById('f-total');
+  if(!validate(num, vid, fecha, total) || !pago.value) { showToast('Completa los campos obligatorios'); return; }
+  facData.push({num:num.value, id_venta:parseInt(vid.value), fecha:fecha.value, metodo:pago.value, total:parseInt(total.value), estado:document.getElementById('f-estado').value});
+  closeModal(); renderFacturas(); showToast('✓ Factura emitida');
+}
+
+// ─── VEHICLE FILTER (topbar) ─────────────────────────────
+function filterVeh(v, el) {
+  document.querySelectorAll('.veh-btn').forEach(b => { b.classList.remove('active-car','active-moto'); });
+  if(v==='carro') el.classList.add('active-car');
+  else if(v==='moto') el.classList.add('active-moto');
+  prodFilter = v === 'todos' ? 'todos' : v;
+  bundleFilter = v === 'todos' ? 'todos' : v;
+  if(currentSection === 'productos') renderProductos();
+  if(currentSection === 'bundles') renderBundles();
+}
+
+// ─── TOAST ───────────────────────────────────────────────
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg; t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2800);
+}
+
+// ─── INIT ────────────────────────────────────────────────
+renderBundles();
+renderProductos();
+renderClientes();
+renderVentas();
+renderInventario();
+renderFacturas();
+</script>
+</body>
+</html>
