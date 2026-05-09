@@ -1,0 +1,4002 @@
+[
+  {
+    "_id": "FAC-00001",
+    "id_venta": 1,
+    "fecha_emision": "2026-03-31",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 335000
+  },
+  {
+    "_id": "FAC-00002",
+    "id_venta": 2,
+    "fecha_emision": "2025-07-04",
+    "estado": "pendiente",
+    "metodo_pago": "efectivo",
+    "total_factura": 284160
+  },
+  {
+    "_id": "FAC-00003",
+    "id_venta": 3,
+    "fecha_emision": "2025-05-20",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 298200
+  },
+  {
+    "_id": "FAC-00004",
+    "id_venta": 4,
+    "fecha_emision": "2025-09-25",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 418500
+  },
+  {
+    "_id": "FAC-00005",
+    "id_venta": 5,
+    "fecha_emision": "2025-09-10",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 310000
+  },
+  {
+    "_id": "FAC-00006",
+    "id_venta": 6,
+    "fecha_emision": "2025-08-30",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 233000
+  },
+  {
+    "_id": "FAC-00007",
+    "id_venta": 7,
+    "fecha_emision": "2025-07-18",
+    "estado": "pendiente",
+    "metodo_pago": "efectivo",
+    "total_factura": 506160
+  },
+  {
+    "_id": "FAC-00008",
+    "id_venta": 8,
+    "fecha_emision": "2025-06-29",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 320000
+  },
+  {
+    "_id": "FAC-00009",
+    "id_venta": 9,
+    "fecha_emision": "2026-04-19",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 670375
+  },
+  {
+    "_id": "FAC-00010",
+    "id_venta": 10,
+    "fecha_emision": "2026-02-11",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 707850
+  },
+  {
+    "_id": "FAC-00011",
+    "id_venta": 11,
+    "fecha_emision": "2025-06-21",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 320000
+  },
+  {
+    "_id": "FAC-00012",
+    "id_venta": 12,
+    "fecha_emision": "2026-03-06",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 197400
+  },
+  {
+    "_id": "FAC-00013",
+    "id_venta": 13,
+    "fecha_emision": "2025-12-10",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 866580
+  },
+  {
+    "_id": "FAC-00014",
+    "id_venta": 14,
+    "fecha_emision": "2025-05-24",
+    "estado": "pendiente",
+    "metodo_pago": "cuotas",
+    "total_factura": 105000
+  },
+  {
+    "_id": "FAC-00015",
+    "id_venta": 15,
+    "fecha_emision": "2025-05-23",
+    "estado": "pendiente",
+    "metodo_pago": "efectivo",
+    "total_factura": 80000
+  },
+  {
+    "_id": "FAC-00016",
+    "id_venta": 16,
+    "fecha_emision": "2025-06-24",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 234600
+  },
+  {
+    "_id": "FAC-00017",
+    "id_venta": 17,
+    "fecha_emision": "2025-08-27",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 360000
+  },
+  {
+    "_id": "FAC-00018",
+    "id_venta": 18,
+    "fecha_emision": "2025-09-04",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 197400
+  },
+  {
+    "_id": "FAC-00019",
+    "id_venta": 19,
+    "fecha_emision": "2026-01-21",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 150000
+  },
+  {
+    "_id": "FAC-00020",
+    "id_venta": 20,
+    "fecha_emision": "2026-03-12",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 233000
+  },
+  {
+    "_id": "FAC-00021",
+    "id_venta": 21,
+    "fecha_emision": "2025-05-21",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 335000
+  },
+  {
+    "_id": "FAC-00022",
+    "id_venta": 22,
+    "fecha_emision": "2026-02-19",
+    "estado": "pendiente",
+    "metodo_pago": "cuotas",
+    "total_factura": 284160
+  },
+  {
+    "_id": "FAC-00023",
+    "id_venta": 23,
+    "fecha_emision": "2025-08-17",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 233000
+  },
+  {
+    "_id": "FAC-00024",
+    "id_venta": 24,
+    "fecha_emision": "2026-04-05",
+    "estado": "pendiente",
+    "metodo_pago": "transferencia",
+    "total_factura": 466200
+  },
+  {
+    "_id": "FAC-00025",
+    "id_venta": 25,
+    "fecha_emision": "2026-05-02",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 707850
+  },
+  {
+    "_id": "FAC-00026",
+    "id_venta": 26,
+    "fecha_emision": "2026-02-11",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 354650
+  },
+  {
+    "_id": "FAC-00027",
+    "id_venta": 27,
+    "fecha_emision": "2025-12-08",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 197400
+  },
+  {
+    "_id": "FAC-00028",
+    "id_venta": 28,
+    "fecha_emision": "2025-08-28",
+    "estado": "pendiente",
+    "metodo_pago": "transferencia",
+    "total_factura": 516600
+  },
+  {
+    "_id": "FAC-00029",
+    "id_venta": 29,
+    "fecha_emision": "2025-12-23",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 359640
+  },
+  {
+    "_id": "FAC-00030",
+    "id_venta": 30,
+    "fecha_emision": "2026-03-05",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 348600
+  },
+  {
+    "_id": "FAC-00031",
+    "id_venta": 31,
+    "fecha_emision": "2025-09-27",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 255000
+  },
+  {
+    "_id": "FAC-00032",
+    "id_venta": 32,
+    "fecha_emision": "2025-05-11",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 407400
+  },
+  {
+    "_id": "FAC-00033",
+    "id_venta": 33,
+    "fecha_emision": "2025-07-28",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 640940
+  },
+  {
+    "_id": "FAC-00034",
+    "id_venta": 34,
+    "fecha_emision": "2026-04-30",
+    "estado": "pendiente",
+    "metodo_pago": "efectivo",
+    "total_factura": 640940
+  },
+  {
+    "_id": "FAC-00035",
+    "id_venta": 35,
+    "fecha_emision": "2025-12-10",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 281125
+  },
+  {
+    "_id": "FAC-00036",
+    "id_venta": 36,
+    "fecha_emision": "2025-10-29",
+    "estado": "pendiente",
+    "metodo_pago": "cuotas",
+    "total_factura": 359640
+  },
+  {
+    "_id": "FAC-00037",
+    "id_venta": 37,
+    "fecha_emision": "2025-09-27",
+    "estado": "pendiente",
+    "metodo_pago": "cuotas",
+    "total_factura": 680450
+  },
+  {
+    "_id": "FAC-00038",
+    "id_venta": 38,
+    "fecha_emision": "2025-07-26",
+    "estado": "anulada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 338800
+  },
+  {
+    "_id": "FAC-00039",
+    "id_venta": 39,
+    "fecha_emision": "2025-08-26",
+    "estado": "anulada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 407400
+  },
+  {
+    "_id": "FAC-00040",
+    "id_venta": 40,
+    "fecha_emision": "2025-10-27",
+    "estado": "anulada",
+    "metodo_pago": "transferencia",
+    "total_factura": 558600
+  },
+  {
+    "_id": "FAC-00041",
+    "id_venta": 41,
+    "fecha_emision": "2025-06-29",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 240000
+  },
+  {
+    "_id": "FAC-00042",
+    "id_venta": 42,
+    "fecha_emision": "2025-06-24",
+    "estado": "anulada",
+    "metodo_pago": "transferencia",
+    "total_factura": 512400
+  },
+  {
+    "_id": "FAC-00043",
+    "id_venta": 43,
+    "fecha_emision": "2025-11-18",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 467610
+  },
+  {
+    "_id": "FAC-00044",
+    "id_venta": 44,
+    "fecha_emision": "2025-06-26",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 226800
+  },
+  {
+    "_id": "FAC-00045",
+    "id_venta": 45,
+    "fecha_emision": "2025-11-07",
+    "estado": "pendiente",
+    "metodo_pago": "transferencia",
+    "total_factura": 523325
+  },
+  {
+    "_id": "FAC-00046",
+    "id_venta": 46,
+    "fecha_emision": "2025-10-31",
+    "estado": "pendiente",
+    "metodo_pago": "cuotas",
+    "total_factura": 284160
+  },
+  {
+    "_id": "FAC-00047",
+    "id_venta": 47,
+    "fecha_emision": "2026-03-13",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 226800
+  },
+  {
+    "_id": "FAC-00048",
+    "id_venta": 48,
+    "fecha_emision": "2025-09-20",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 359640
+  },
+  {
+    "_id": "FAC-00049",
+    "id_venta": 49,
+    "fecha_emision": "2025-05-30",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 275000
+  },
+  {
+    "_id": "FAC-00050",
+    "id_venta": 50,
+    "fecha_emision": "2025-12-29",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 225000
+  },
+  {
+    "_id": "FAC-00051",
+    "id_venta": 51,
+    "fecha_emision": "2026-02-06",
+    "estado": "anulada",
+    "metodo_pago": "cuotas",
+    "total_factura": 233000
+  },
+  {
+    "_id": "FAC-00052",
+    "id_venta": 52,
+    "fecha_emision": "2025-07-10",
+    "estado": "pendiente",
+    "metodo_pago": "cuotas",
+    "total_factura": 866580
+  },
+  {
+    "_id": "FAC-00053",
+    "id_venta": 53,
+    "fecha_emision": "2025-11-17",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 866580
+  },
+  {
+    "_id": "FAC-00054",
+    "id_venta": 54,
+    "fecha_emision": "2025-06-17",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 150000
+  },
+  {
+    "_id": "FAC-00055",
+    "id_venta": 55,
+    "fecha_emision": "2026-02-14",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 138000
+  },
+  {
+    "_id": "FAC-00056",
+    "id_venta": 56,
+    "fecha_emision": "2025-10-05",
+    "estado": "anulada",
+    "metodo_pago": "transferencia",
+    "total_factura": 284160
+  },
+  {
+    "_id": "FAC-00057",
+    "id_venta": 57,
+    "fecha_emision": "2026-03-25",
+    "estado": "anulada",
+    "metodo_pago": "efectivo",
+    "total_factura": 225000
+  },
+  {
+    "_id": "FAC-00058",
+    "id_venta": 58,
+    "fecha_emision": "2026-03-20",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 640940
+  },
+  {
+    "_id": "FAC-00059",
+    "id_venta": 59,
+    "fecha_emision": "2025-11-09",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 255000
+  },
+  {
+    "_id": "FAC-00060",
+    "id_venta": 60,
+    "fecha_emision": "2026-02-27",
+    "estado": "pendiente",
+    "metodo_pago": "tarjeta",
+    "total_factura": 233000
+  },
+  {
+    "_id": "FAC-00061",
+    "id_venta": 61,
+    "fecha_emision": "2025-08-14",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 150000
+  },
+  {
+    "_id": "FAC-00062",
+    "id_venta": 62,
+    "fecha_emision": "2026-05-03",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 225000
+  },
+  {
+    "_id": "FAC-00063",
+    "id_venta": 63,
+    "fecha_emision": "2025-06-12",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 635000
+  },
+  {
+    "_id": "FAC-00064",
+    "id_venta": 64,
+    "fecha_emision": "2025-05-31",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 866580
+  },
+  {
+    "_id": "FAC-00065",
+    "id_venta": 65,
+    "fecha_emision": "2026-04-11",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 466200
+  },
+  {
+    "_id": "FAC-00066",
+    "id_venta": 66,
+    "fecha_emision": "2025-09-01",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 313000
+  },
+  {
+    "_id": "FAC-00067",
+    "id_venta": 67,
+    "fecha_emision": "2025-10-03",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 255000
+  },
+  {
+    "_id": "FAC-00068",
+    "id_venta": 68,
+    "fecha_emision": "2025-06-17",
+    "estado": "anulada",
+    "metodo_pago": "cuotas",
+    "total_factura": 420000
+  },
+  {
+    "_id": "FAC-00069",
+    "id_venta": 69,
+    "fecha_emision": "2025-09-04",
+    "estado": "anulada",
+    "metodo_pago": "transferencia",
+    "total_factura": 247800
+  },
+  {
+    "_id": "FAC-00070",
+    "id_venta": 70,
+    "fecha_emision": "2025-06-28",
+    "estado": "pendiente",
+    "metodo_pago": "transferencia",
+    "total_factura": 175000
+  },
+  {
+    "_id": "FAC-00071",
+    "id_venta": 71,
+    "fecha_emision": "2025-11-18",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 105000
+  },
+  {
+    "_id": "FAC-00072",
+    "id_venta": 72,
+    "fecha_emision": "2025-09-27",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 1055340
+  },
+  {
+    "_id": "FAC-00073",
+    "id_venta": 73,
+    "fecha_emision": "2025-12-26",
+    "estado": "anulada",
+    "metodo_pago": "transferencia",
+    "total_factura": 233000
+  },
+  {
+    "_id": "FAC-00074",
+    "id_venta": 74,
+    "fecha_emision": "2026-03-29",
+    "estado": "pendiente",
+    "metodo_pago": "transferencia",
+    "total_factura": 284160
+  },
+  {
+    "_id": "FAC-00075",
+    "id_venta": 75,
+    "fecha_emision": "2025-11-10",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 707850
+  },
+  {
+    "_id": "FAC-00076",
+    "id_venta": 76,
+    "fecha_emision": "2025-07-30",
+    "estado": "anulada",
+    "metodo_pago": "transferencia",
+    "total_factura": 491400
+  },
+  {
+    "_id": "FAC-00077",
+    "id_venta": 77,
+    "fecha_emision": "2025-11-13",
+    "estado": "anulada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 319200
+  },
+  {
+    "_id": "FAC-00078",
+    "id_venta": 78,
+    "fecha_emision": "2025-11-05",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 467610
+  },
+  {
+    "_id": "FAC-00079",
+    "id_venta": 79,
+    "fecha_emision": "2025-08-23",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 96600
+  },
+  {
+    "_id": "FAC-00080",
+    "id_venta": 80,
+    "fecha_emision": "2026-04-16",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 899184
+  },
+  {
+    "_id": "FAC-00081",
+    "id_venta": 81,
+    "fecha_emision": "2025-09-21",
+    "estado": "anulada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 225000
+  },
+  {
+    "_id": "FAC-00082",
+    "id_venta": 82,
+    "fecha_emision": "2026-05-02",
+    "estado": "pendiente",
+    "metodo_pago": "tarjeta",
+    "total_factura": 247800
+  },
+  {
+    "_id": "FAC-00083",
+    "id_venta": 83,
+    "fecha_emision": "2026-04-22",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 320000
+  },
+  {
+    "_id": "FAC-00084",
+    "id_venta": 84,
+    "fecha_emision": "2026-04-04",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 359640
+  },
+  {
+    "_id": "FAC-00085",
+    "id_venta": 85,
+    "fecha_emision": "2025-06-13",
+    "estado": "pendiente",
+    "metodo_pago": "transferencia",
+    "total_factura": 338800
+  },
+  {
+    "_id": "FAC-00086",
+    "id_venta": 86,
+    "fecha_emision": "2026-03-15",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 643500
+  },
+  {
+    "_id": "FAC-00087",
+    "id_venta": 87,
+    "fecha_emision": "2026-03-29",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 247800
+  },
+  {
+    "_id": "FAC-00088",
+    "id_venta": 88,
+    "fecha_emision": "2025-08-03",
+    "estado": "anulada",
+    "metodo_pago": "transferencia",
+    "total_factura": 335000
+  },
+  {
+    "_id": "FAC-00089",
+    "id_venta": 89,
+    "fecha_emision": "2026-02-05",
+    "estado": "pendiente",
+    "metodo_pago": "transferencia",
+    "total_factura": 96600
+  },
+  {
+    "_id": "FAC-00090",
+    "id_venta": 90,
+    "fecha_emision": "2025-09-10",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 197400
+  },
+  {
+    "_id": "FAC-00091",
+    "id_venta": 91,
+    "fecha_emision": "2025-07-30",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 233000
+  },
+  {
+    "_id": "FAC-00092",
+    "id_venta": 92,
+    "fecha_emision": "2025-12-30",
+    "estado": "anulada",
+    "metodo_pago": "transferencia",
+    "total_factura": 504000
+  },
+  {
+    "_id": "FAC-00093",
+    "id_venta": 93,
+    "fecha_emision": "2025-11-18",
+    "estado": "anulada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 640940
+  },
+  {
+    "_id": "FAC-00094",
+    "id_venta": 94,
+    "fecha_emision": "2025-09-23",
+    "estado": "anulada",
+    "metodo_pago": "transferencia",
+    "total_factura": 407400
+  },
+  {
+    "_id": "FAC-00095",
+    "id_venta": 95,
+    "fecha_emision": "2026-03-31",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 275000
+  },
+  {
+    "_id": "FAC-00096",
+    "id_venta": 96,
+    "fecha_emision": "2026-04-25",
+    "estado": "pendiente",
+    "metodo_pago": "transferencia",
+    "total_factura": 579150
+  },
+  {
+    "_id": "FAC-00097",
+    "id_venta": 97,
+    "fecha_emision": "2026-02-17",
+    "estado": "anulada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 866580
+  },
+  {
+    "_id": "FAC-00098",
+    "id_venta": 98,
+    "fecha_emision": "2025-08-28",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 215000
+  },
+  {
+    "_id": "FAC-00099",
+    "id_venta": 99,
+    "fecha_emision": "2026-04-23",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 255000
+  },
+  {
+    "_id": "FAC-00100",
+    "id_venta": 100,
+    "fecha_emision": "2025-10-21",
+    "estado": "anulada",
+    "metodo_pago": "cuotas",
+    "total_factura": 640940
+  },
+  {
+    "_id": "FAC-00101",
+    "id_venta": 101,
+    "fecha_emision": "2025-06-05",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 579150
+  },
+  {
+    "_id": "FAC-00102",
+    "id_venta": 102,
+    "fecha_emision": "2025-09-02",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 866580
+  },
+  {
+    "_id": "FAC-00103",
+    "id_venta": 103,
+    "fecha_emision": "2025-05-24",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 284160
+  },
+  {
+    "_id": "FAC-00104",
+    "id_venta": 104,
+    "fecha_emision": "2025-10-16",
+    "estado": "pendiente",
+    "metodo_pago": "transferencia",
+    "total_factura": 407400
+  },
+  {
+    "_id": "FAC-00105",
+    "id_venta": 105,
+    "fecha_emision": "2025-11-29",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 150000
+  },
+  {
+    "_id": "FAC-00106",
+    "id_venta": 106,
+    "fecha_emision": "2025-09-22",
+    "estado": "pendiente",
+    "metodo_pago": "tarjeta",
+    "total_factura": 335000
+  },
+  {
+    "_id": "FAC-00107",
+    "id_venta": 107,
+    "fecha_emision": "2025-06-10",
+    "estado": "pendiente",
+    "metodo_pago": "cuotas",
+    "total_factura": 866580
+  },
+  {
+    "_id": "FAC-00108",
+    "id_venta": 108,
+    "fecha_emision": "2025-08-24",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 96600
+  },
+  {
+    "_id": "FAC-00109",
+    "id_venta": 109,
+    "fecha_emision": "2026-02-22",
+    "estado": "pendiente",
+    "metodo_pago": "efectivo",
+    "total_factura": 226800
+  },
+  {
+    "_id": "FAC-00110",
+    "id_venta": 110,
+    "fecha_emision": "2025-10-16",
+    "estado": "anulada",
+    "metodo_pago": "efectivo",
+    "total_factura": 896610
+  },
+  {
+    "_id": "FAC-00111",
+    "id_venta": 111,
+    "fecha_emision": "2025-08-24",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 288000
+  },
+  {
+    "_id": "FAC-00112",
+    "id_venta": 112,
+    "fecha_emision": "2026-04-08",
+    "estado": "anulada",
+    "metodo_pago": "transferencia",
+    "total_factura": 338800
+  },
+  {
+    "_id": "FAC-00113",
+    "id_venta": 113,
+    "fecha_emision": "2026-01-18",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 255000
+  },
+  {
+    "_id": "FAC-00114",
+    "id_venta": 114,
+    "fecha_emision": "2025-11-26",
+    "estado": "anulada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 260000
+  },
+  {
+    "_id": "FAC-00115",
+    "id_venta": 115,
+    "fecha_emision": "2026-04-02",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 707850
+  },
+  {
+    "_id": "FAC-00116",
+    "id_venta": 116,
+    "fecha_emision": "2025-12-28",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 80000
+  },
+  {
+    "_id": "FAC-00117",
+    "id_venta": 117,
+    "fecha_emision": "2025-07-20",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 579150
+  },
+  {
+    "_id": "FAC-00118",
+    "id_venta": 118,
+    "fecha_emision": "2025-09-20",
+    "estado": "anulada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 400000
+  },
+  {
+    "_id": "FAC-00119",
+    "id_venta": 119,
+    "fecha_emision": "2025-07-18",
+    "estado": "pendiente",
+    "metodo_pago": "transferencia",
+    "total_factura": 905190
+  },
+  {
+    "_id": "FAC-00120",
+    "id_venta": 120,
+    "fecha_emision": "2025-09-11",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 215000
+  },
+  {
+    "_id": "FAC-00121",
+    "id_venta": 121,
+    "fecha_emision": "2026-02-19",
+    "estado": "anulada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 255000
+  },
+  {
+    "_id": "FAC-00122",
+    "id_venta": 122,
+    "fecha_emision": "2026-02-07",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 226800
+  },
+  {
+    "_id": "FAC-00123",
+    "id_venta": 123,
+    "fecha_emision": "2025-09-19",
+    "estado": "anulada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 302400
+  },
+  {
+    "_id": "FAC-00124",
+    "id_venta": 124,
+    "fecha_emision": "2026-03-03",
+    "estado": "pendiente",
+    "metodo_pago": "transferencia",
+    "total_factura": 185000
+  },
+  {
+    "_id": "FAC-00125",
+    "id_venta": 125,
+    "fecha_emision": "2025-12-13",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 418500
+  },
+  {
+    "_id": "FAC-00126",
+    "id_venta": 126,
+    "fecha_emision": "2026-03-02",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 320000
+  },
+  {
+    "_id": "FAC-00127",
+    "id_venta": 127,
+    "fecha_emision": "2025-11-28",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 225000
+  },
+  {
+    "_id": "FAC-00128",
+    "id_venta": 128,
+    "fecha_emision": "2025-11-09",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 466200
+  },
+  {
+    "_id": "FAC-00129",
+    "id_venta": 129,
+    "fecha_emision": "2025-08-28",
+    "estado": "pendiente",
+    "metodo_pago": "cuotas",
+    "total_factura": 707850
+  },
+  {
+    "_id": "FAC-00130",
+    "id_venta": 130,
+    "fecha_emision": "2025-07-17",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 281125
+  },
+  {
+    "_id": "FAC-00131",
+    "id_venta": 131,
+    "fecha_emision": "2026-01-23",
+    "estado": "anulada",
+    "metodo_pago": "efectivo",
+    "total_factura": 866580
+  },
+  {
+    "_id": "FAC-00132",
+    "id_venta": 132,
+    "fecha_emision": "2026-01-15",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 320000
+  },
+  {
+    "_id": "FAC-00133",
+    "id_venta": 133,
+    "fecha_emision": "2025-06-23",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 373800
+  },
+  {
+    "_id": "FAC-00134",
+    "id_venta": 134,
+    "fecha_emision": "2025-06-01",
+    "estado": "pendiente",
+    "metodo_pago": "efectivo",
+    "total_factura": 466200
+  },
+  {
+    "_id": "FAC-00135",
+    "id_venta": 135,
+    "fecha_emision": "2025-07-03",
+    "estado": "anulada",
+    "metodo_pago": "transferencia",
+    "total_factura": 215000
+  },
+  {
+    "_id": "FAC-00136",
+    "id_venta": 136,
+    "fecha_emision": "2025-07-25",
+    "estado": "pendiente",
+    "metodo_pago": "tarjeta",
+    "total_factura": 418500
+  },
+  {
+    "_id": "FAC-00137",
+    "id_venta": 137,
+    "fecha_emision": "2026-03-25",
+    "estado": "anulada",
+    "metodo_pago": "transferencia",
+    "total_factura": 310800
+  },
+  {
+    "_id": "FAC-00138",
+    "id_venta": 138,
+    "fecha_emision": "2025-07-28",
+    "estado": "pendiente",
+    "metodo_pago": "cuotas",
+    "total_factura": 359640
+  },
+  {
+    "_id": "FAC-00139",
+    "id_venta": 139,
+    "fecha_emision": "2026-04-21",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 866580
+  },
+  {
+    "_id": "FAC-00140",
+    "id_venta": 140,
+    "fecha_emision": "2025-12-10",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 96600
+  },
+  {
+    "_id": "FAC-00141",
+    "id_venta": 141,
+    "fecha_emision": "2026-03-09",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 441000
+  },
+  {
+    "_id": "FAC-00142",
+    "id_venta": 142,
+    "fecha_emision": "2025-06-09",
+    "estado": "pendiente",
+    "metodo_pago": "transferencia",
+    "total_factura": 300000
+  },
+  {
+    "_id": "FAC-00143",
+    "id_venta": 143,
+    "fecha_emision": "2025-11-21",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 195000
+  },
+  {
+    "_id": "FAC-00144",
+    "id_venta": 144,
+    "fecha_emision": "2025-11-19",
+    "estado": "pendiente",
+    "metodo_pago": "efectivo",
+    "total_factura": 467610
+  },
+  {
+    "_id": "FAC-00145",
+    "id_venta": 145,
+    "fecha_emision": "2026-03-09",
+    "estado": "anulada",
+    "metodo_pago": "transferencia",
+    "total_factura": 407400
+  },
+  {
+    "_id": "FAC-00146",
+    "id_venta": 146,
+    "fecha_emision": "2026-01-02",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 348600
+  },
+  {
+    "_id": "FAC-00147",
+    "id_venta": 147,
+    "fecha_emision": "2026-02-02",
+    "estado": "anulada",
+    "metodo_pago": "cuotas",
+    "total_factura": 640940
+  },
+  {
+    "_id": "FAC-00148",
+    "id_venta": 148,
+    "fecha_emision": "2025-09-13",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 281125
+  },
+  {
+    "_id": "FAC-00149",
+    "id_venta": 149,
+    "fecha_emision": "2026-02-15",
+    "estado": "pendiente",
+    "metodo_pago": "efectivo",
+    "total_factura": 348600
+  },
+  {
+    "_id": "FAC-00150",
+    "id_venta": 150,
+    "fecha_emision": "2025-05-13",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 670500
+  },
+  {
+    "_id": "FAC-00151",
+    "id_venta": 151,
+    "fecha_emision": "2026-04-21",
+    "estado": "pendiente",
+    "metodo_pago": "transferencia",
+    "total_factura": 225000
+  },
+  {
+    "_id": "FAC-00152",
+    "id_venta": 152,
+    "fecha_emision": "2025-07-05",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 264600
+  },
+  {
+    "_id": "FAC-00153",
+    "id_venta": 153,
+    "fecha_emision": "2026-04-22",
+    "estado": "anulada",
+    "metodo_pago": "cuotas",
+    "total_factura": 432600
+  },
+  {
+    "_id": "FAC-00154",
+    "id_venta": 154,
+    "fecha_emision": "2026-02-06",
+    "estado": "anulada",
+    "metodo_pago": "transferencia",
+    "total_factura": 218400
+  },
+  {
+    "_id": "FAC-00155",
+    "id_venta": 155,
+    "fecha_emision": "2025-09-21",
+    "estado": "anulada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 407400
+  },
+  {
+    "_id": "FAC-00156",
+    "id_venta": 156,
+    "fecha_emision": "2026-04-01",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 465000
+  },
+  {
+    "_id": "FAC-00157",
+    "id_venta": 157,
+    "fecha_emision": "2025-10-29",
+    "estado": "pendiente",
+    "metodo_pago": "transferencia",
+    "total_factura": 333000
+  },
+  {
+    "_id": "FAC-00158",
+    "id_venta": 158,
+    "fecha_emision": "2025-07-04",
+    "estado": "pendiente",
+    "metodo_pago": "tarjeta",
+    "total_factura": 767910
+  },
+  {
+    "_id": "FAC-00159",
+    "id_venta": 159,
+    "fecha_emision": "2025-10-05",
+    "estado": "anulada",
+    "metodo_pago": "cuotas",
+    "total_factura": 640940
+  },
+  {
+    "_id": "FAC-00160",
+    "id_venta": 160,
+    "fecha_emision": "2025-12-16",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 175000
+  },
+  {
+    "_id": "FAC-00161",
+    "id_venta": 161,
+    "fecha_emision": "2025-07-27",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 418500
+  },
+  {
+    "_id": "FAC-00162",
+    "id_venta": 162,
+    "fecha_emision": "2025-12-26",
+    "estado": "anulada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 260000
+  },
+  {
+    "_id": "FAC-00163",
+    "id_venta": 163,
+    "fecha_emision": "2025-05-09",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 310000
+  },
+  {
+    "_id": "FAC-00164",
+    "id_venta": 164,
+    "fecha_emision": "2025-09-19",
+    "estado": "pendiente",
+    "metodo_pago": "tarjeta",
+    "total_factura": 280000
+  },
+  {
+    "_id": "FAC-00165",
+    "id_venta": 165,
+    "fecha_emision": "2026-01-19",
+    "estado": "pendiente",
+    "metodo_pago": "tarjeta",
+    "total_factura": 348600
+  },
+  {
+    "_id": "FAC-00166",
+    "id_venta": 166,
+    "fecha_emision": "2025-08-07",
+    "estado": "pendiente",
+    "metodo_pago": "cuotas",
+    "total_factura": 452700
+  },
+  {
+    "_id": "FAC-00167",
+    "id_venta": 167,
+    "fecha_emision": "2026-01-22",
+    "estado": "pendiente",
+    "metodo_pago": "cuotas",
+    "total_factura": 275000
+  },
+  {
+    "_id": "FAC-00168",
+    "id_venta": 168,
+    "fecha_emision": "2025-07-01",
+    "estado": "anulada",
+    "metodo_pago": "efectivo",
+    "total_factura": 467610
+  },
+  {
+    "_id": "FAC-00169",
+    "id_venta": 169,
+    "fecha_emision": "2026-03-24",
+    "estado": "anulada",
+    "metodo_pago": "efectivo",
+    "total_factura": 407400
+  },
+  {
+    "_id": "FAC-00170",
+    "id_venta": 170,
+    "fecha_emision": "2025-10-07",
+    "estado": "pendiente",
+    "metodo_pago": "efectivo",
+    "total_factura": 707850
+  },
+  {
+    "_id": "FAC-00171",
+    "id_venta": 171,
+    "fecha_emision": "2026-03-31",
+    "estado": "anulada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 306360
+  },
+  {
+    "_id": "FAC-00172",
+    "id_venta": 172,
+    "fecha_emision": "2026-01-22",
+    "estado": "anulada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 80000
+  },
+  {
+    "_id": "FAC-00173",
+    "id_venta": 173,
+    "fecha_emision": "2026-03-15",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 197400
+  },
+  {
+    "_id": "FAC-00174",
+    "id_venta": 174,
+    "fecha_emision": "2025-08-17",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 281125
+  },
+  {
+    "_id": "FAC-00175",
+    "id_venta": 175,
+    "fecha_emision": "2025-07-25",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 470000
+  },
+  {
+    "_id": "FAC-00176",
+    "id_venta": 176,
+    "fecha_emision": "2025-11-15",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 197400
+  },
+  {
+    "_id": "FAC-00177",
+    "id_venta": 177,
+    "fecha_emision": "2025-07-29",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 348600
+  },
+  {
+    "_id": "FAC-00178",
+    "id_venta": 178,
+    "fecha_emision": "2026-02-08",
+    "estado": "pendiente",
+    "metodo_pago": "tarjeta",
+    "total_factura": 215000
+  },
+  {
+    "_id": "FAC-00179",
+    "id_venta": 179,
+    "fecha_emision": "2026-02-03",
+    "estado": "anulada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 707850
+  },
+  {
+    "_id": "FAC-00180",
+    "id_venta": 180,
+    "fecha_emision": "2025-05-08",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 225000
+  },
+  {
+    "_id": "FAC-00181",
+    "id_venta": 181,
+    "fecha_emision": "2026-03-10",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 348600
+  },
+  {
+    "_id": "FAC-00182",
+    "id_venta": 182,
+    "fecha_emision": "2025-10-20",
+    "estado": "pendiente",
+    "metodo_pago": "transferencia",
+    "total_factura": 200000
+  },
+  {
+    "_id": "FAC-00183",
+    "id_venta": 183,
+    "fecha_emision": "2026-01-13",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 96600
+  },
+  {
+    "_id": "FAC-00184",
+    "id_venta": 184,
+    "fecha_emision": "2025-05-17",
+    "estado": "anulada",
+    "metodo_pago": "efectivo",
+    "total_factura": 293000
+  },
+  {
+    "_id": "FAC-00185",
+    "id_venta": 185,
+    "fecha_emision": "2025-07-04",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 281125
+  },
+  {
+    "_id": "FAC-00186",
+    "id_venta": 186,
+    "fecha_emision": "2025-11-09",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 457800
+  },
+  {
+    "_id": "FAC-00187",
+    "id_venta": 187,
+    "fecha_emision": "2025-10-12",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 407400
+  },
+  {
+    "_id": "FAC-00188",
+    "id_venta": 188,
+    "fecha_emision": "2025-09-07",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 390720
+  },
+  {
+    "_id": "FAC-00189",
+    "id_venta": 189,
+    "fecha_emision": "2025-06-06",
+    "estado": "anulada",
+    "metodo_pago": "cuotas",
+    "total_factura": 215000
+  },
+  {
+    "_id": "FAC-00190",
+    "id_venta": 190,
+    "fecha_emision": "2025-09-08",
+    "estado": "pendiente",
+    "metodo_pago": "tarjeta",
+    "total_factura": 466200
+  },
+  {
+    "_id": "FAC-00191",
+    "id_venta": 191,
+    "fecha_emision": "2026-02-22",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 340000
+  },
+  {
+    "_id": "FAC-00192",
+    "id_venta": 192,
+    "fecha_emision": "2025-06-17",
+    "estado": "pendiente",
+    "metodo_pago": "efectivo",
+    "total_factura": 280000
+  },
+  {
+    "_id": "FAC-00193",
+    "id_venta": 193,
+    "fecha_emision": "2025-06-20",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 306360
+  },
+  {
+    "_id": "FAC-00194",
+    "id_venta": 194,
+    "fecha_emision": "2026-01-11",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 866580
+  },
+  {
+    "_id": "FAC-00195",
+    "id_venta": 195,
+    "fecha_emision": "2025-06-12",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 655000
+  },
+  {
+    "_id": "FAC-00196",
+    "id_venta": 196,
+    "fecha_emision": "2026-02-04",
+    "estado": "anulada",
+    "metodo_pago": "cuotas",
+    "total_factura": 348600
+  },
+  {
+    "_id": "FAC-00197",
+    "id_venta": 197,
+    "fecha_emision": "2025-07-11",
+    "estado": "anulada",
+    "metodo_pago": "transferencia",
+    "total_factura": 535000
+  },
+  {
+    "_id": "FAC-00198",
+    "id_venta": 198,
+    "fecha_emision": "2025-07-12",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 359640
+  },
+  {
+    "_id": "FAC-00199",
+    "id_venta": 199,
+    "fecha_emision": "2026-04-10",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 359640
+  },
+  {
+    "_id": "FAC-00200",
+    "id_venta": 200,
+    "fecha_emision": "2026-01-06",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 707850
+  },
+  {
+    "_id": "FAC-00201",
+    "id_venta": 201,
+    "fecha_emision": "2026-02-13",
+    "estado": "pendiente",
+    "metodo_pago": "cuotas",
+    "total_factura": 407400
+  },
+  {
+    "_id": "FAC-00202",
+    "id_venta": 202,
+    "fecha_emision": "2025-07-31",
+    "estado": "pendiente",
+    "metodo_pago": "cuotas",
+    "total_factura": 225000
+  },
+  {
+    "_id": "FAC-00203",
+    "id_venta": 203,
+    "fecha_emision": "2025-09-20",
+    "estado": "anulada",
+    "metodo_pago": "transferencia",
+    "total_factura": 707850
+  },
+  {
+    "_id": "FAC-00204",
+    "id_venta": 204,
+    "fecha_emision": "2026-02-02",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 150000
+  },
+  {
+    "_id": "FAC-00205",
+    "id_venta": 205,
+    "fecha_emision": "2026-03-14",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 320000
+  },
+  {
+    "_id": "FAC-00206",
+    "id_venta": 206,
+    "fecha_emision": "2025-12-10",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 326600
+  },
+  {
+    "_id": "FAC-00207",
+    "id_venta": 207,
+    "fecha_emision": "2025-08-24",
+    "estado": "pendiente",
+    "metodo_pago": "transferencia",
+    "total_factura": 466200
+  },
+  {
+    "_id": "FAC-00208",
+    "id_venta": 208,
+    "fecha_emision": "2026-02-08",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 579150
+  },
+  {
+    "_id": "FAC-00209",
+    "id_venta": 209,
+    "fecha_emision": "2026-04-26",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 175000
+  },
+  {
+    "_id": "FAC-00210",
+    "id_venta": 210,
+    "fecha_emision": "2025-08-18",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 335000
+  },
+  {
+    "_id": "FAC-00211",
+    "id_venta": 211,
+    "fecha_emision": "2026-05-08",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 105000
+  },
+  {
+    "_id": "FAC-00212",
+    "id_venta": 212,
+    "fecha_emision": "2025-10-14",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 418500
+  },
+  {
+    "_id": "FAC-00213",
+    "id_venta": 213,
+    "fecha_emision": "2025-11-28",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 866580
+  },
+  {
+    "_id": "FAC-00214",
+    "id_venta": 214,
+    "fecha_emision": "2026-04-16",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 197400
+  },
+  {
+    "_id": "FAC-00215",
+    "id_venta": 215,
+    "fecha_emision": "2026-04-05",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 866580
+  },
+  {
+    "_id": "FAC-00216",
+    "id_venta": 216,
+    "fecha_emision": "2025-11-15",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 407400
+  },
+  {
+    "_id": "FAC-00217",
+    "id_venta": 217,
+    "fecha_emision": "2025-12-18",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 247800
+  },
+  {
+    "_id": "FAC-00218",
+    "id_venta": 218,
+    "fecha_emision": "2026-01-27",
+    "estado": "pendiente",
+    "metodo_pago": "tarjeta",
+    "total_factura": 293000
+  },
+  {
+    "_id": "FAC-00219",
+    "id_venta": 219,
+    "fecha_emision": "2025-12-25",
+    "estado": "pendiente",
+    "metodo_pago": "transferencia",
+    "total_factura": 215000
+  },
+  {
+    "_id": "FAC-00220",
+    "id_venta": 220,
+    "fecha_emision": "2025-07-08",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 105000
+  },
+  {
+    "_id": "FAC-00221",
+    "id_venta": 221,
+    "fecha_emision": "2025-09-11",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 418500
+  },
+  {
+    "_id": "FAC-00222",
+    "id_venta": 222,
+    "fecha_emision": "2025-08-31",
+    "estado": "pendiente",
+    "metodo_pago": "transferencia",
+    "total_factura": 215000
+  },
+  {
+    "_id": "FAC-00223",
+    "id_venta": 223,
+    "fecha_emision": "2025-06-09",
+    "estado": "pendiente",
+    "metodo_pago": "efectivo",
+    "total_factura": 197400
+  },
+  {
+    "_id": "FAC-00224",
+    "id_venta": 224,
+    "fecha_emision": "2025-10-28",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 275000
+  },
+  {
+    "_id": "FAC-00225",
+    "id_venta": 225,
+    "fecha_emision": "2025-05-18",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 281125
+  },
+  {
+    "_id": "FAC-00226",
+    "id_venta": 226,
+    "fecha_emision": "2026-03-05",
+    "estado": "anulada",
+    "metodo_pago": "efectivo",
+    "total_factura": 275000
+  },
+  {
+    "_id": "FAC-00227",
+    "id_venta": 227,
+    "fecha_emision": "2026-02-15",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 359640
+  },
+  {
+    "_id": "FAC-00228",
+    "id_venta": 228,
+    "fecha_emision": "2025-09-02",
+    "estado": "anulada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 247800
+  },
+  {
+    "_id": "FAC-00229",
+    "id_venta": 229,
+    "fecha_emision": "2026-03-05",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 284160
+  },
+  {
+    "_id": "FAC-00230",
+    "id_venta": 230,
+    "fecha_emision": "2025-08-28",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 225000
+  },
+  {
+    "_id": "FAC-00231",
+    "id_venta": 231,
+    "fecha_emision": "2025-05-11",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 335000
+  },
+  {
+    "_id": "FAC-00232",
+    "id_venta": 232,
+    "fecha_emision": "2025-06-13",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 284160
+  },
+  {
+    "_id": "FAC-00233",
+    "id_venta": 233,
+    "fecha_emision": "2026-05-05",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 197400
+  },
+  {
+    "_id": "FAC-00234",
+    "id_venta": 234,
+    "fecha_emision": "2026-03-27",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 215000
+  },
+  {
+    "_id": "FAC-00235",
+    "id_venta": 235,
+    "fecha_emision": "2025-06-07",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 348600
+  },
+  {
+    "_id": "FAC-00236",
+    "id_venta": 236,
+    "fecha_emision": "2025-09-02",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 510400
+  },
+  {
+    "_id": "FAC-00237",
+    "id_venta": 237,
+    "fecha_emision": "2025-06-11",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 215000
+  },
+  {
+    "_id": "FAC-00238",
+    "id_venta": 238,
+    "fecha_emision": "2025-05-24",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 359640
+  },
+  {
+    "_id": "FAC-00239",
+    "id_venta": 239,
+    "fecha_emision": "2025-10-24",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 255000
+  },
+  {
+    "_id": "FAC-00240",
+    "id_venta": 240,
+    "fecha_emision": "2025-06-13",
+    "estado": "anulada",
+    "metodo_pago": "cuotas",
+    "total_factura": 225000
+  },
+  {
+    "_id": "FAC-00241",
+    "id_venta": 241,
+    "fecha_emision": "2026-01-26",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 260000
+  },
+  {
+    "_id": "FAC-00242",
+    "id_venta": 242,
+    "fecha_emision": "2025-09-06",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 640940
+  },
+  {
+    "_id": "FAC-00243",
+    "id_venta": 243,
+    "fecha_emision": "2025-09-27",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 407400
+  },
+  {
+    "_id": "FAC-00244",
+    "id_venta": 244,
+    "fecha_emision": "2026-04-15",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 300000
+  },
+  {
+    "_id": "FAC-00245",
+    "id_venta": 245,
+    "fecha_emision": "2026-01-11",
+    "estado": "anulada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 80000
+  },
+  {
+    "_id": "FAC-00246",
+    "id_venta": 246,
+    "fecha_emision": "2025-08-25",
+    "estado": "anulada",
+    "metodo_pago": "transferencia",
+    "total_factura": 197400
+  },
+  {
+    "_id": "FAC-00247",
+    "id_venta": 247,
+    "fecha_emision": "2026-02-08",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 320000
+  },
+  {
+    "_id": "FAC-00248",
+    "id_venta": 248,
+    "fecha_emision": "2025-07-14",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 247800
+  },
+  {
+    "_id": "FAC-00249",
+    "id_venta": 249,
+    "fecha_emision": "2026-02-24",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 197400
+  },
+  {
+    "_id": "FAC-00250",
+    "id_venta": 250,
+    "fecha_emision": "2026-02-27",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 190000
+  },
+  {
+    "_id": "FAC-00251",
+    "id_venta": 251,
+    "fecha_emision": "2026-01-05",
+    "estado": "pendiente",
+    "metodo_pago": "efectivo",
+    "total_factura": 284160
+  },
+  {
+    "_id": "FAC-00252",
+    "id_venta": 252,
+    "fecha_emision": "2025-09-09",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 247800
+  },
+  {
+    "_id": "FAC-00253",
+    "id_venta": 253,
+    "fecha_emision": "2026-01-05",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 866580
+  },
+  {
+    "_id": "FAC-00254",
+    "id_venta": 254,
+    "fecha_emision": "2025-12-02",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 466200
+  },
+  {
+    "_id": "FAC-00255",
+    "id_venta": 255,
+    "fecha_emision": "2025-08-13",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 407400
+  },
+  {
+    "_id": "FAC-00256",
+    "id_venta": 256,
+    "fecha_emision": "2025-06-25",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 96600
+  },
+  {
+    "_id": "FAC-00257",
+    "id_venta": 257,
+    "fecha_emision": "2025-06-26",
+    "estado": "anulada",
+    "metodo_pago": "efectivo",
+    "total_factura": 348600
+  },
+  {
+    "_id": "FAC-00258",
+    "id_venta": 258,
+    "fecha_emision": "2026-04-10",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 335000
+  },
+  {
+    "_id": "FAC-00259",
+    "id_venta": 259,
+    "fecha_emision": "2025-12-14",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 260000
+  },
+  {
+    "_id": "FAC-00260",
+    "id_venta": 260,
+    "fecha_emision": "2025-11-05",
+    "estado": "pendiente",
+    "metodo_pago": "efectivo",
+    "total_factura": 215000
+  },
+  {
+    "_id": "FAC-00261",
+    "id_venta": 261,
+    "fecha_emision": "2025-12-10",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 974580
+  },
+  {
+    "_id": "FAC-00262",
+    "id_venta": 262,
+    "fecha_emision": "2025-12-04",
+    "estado": "anulada",
+    "metodo_pago": "transferencia",
+    "total_factura": 466200
+  },
+  {
+    "_id": "FAC-00263",
+    "id_venta": 263,
+    "fecha_emision": "2026-01-02",
+    "estado": "pendiente",
+    "metodo_pago": "tarjeta",
+    "total_factura": 467610
+  },
+  {
+    "_id": "FAC-00264",
+    "id_venta": 264,
+    "fecha_emision": "2025-06-04",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 150000
+  },
+  {
+    "_id": "FAC-00265",
+    "id_venta": 265,
+    "fecha_emision": "2026-04-17",
+    "estado": "pendiente",
+    "metodo_pago": "cuotas",
+    "total_factura": 281125
+  },
+  {
+    "_id": "FAC-00266",
+    "id_venta": 266,
+    "fecha_emision": "2026-04-07",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 96600
+  },
+  {
+    "_id": "FAC-00267",
+    "id_venta": 267,
+    "fecha_emision": "2026-04-03",
+    "estado": "anulada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 359640
+  },
+  {
+    "_id": "FAC-00268",
+    "id_venta": 268,
+    "fecha_emision": "2025-06-27",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 359640
+  },
+  {
+    "_id": "FAC-00269",
+    "id_venta": 269,
+    "fecha_emision": "2025-06-08",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 234600
+  },
+  {
+    "_id": "FAC-00270",
+    "id_venta": 270,
+    "fecha_emision": "2025-11-30",
+    "estado": "pendiente",
+    "metodo_pago": "transferencia",
+    "total_factura": 707850
+  },
+  {
+    "_id": "FAC-00271",
+    "id_venta": 271,
+    "fecha_emision": "2025-10-28",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 338800
+  },
+  {
+    "_id": "FAC-00272",
+    "id_venta": 272,
+    "fecha_emision": "2025-07-02",
+    "estado": "pendiente",
+    "metodo_pago": "transferencia",
+    "total_factura": 281400
+  },
+  {
+    "_id": "FAC-00273",
+    "id_venta": 273,
+    "fecha_emision": "2025-09-12",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 225000
+  },
+  {
+    "_id": "FAC-00274",
+    "id_venta": 274,
+    "fecha_emision": "2025-08-14",
+    "estado": "anulada",
+    "metodo_pago": "cuotas",
+    "total_factura": 215000
+  },
+  {
+    "_id": "FAC-00275",
+    "id_venta": 275,
+    "fecha_emision": "2025-08-13",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 150000
+  },
+  {
+    "_id": "FAC-00276",
+    "id_venta": 276,
+    "fecha_emision": "2026-02-06",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 247800
+  },
+  {
+    "_id": "FAC-00277",
+    "id_venta": 277,
+    "fecha_emision": "2025-12-23",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 866580
+  },
+  {
+    "_id": "FAC-00278",
+    "id_venta": 278,
+    "fecha_emision": "2025-07-18",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 197400
+  },
+  {
+    "_id": "FAC-00279",
+    "id_venta": 279,
+    "fecha_emision": "2025-12-10",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 105000
+  },
+  {
+    "_id": "FAC-00280",
+    "id_venta": 280,
+    "fecha_emision": "2025-08-09",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 333000
+  },
+  {
+    "_id": "FAC-00281",
+    "id_venta": 281,
+    "fecha_emision": "2025-09-27",
+    "estado": "anulada",
+    "metodo_pago": "efectivo",
+    "total_factura": 105000
+  },
+  {
+    "_id": "FAC-00282",
+    "id_venta": 282,
+    "fecha_emision": "2025-12-30",
+    "estado": "pendiente",
+    "metodo_pago": "cuotas",
+    "total_factura": 359640
+  },
+  {
+    "_id": "FAC-00283",
+    "id_venta": 283,
+    "fecha_emision": "2025-09-12",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 105000
+  },
+  {
+    "_id": "FAC-00284",
+    "id_venta": 284,
+    "fecha_emision": "2025-06-15",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 225000
+  },
+  {
+    "_id": "FAC-00285",
+    "id_venta": 285,
+    "fecha_emision": "2025-12-20",
+    "estado": "anulada",
+    "metodo_pago": "efectivo",
+    "total_factura": 399000
+  },
+  {
+    "_id": "FAC-00286",
+    "id_venta": 286,
+    "fecha_emision": "2026-02-13",
+    "estado": "anulada",
+    "metodo_pago": "efectivo",
+    "total_factura": 225000
+  },
+  {
+    "_id": "FAC-00287",
+    "id_venta": 287,
+    "fecha_emision": "2025-06-27",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 281125
+  },
+  {
+    "_id": "FAC-00288",
+    "id_venta": 288,
+    "fecha_emision": "2025-06-02",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 707850
+  },
+  {
+    "_id": "FAC-00289",
+    "id_venta": 289,
+    "fecha_emision": "2026-04-06",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 519480
+  },
+  {
+    "_id": "FAC-00290",
+    "id_venta": 290,
+    "fecha_emision": "2026-02-08",
+    "estado": "pendiente",
+    "metodo_pago": "cuotas",
+    "total_factura": 222600
+  },
+  {
+    "_id": "FAC-00291",
+    "id_venta": 291,
+    "fecha_emision": "2025-05-15",
+    "estado": "anulada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 80000
+  },
+  {
+    "_id": "FAC-00292",
+    "id_venta": 292,
+    "fecha_emision": "2025-06-24",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 655000
+  },
+  {
+    "_id": "FAC-00293",
+    "id_venta": 293,
+    "fecha_emision": "2025-09-06",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 284160
+  },
+  {
+    "_id": "FAC-00294",
+    "id_venta": 294,
+    "fecha_emision": "2025-08-01",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 225000
+  },
+  {
+    "_id": "FAC-00295",
+    "id_venta": 295,
+    "fecha_emision": "2025-12-02",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 407400
+  },
+  {
+    "_id": "FAC-00296",
+    "id_venta": 296,
+    "fecha_emision": "2026-01-11",
+    "estado": "anulada",
+    "metodo_pago": "transferencia",
+    "total_factura": 226800
+  },
+  {
+    "_id": "FAC-00297",
+    "id_venta": 297,
+    "fecha_emision": "2026-01-09",
+    "estado": "anulada",
+    "metodo_pago": "cuotas",
+    "total_factura": 359640
+  },
+  {
+    "_id": "FAC-00298",
+    "id_venta": 298,
+    "fecha_emision": "2025-08-25",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 467610
+  },
+  {
+    "_id": "FAC-00299",
+    "id_venta": 299,
+    "fecha_emision": "2025-11-29",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 706790
+  },
+  {
+    "_id": "FAC-00300",
+    "id_venta": 300,
+    "fecha_emision": "2025-06-07",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 225000
+  },
+  {
+    "_id": "FAC-00301",
+    "id_venta": 301,
+    "fecha_emision": "2025-07-31",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 338800
+  },
+  {
+    "_id": "FAC-00302",
+    "id_venta": 302,
+    "fecha_emision": "2025-11-18",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 222600
+  },
+  {
+    "_id": "FAC-00303",
+    "id_venta": 303,
+    "fecha_emision": "2025-05-09",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 255000
+  },
+  {
+    "_id": "FAC-00304",
+    "id_venta": 304,
+    "fecha_emision": "2025-11-23",
+    "estado": "pendiente",
+    "metodo_pago": "cuotas",
+    "total_factura": 705000
+  },
+  {
+    "_id": "FAC-00305",
+    "id_venta": 305,
+    "fecha_emision": "2025-09-20",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 195000
+  },
+  {
+    "_id": "FAC-00306",
+    "id_venta": 306,
+    "fecha_emision": "2025-12-26",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 255000
+  },
+  {
+    "_id": "FAC-00307",
+    "id_venta": 307,
+    "fecha_emision": "2025-10-01",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 161000
+  },
+  {
+    "_id": "FAC-00308",
+    "id_venta": 308,
+    "fecha_emision": "2025-12-10",
+    "estado": "pendiente",
+    "metodo_pago": "cuotas",
+    "total_factura": 866580
+  },
+  {
+    "_id": "FAC-00309",
+    "id_venta": 309,
+    "fecha_emision": "2026-04-29",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 466200
+  },
+  {
+    "_id": "FAC-00310",
+    "id_venta": 310,
+    "fecha_emision": "2026-02-16",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 260000
+  },
+  {
+    "_id": "FAC-00311",
+    "id_venta": 311,
+    "fecha_emision": "2026-04-11",
+    "estado": "pendiente",
+    "metodo_pago": "transferencia",
+    "total_factura": 767910
+  },
+  {
+    "_id": "FAC-00312",
+    "id_venta": 312,
+    "fecha_emision": "2026-01-12",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 466200
+  },
+  {
+    "_id": "FAC-00313",
+    "id_venta": 313,
+    "fecha_emision": "2025-07-26",
+    "estado": "pendiente",
+    "metodo_pago": "efectivo",
+    "total_factura": 147200
+  },
+  {
+    "_id": "FAC-00314",
+    "id_venta": 314,
+    "fecha_emision": "2025-08-13",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 150000
+  },
+  {
+    "_id": "FAC-00315",
+    "id_venta": 315,
+    "fecha_emision": "2025-10-06",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 150000
+  },
+  {
+    "_id": "FAC-00316",
+    "id_venta": 316,
+    "fecha_emision": "2025-08-27",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 335000
+  },
+  {
+    "_id": "FAC-00317",
+    "id_venta": 317,
+    "fecha_emision": "2025-06-06",
+    "estado": "pendiente",
+    "metodo_pago": "efectivo",
+    "total_factura": 275000
+  },
+  {
+    "_id": "FAC-00318",
+    "id_venta": 318,
+    "fecha_emision": "2026-02-28",
+    "estado": "pendiente",
+    "metodo_pago": "transferencia",
+    "total_factura": 215000
+  },
+  {
+    "_id": "FAC-00319",
+    "id_venta": 319,
+    "fecha_emision": "2026-02-09",
+    "estado": "anulada",
+    "metodo_pago": "cuotas",
+    "total_factura": 215000
+  },
+  {
+    "_id": "FAC-00320",
+    "id_venta": 320,
+    "fecha_emision": "2025-06-08",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 348600
+  },
+  {
+    "_id": "FAC-00321",
+    "id_venta": 321,
+    "fecha_emision": "2025-10-15",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 770000
+  },
+  {
+    "_id": "FAC-00322",
+    "id_venta": 322,
+    "fecha_emision": "2025-06-06",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 80000
+  },
+  {
+    "_id": "FAC-00323",
+    "id_venta": 323,
+    "fecha_emision": "2025-06-02",
+    "estado": "pendiente",
+    "metodo_pago": "transferencia",
+    "total_factura": 105000
+  },
+  {
+    "_id": "FAC-00324",
+    "id_venta": 324,
+    "fecha_emision": "2026-03-03",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 407400
+  },
+  {
+    "_id": "FAC-00325",
+    "id_venta": 325,
+    "fecha_emision": "2026-01-07",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 96600
+  },
+  {
+    "_id": "FAC-00326",
+    "id_venta": 326,
+    "fecha_emision": "2026-01-20",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 436800
+  },
+  {
+    "_id": "FAC-00327",
+    "id_venta": 327,
+    "fecha_emision": "2026-02-03",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 190000
+  },
+  {
+    "_id": "FAC-00328",
+    "id_venta": 328,
+    "fecha_emision": "2025-07-27",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 247800
+  },
+  {
+    "_id": "FAC-00329",
+    "id_venta": 329,
+    "fecha_emision": "2025-06-06",
+    "estado": "anulada",
+    "metodo_pago": "cuotas",
+    "total_factura": 96600
+  },
+  {
+    "_id": "FAC-00330",
+    "id_venta": 330,
+    "fecha_emision": "2026-01-23",
+    "estado": "anulada",
+    "metodo_pago": "transferencia",
+    "total_factura": 674304
+  },
+  {
+    "_id": "FAC-00331",
+    "id_venta": 331,
+    "fecha_emision": "2025-06-18",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 466200
+  },
+  {
+    "_id": "FAC-00332",
+    "id_venta": 332,
+    "fecha_emision": "2025-08-11",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 466200
+  },
+  {
+    "_id": "FAC-00333",
+    "id_venta": 333,
+    "fecha_emision": "2025-06-12",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 705000
+  },
+  {
+    "_id": "FAC-00334",
+    "id_venta": 334,
+    "fecha_emision": "2026-03-08",
+    "estado": "pendiente",
+    "metodo_pago": "cuotas",
+    "total_factura": 197400
+  },
+  {
+    "_id": "FAC-00335",
+    "id_venta": 335,
+    "fecha_emision": "2025-06-11",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 233000
+  },
+  {
+    "_id": "FAC-00336",
+    "id_venta": 336,
+    "fecha_emision": "2026-04-18",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 338800
+  },
+  {
+    "_id": "FAC-00337",
+    "id_venta": 337,
+    "fecha_emision": "2025-09-05",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 320000
+  },
+  {
+    "_id": "FAC-00338",
+    "id_venta": 338,
+    "fecha_emision": "2025-11-30",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 281125
+  },
+  {
+    "_id": "FAC-00339",
+    "id_venta": 339,
+    "fecha_emision": "2025-07-08",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 120000
+  },
+  {
+    "_id": "FAC-00340",
+    "id_venta": 340,
+    "fecha_emision": "2026-02-23",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 265000
+  },
+  {
+    "_id": "FAC-00341",
+    "id_venta": 341,
+    "fecha_emision": "2025-09-11",
+    "estado": "anulada",
+    "metodo_pago": "transferencia",
+    "total_factura": 866580
+  },
+  {
+    "_id": "FAC-00342",
+    "id_venta": 342,
+    "fecha_emision": "2026-02-28",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 197400
+  },
+  {
+    "_id": "FAC-00343",
+    "id_venta": 343,
+    "fecha_emision": "2026-03-08",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 225000
+  },
+  {
+    "_id": "FAC-00344",
+    "id_venta": 344,
+    "fecha_emision": "2025-05-28",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 284160
+  },
+  {
+    "_id": "FAC-00345",
+    "id_venta": 345,
+    "fecha_emision": "2026-03-21",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 240000
+  },
+  {
+    "_id": "FAC-00346",
+    "id_venta": 346,
+    "fecha_emision": "2025-06-18",
+    "estado": "pendiente",
+    "metodo_pago": "cuotas",
+    "total_factura": 609180
+  },
+  {
+    "_id": "FAC-00347",
+    "id_venta": 347,
+    "fecha_emision": "2025-12-08",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 275000
+  },
+  {
+    "_id": "FAC-00348",
+    "id_venta": 348,
+    "fecha_emision": "2026-04-09",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 150000
+  },
+  {
+    "_id": "FAC-00349",
+    "id_venta": 349,
+    "fecha_emision": "2026-03-02",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 233000
+  },
+  {
+    "_id": "FAC-00350",
+    "id_venta": 350,
+    "fecha_emision": "2026-02-21",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 215000
+  },
+  {
+    "_id": "FAC-00351",
+    "id_venta": 351,
+    "fecha_emision": "2026-01-30",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 275000
+  },
+  {
+    "_id": "FAC-00352",
+    "id_venta": 352,
+    "fecha_emision": "2025-10-16",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 281125
+  },
+  {
+    "_id": "FAC-00353",
+    "id_venta": 353,
+    "fecha_emision": "2025-09-18",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 348600
+  },
+  {
+    "_id": "FAC-00354",
+    "id_venta": 354,
+    "fecha_emision": "2025-08-20",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 105000
+  },
+  {
+    "_id": "FAC-00355",
+    "id_venta": 355,
+    "fecha_emision": "2026-04-15",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 197400
+  },
+  {
+    "_id": "FAC-00356",
+    "id_venta": 356,
+    "fecha_emision": "2025-10-15",
+    "estado": "pendiente",
+    "metodo_pago": "tarjeta",
+    "total_factura": 150000
+  },
+  {
+    "_id": "FAC-00357",
+    "id_venta": 357,
+    "fecha_emision": "2025-09-07",
+    "estado": "pendiente",
+    "metodo_pago": "efectivo",
+    "total_factura": 247800
+  },
+  {
+    "_id": "FAC-00358",
+    "id_venta": 358,
+    "fecha_emision": "2025-09-20",
+    "estado": "pendiente",
+    "metodo_pago": "efectivo",
+    "total_factura": 270000
+  },
+  {
+    "_id": "FAC-00359",
+    "id_venta": 359,
+    "fecha_emision": "2025-11-26",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 338800
+  },
+  {
+    "_id": "FAC-00360",
+    "id_venta": 360,
+    "fecha_emision": "2025-07-14",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 475000
+  },
+  {
+    "_id": "FAC-00361",
+    "id_venta": 361,
+    "fecha_emision": "2026-04-16",
+    "estado": "pendiente",
+    "metodo_pago": "transferencia",
+    "total_factura": 110000
+  },
+  {
+    "_id": "FAC-00362",
+    "id_venta": 362,
+    "fecha_emision": "2026-04-03",
+    "estado": "pendiente",
+    "metodo_pago": "tarjeta",
+    "total_factura": 197400
+  },
+  {
+    "_id": "FAC-00363",
+    "id_venta": 363,
+    "fecha_emision": "2025-10-08",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 348600
+  },
+  {
+    "_id": "FAC-00364",
+    "id_venta": 364,
+    "fecha_emision": "2025-12-28",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 215000
+  },
+  {
+    "_id": "FAC-00365",
+    "id_venta": 365,
+    "fecha_emision": "2025-10-16",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 707850
+  },
+  {
+    "_id": "FAC-00366",
+    "id_venta": 366,
+    "fecha_emision": "2025-06-14",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 866580
+  },
+  {
+    "_id": "FAC-00367",
+    "id_venta": 367,
+    "fecha_emision": "2025-05-12",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 150000
+  },
+  {
+    "_id": "FAC-00368",
+    "id_venta": 368,
+    "fecha_emision": "2025-12-28",
+    "estado": "pendiente",
+    "metodo_pago": "cuotas",
+    "total_factura": 281125
+  },
+  {
+    "_id": "FAC-00369",
+    "id_venta": 369,
+    "fecha_emision": "2026-03-22",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 466200
+  },
+  {
+    "_id": "FAC-00370",
+    "id_venta": 370,
+    "fecha_emision": "2026-02-20",
+    "estado": "anulada",
+    "metodo_pago": "cuotas",
+    "total_factura": 284160
+  },
+  {
+    "_id": "FAC-00371",
+    "id_venta": 371,
+    "fecha_emision": "2025-06-28",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 225000
+  },
+  {
+    "_id": "FAC-00372",
+    "id_venta": 372,
+    "fecha_emision": "2025-06-14",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 866580
+  },
+  {
+    "_id": "FAC-00373",
+    "id_venta": 373,
+    "fecha_emision": "2026-02-07",
+    "estado": "anulada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 466200
+  },
+  {
+    "_id": "FAC-00374",
+    "id_venta": 374,
+    "fecha_emision": "2025-08-25",
+    "estado": "anulada",
+    "metodo_pago": "efectivo",
+    "total_factura": 335000
+  },
+  {
+    "_id": "FAC-00375",
+    "id_venta": 375,
+    "fecha_emision": "2026-01-22",
+    "estado": "pendiente",
+    "metodo_pago": "tarjeta",
+    "total_factura": 466200
+  },
+  {
+    "_id": "FAC-00376",
+    "id_venta": 376,
+    "fecha_emision": "2025-09-20",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 150000
+  },
+  {
+    "_id": "FAC-00377",
+    "id_venta": 377,
+    "fecha_emision": "2025-07-14",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 400000
+  },
+  {
+    "_id": "FAC-00378",
+    "id_venta": 378,
+    "fecha_emision": "2025-11-02",
+    "estado": "pendiente",
+    "metodo_pago": "cuotas",
+    "total_factura": 197400
+  },
+  {
+    "_id": "FAC-00379",
+    "id_venta": 379,
+    "fecha_emision": "2025-06-12",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 284160
+  },
+  {
+    "_id": "FAC-00380",
+    "id_venta": 380,
+    "fecha_emision": "2025-09-10",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 110000
+  },
+  {
+    "_id": "FAC-00381",
+    "id_venta": 381,
+    "fecha_emision": "2025-11-13",
+    "estado": "anulada",
+    "metodo_pago": "transferencia",
+    "total_factura": 197400
+  },
+  {
+    "_id": "FAC-00382",
+    "id_venta": 382,
+    "fecha_emision": "2025-09-30",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 313995
+  },
+  {
+    "_id": "FAC-00383",
+    "id_venta": 383,
+    "fecha_emision": "2025-07-27",
+    "estado": "anulada",
+    "metodo_pago": "cuotas",
+    "total_factura": 335000
+  },
+  {
+    "_id": "FAC-00384",
+    "id_venta": 384,
+    "fecha_emision": "2025-12-18",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 707850
+  },
+  {
+    "_id": "FAC-00385",
+    "id_venta": 385,
+    "fecha_emision": "2026-02-10",
+    "estado": "anulada",
+    "metodo_pago": "transferencia",
+    "total_factura": 105000
+  },
+  {
+    "_id": "FAC-00386",
+    "id_venta": 386,
+    "fecha_emision": "2026-05-03",
+    "estado": "pendiente",
+    "metodo_pago": "efectivo",
+    "total_factura": 284160
+  },
+  {
+    "_id": "FAC-00387",
+    "id_venta": 387,
+    "fecha_emision": "2025-10-09",
+    "estado": "pendiente",
+    "metodo_pago": "tarjeta",
+    "total_factura": 310000
+  },
+  {
+    "_id": "FAC-00388",
+    "id_venta": 388,
+    "fecha_emision": "2026-03-17",
+    "estado": "anulada",
+    "metodo_pago": "efectivo",
+    "total_factura": 105000
+  },
+  {
+    "_id": "FAC-00389",
+    "id_venta": 389,
+    "fecha_emision": "2026-04-07",
+    "estado": "anulada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 320000
+  },
+  {
+    "_id": "FAC-00390",
+    "id_venta": 390,
+    "fecha_emision": "2026-02-02",
+    "estado": "pendiente",
+    "metodo_pago": "cuotas",
+    "total_factura": 467610
+  },
+  {
+    "_id": "FAC-00391",
+    "id_venta": 391,
+    "fecha_emision": "2025-05-12",
+    "estado": "anulada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 255000
+  },
+  {
+    "_id": "FAC-00392",
+    "id_venta": 392,
+    "fecha_emision": "2026-04-14",
+    "estado": "anulada",
+    "metodo_pago": "transferencia",
+    "total_factura": 328700
+  },
+  {
+    "_id": "FAC-00393",
+    "id_venta": 393,
+    "fecha_emision": "2026-02-15",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 866580
+  },
+  {
+    "_id": "FAC-00394",
+    "id_venta": 394,
+    "fecha_emision": "2025-10-08",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 80000
+  },
+  {
+    "_id": "FAC-00395",
+    "id_venta": 395,
+    "fecha_emision": "2026-04-12",
+    "estado": "anulada",
+    "metodo_pago": "transferencia",
+    "total_factura": 247800
+  },
+  {
+    "_id": "FAC-00396",
+    "id_venta": 396,
+    "fecha_emision": "2025-06-30",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 247800
+  },
+  {
+    "_id": "FAC-00397",
+    "id_venta": 397,
+    "fecha_emision": "2025-07-15",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 278000
+  },
+  {
+    "_id": "FAC-00398",
+    "id_venta": 398,
+    "fecha_emision": "2025-09-20",
+    "estado": "anulada",
+    "metodo_pago": "cuotas",
+    "total_factura": 640940
+  },
+  {
+    "_id": "FAC-00399",
+    "id_venta": 399,
+    "fecha_emision": "2025-07-06",
+    "estado": "pendiente",
+    "metodo_pago": "efectivo",
+    "total_factura": 233000
+  },
+  {
+    "_id": "FAC-00400",
+    "id_venta": 400,
+    "fecha_emision": "2025-07-01",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 226800
+  },
+  {
+    "_id": "FAC-00401",
+    "id_venta": 401,
+    "fecha_emision": "2026-02-15",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 348600
+  },
+  {
+    "_id": "FAC-00402",
+    "id_venta": 402,
+    "fecha_emision": "2025-07-26",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 247800
+  },
+  {
+    "_id": "FAC-00403",
+    "id_venta": 403,
+    "fecha_emision": "2025-09-24",
+    "estado": "anulada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 284160
+  },
+  {
+    "_id": "FAC-00404",
+    "id_venta": 404,
+    "fecha_emision": "2025-09-29",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 707850
+  },
+  {
+    "_id": "FAC-00405",
+    "id_venta": 405,
+    "fecha_emision": "2026-03-13",
+    "estado": "anulada",
+    "metodo_pago": "efectivo",
+    "total_factura": 348600
+  },
+  {
+    "_id": "FAC-00406",
+    "id_venta": 406,
+    "fecha_emision": "2025-08-23",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 294000
+  },
+  {
+    "_id": "FAC-00407",
+    "id_venta": 407,
+    "fecha_emision": "2025-10-30",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 233000
+  },
+  {
+    "_id": "FAC-00408",
+    "id_venta": 408,
+    "fecha_emision": "2025-08-20",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 281125
+  },
+  {
+    "_id": "FAC-00409",
+    "id_venta": 409,
+    "fecha_emision": "2026-04-24",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 415000
+  },
+  {
+    "_id": "FAC-00410",
+    "id_venta": 410,
+    "fecha_emision": "2026-03-28",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 233000
+  },
+  {
+    "_id": "FAC-00411",
+    "id_venta": 411,
+    "fecha_emision": "2025-09-20",
+    "estado": "pendiente",
+    "metodo_pago": "transferencia",
+    "total_factura": 866580
+  },
+  {
+    "_id": "FAC-00412",
+    "id_venta": 412,
+    "fecha_emision": "2026-01-21",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 579150
+  },
+  {
+    "_id": "FAC-00413",
+    "id_venta": 413,
+    "fecha_emision": "2026-01-13",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 281125
+  },
+  {
+    "_id": "FAC-00414",
+    "id_venta": 414,
+    "fecha_emision": "2025-09-13",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 185000
+  },
+  {
+    "_id": "FAC-00415",
+    "id_venta": 415,
+    "fecha_emision": "2025-06-03",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 418500
+  },
+  {
+    "_id": "FAC-00416",
+    "id_venta": 416,
+    "fecha_emision": "2025-06-24",
+    "estado": "anulada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 80000
+  },
+  {
+    "_id": "FAC-00417",
+    "id_venta": 417,
+    "fecha_emision": "2026-03-28",
+    "estado": "pendiente",
+    "metodo_pago": "transferencia",
+    "total_factura": 466200
+  },
+  {
+    "_id": "FAC-00418",
+    "id_venta": 418,
+    "fecha_emision": "2025-12-10",
+    "estado": "anulada",
+    "metodo_pago": "cuotas",
+    "total_factura": 453200
+  },
+  {
+    "_id": "FAC-00419",
+    "id_venta": 419,
+    "fecha_emision": "2025-09-26",
+    "estado": "anulada",
+    "metodo_pago": "efectivo",
+    "total_factura": 500214
+  },
+  {
+    "_id": "FAC-00420",
+    "id_venta": 420,
+    "fecha_emision": "2025-05-30",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 407400
+  },
+  {
+    "_id": "FAC-00421",
+    "id_venta": 421,
+    "fecha_emision": "2025-05-09",
+    "estado": "pendiente",
+    "metodo_pago": "efectivo",
+    "total_factura": 466200
+  },
+  {
+    "_id": "FAC-00422",
+    "id_venta": 422,
+    "fecha_emision": "2025-10-25",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 215000
+  },
+  {
+    "_id": "FAC-00423",
+    "id_venta": 423,
+    "fecha_emision": "2025-07-13",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 275000
+  },
+  {
+    "_id": "FAC-00424",
+    "id_venta": 424,
+    "fecha_emision": "2026-03-30",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 348600
+  },
+  {
+    "_id": "FAC-00425",
+    "id_venta": 425,
+    "fecha_emision": "2025-09-19",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 275000
+  },
+  {
+    "_id": "FAC-00426",
+    "id_venta": 426,
+    "fecha_emision": "2025-07-29",
+    "estado": "anulada",
+    "metodo_pago": "efectivo",
+    "total_factura": 640940
+  },
+  {
+    "_id": "FAC-00427",
+    "id_venta": 427,
+    "fecha_emision": "2025-12-20",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 233000
+  },
+  {
+    "_id": "FAC-00428",
+    "id_venta": 428,
+    "fecha_emision": "2026-02-14",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 579150
+  },
+  {
+    "_id": "FAC-00429",
+    "id_venta": 429,
+    "fecha_emision": "2026-05-04",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 348600
+  },
+  {
+    "_id": "FAC-00430",
+    "id_venta": 430,
+    "fecha_emision": "2025-12-12",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 247800
+  },
+  {
+    "_id": "FAC-00431",
+    "id_venta": 431,
+    "fecha_emision": "2026-02-19",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 150000
+  },
+  {
+    "_id": "FAC-00432",
+    "id_venta": 432,
+    "fecha_emision": "2025-05-12",
+    "estado": "anulada",
+    "metodo_pago": "efectivo",
+    "total_factura": 497640
+  },
+  {
+    "_id": "FAC-00433",
+    "id_venta": 433,
+    "fecha_emision": "2025-07-04",
+    "estado": "pendiente",
+    "metodo_pago": "tarjeta",
+    "total_factura": 866580
+  },
+  {
+    "_id": "FAC-00434",
+    "id_venta": 434,
+    "fecha_emision": "2025-06-15",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 609825
+  },
+  {
+    "_id": "FAC-00435",
+    "id_venta": 435,
+    "fecha_emision": "2026-04-26",
+    "estado": "pendiente",
+    "metodo_pago": "efectivo",
+    "total_factura": 348600
+  },
+  {
+    "_id": "FAC-00436",
+    "id_venta": 436,
+    "fecha_emision": "2025-07-23",
+    "estado": "anulada",
+    "metodo_pago": "cuotas",
+    "total_factura": 707850
+  },
+  {
+    "_id": "FAC-00437",
+    "id_venta": 437,
+    "fecha_emision": "2026-02-11",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 150000
+  },
+  {
+    "_id": "FAC-00438",
+    "id_venta": 438,
+    "fecha_emision": "2025-05-26",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 105000
+  },
+  {
+    "_id": "FAC-00439",
+    "id_venta": 439,
+    "fecha_emision": "2025-11-13",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 255000
+  },
+  {
+    "_id": "FAC-00440",
+    "id_venta": 440,
+    "fecha_emision": "2026-03-02",
+    "estado": "pendiente",
+    "metodo_pago": "transferencia",
+    "total_factura": 866580
+  },
+  {
+    "_id": "FAC-00441",
+    "id_venta": 441,
+    "fecha_emision": "2026-02-14",
+    "estado": "pendiente",
+    "metodo_pago": "cuotas",
+    "total_factura": 359640
+  },
+  {
+    "_id": "FAC-00442",
+    "id_venta": 442,
+    "fecha_emision": "2025-07-22",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 348600
+  },
+  {
+    "_id": "FAC-00443",
+    "id_venta": 443,
+    "fecha_emision": "2025-12-14",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 335000
+  },
+  {
+    "_id": "FAC-00444",
+    "id_venta": 444,
+    "fecha_emision": "2025-07-12",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 640940
+  },
+  {
+    "_id": "FAC-00445",
+    "id_venta": 445,
+    "fecha_emision": "2025-05-29",
+    "estado": "anulada",
+    "metodo_pago": "cuotas",
+    "total_factura": 306360
+  },
+  {
+    "_id": "FAC-00446",
+    "id_venta": 446,
+    "fecha_emision": "2025-10-12",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 558600
+  },
+  {
+    "_id": "FAC-00447",
+    "id_venta": 447,
+    "fecha_emision": "2025-11-10",
+    "estado": "anulada",
+    "metodo_pago": "efectivo",
+    "total_factura": 215000
+  },
+  {
+    "_id": "FAC-00448",
+    "id_venta": 448,
+    "fecha_emision": "2025-05-28",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 226800
+  },
+  {
+    "_id": "FAC-00449",
+    "id_venta": 449,
+    "fecha_emision": "2025-11-07",
+    "estado": "pendiente",
+    "metodo_pago": "transferencia",
+    "total_factura": 453600
+  },
+  {
+    "_id": "FAC-00450",
+    "id_venta": 450,
+    "fecha_emision": "2025-08-23",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 226800
+  },
+  {
+    "_id": "FAC-00451",
+    "id_venta": 451,
+    "fecha_emision": "2026-04-22",
+    "estado": "pendiente",
+    "metodo_pago": "cuotas",
+    "total_factura": 197400
+  },
+  {
+    "_id": "FAC-00452",
+    "id_venta": 452,
+    "fecha_emision": "2025-09-12",
+    "estado": "anulada",
+    "metodo_pago": "transferencia",
+    "total_factura": 220000
+  },
+  {
+    "_id": "FAC-00453",
+    "id_venta": 453,
+    "fecha_emision": "2026-04-14",
+    "estado": "pendiente",
+    "metodo_pago": "cuotas",
+    "total_factura": 359640
+  },
+  {
+    "_id": "FAC-00454",
+    "id_venta": 454,
+    "fecha_emision": "2025-06-29",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 255000
+  },
+  {
+    "_id": "FAC-00455",
+    "id_venta": 455,
+    "fecha_emision": "2025-11-05",
+    "estado": "pendiente",
+    "metodo_pago": "efectivo",
+    "total_factura": 215000
+  },
+  {
+    "_id": "FAC-00456",
+    "id_venta": 456,
+    "fecha_emision": "2026-02-18",
+    "estado": "anulada",
+    "metodo_pago": "transferencia",
+    "total_factura": 310800
+  },
+  {
+    "_id": "FAC-00457",
+    "id_venta": 457,
+    "fecha_emision": "2025-12-02",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 436800
+  },
+  {
+    "_id": "FAC-00458",
+    "id_venta": 458,
+    "fecha_emision": "2026-03-21",
+    "estado": "pendiente",
+    "metodo_pago": "cuotas",
+    "total_factura": 707850
+  },
+  {
+    "_id": "FAC-00459",
+    "id_venta": 459,
+    "fecha_emision": "2025-07-26",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 265000
+  },
+  {
+    "_id": "FAC-00460",
+    "id_venta": 460,
+    "fecha_emision": "2025-09-06",
+    "estado": "anulada",
+    "metodo_pago": "efectivo",
+    "total_factura": 255000
+  },
+  {
+    "_id": "FAC-00461",
+    "id_venta": 461,
+    "fecha_emision": "2025-07-30",
+    "estado": "pendiente",
+    "metodo_pago": "efectivo",
+    "total_factura": 445200
+  },
+  {
+    "_id": "FAC-00462",
+    "id_venta": 462,
+    "fecha_emision": "2025-08-06",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 338800
+  },
+  {
+    "_id": "FAC-00463",
+    "id_venta": 463,
+    "fecha_emision": "2025-12-05",
+    "estado": "pendiente",
+    "metodo_pago": "tarjeta",
+    "total_factura": 175000
+  },
+  {
+    "_id": "FAC-00464",
+    "id_venta": 464,
+    "fecha_emision": "2025-05-20",
+    "estado": "anulada",
+    "metodo_pago": "transferencia",
+    "total_factura": 320000
+  },
+  {
+    "_id": "FAC-00465",
+    "id_venta": 465,
+    "fecha_emision": "2025-08-07",
+    "estado": "anulada",
+    "metodo_pago": "efectivo",
+    "total_factura": 233000
+  },
+  {
+    "_id": "FAC-00466",
+    "id_venta": 466,
+    "fecha_emision": "2025-10-25",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 96600
+  },
+  {
+    "_id": "FAC-00467",
+    "id_venta": 467,
+    "fecha_emision": "2025-12-04",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 468000
+  },
+  {
+    "_id": "FAC-00468",
+    "id_venta": 468,
+    "fecha_emision": "2026-04-15",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 175000
+  },
+  {
+    "_id": "FAC-00469",
+    "id_venta": 469,
+    "fecha_emision": "2025-09-12",
+    "estado": "anulada",
+    "metodo_pago": "cuotas",
+    "total_factura": 335000
+  },
+  {
+    "_id": "FAC-00470",
+    "id_venta": 470,
+    "fecha_emision": "2025-09-21",
+    "estado": "anulada",
+    "metodo_pago": "efectivo",
+    "total_factura": 348600
+  },
+  {
+    "_id": "FAC-00471",
+    "id_venta": 471,
+    "fecha_emision": "2025-07-28",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 462000
+  },
+  {
+    "_id": "FAC-00472",
+    "id_venta": 472,
+    "fecha_emision": "2026-05-02",
+    "estado": "anulada",
+    "metodo_pago": "efectivo",
+    "total_factura": 378000
+  },
+  {
+    "_id": "FAC-00473",
+    "id_venta": 473,
+    "fecha_emision": "2025-07-02",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 197400
+  },
+  {
+    "_id": "FAC-00474",
+    "id_venta": 474,
+    "fecha_emision": "2025-11-19",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 226800
+  },
+  {
+    "_id": "FAC-00475",
+    "id_venta": 475,
+    "fecha_emision": "2025-05-27",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 105000
+  },
+  {
+    "_id": "FAC-00476",
+    "id_venta": 476,
+    "fecha_emision": "2026-01-03",
+    "estado": "anulada",
+    "metodo_pago": "cuotas",
+    "total_factura": 707850
+  },
+  {
+    "_id": "FAC-00477",
+    "id_venta": 477,
+    "fecha_emision": "2025-08-29",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 225000
+  },
+  {
+    "_id": "FAC-00478",
+    "id_venta": 478,
+    "fecha_emision": "2025-08-18",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 226800
+  },
+  {
+    "_id": "FAC-00479",
+    "id_venta": 479,
+    "fecha_emision": "2025-12-29",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 348600
+  },
+  {
+    "_id": "FAC-00480",
+    "id_venta": 480,
+    "fecha_emision": "2025-11-03",
+    "estado": "anulada",
+    "metodo_pago": "cuotas",
+    "total_factura": 707850
+  },
+  {
+    "_id": "FAC-00481",
+    "id_venta": 481,
+    "fecha_emision": "2025-10-11",
+    "estado": "pagada",
+    "metodo_pago": "cuotas",
+    "total_factura": 315240
+  },
+  {
+    "_id": "FAC-00482",
+    "id_venta": 482,
+    "fecha_emision": "2025-09-01",
+    "estado": "anulada",
+    "metodo_pago": "efectivo",
+    "total_factura": 418500
+  },
+  {
+    "_id": "FAC-00483",
+    "id_venta": 483,
+    "fecha_emision": "2025-08-30",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 320000
+  },
+  {
+    "_id": "FAC-00484",
+    "id_venta": 484,
+    "fecha_emision": "2025-05-20",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 467610
+  },
+  {
+    "_id": "FAC-00485",
+    "id_venta": 485,
+    "fecha_emision": "2026-04-10",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 467610
+  },
+  {
+    "_id": "FAC-00486",
+    "id_venta": 486,
+    "fecha_emision": "2025-08-14",
+    "estado": "pendiente",
+    "metodo_pago": "tarjeta",
+    "total_factura": 348600
+  },
+  {
+    "_id": "FAC-00487",
+    "id_venta": 487,
+    "fecha_emision": "2025-11-28",
+    "estado": "anulada",
+    "metodo_pago": "transferencia",
+    "total_factura": 197400
+  },
+  {
+    "_id": "FAC-00488",
+    "id_venta": 488,
+    "fecha_emision": "2025-10-23",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 335000
+  },
+  {
+    "_id": "FAC-00489",
+    "id_venta": 489,
+    "fecha_emision": "2025-09-27",
+    "estado": "anulada",
+    "metodo_pago": "efectivo",
+    "total_factura": 225000
+  },
+  {
+    "_id": "FAC-00490",
+    "id_venta": 490,
+    "fecha_emision": "2025-06-12",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 407400
+  },
+  {
+    "_id": "FAC-00491",
+    "id_venta": 491,
+    "fecha_emision": "2025-09-27",
+    "estado": "anulada",
+    "metodo_pago": "transferencia",
+    "total_factura": 640940
+  },
+  {
+    "_id": "FAC-00492",
+    "id_venta": 492,
+    "fecha_emision": "2025-11-03",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 175000
+  },
+  {
+    "_id": "FAC-00493",
+    "id_venta": 493,
+    "fecha_emision": "2026-04-01",
+    "estado": "pendiente",
+    "metodo_pago": "efectivo",
+    "total_factura": 275000
+  },
+  {
+    "_id": "FAC-00494",
+    "id_venta": 494,
+    "fecha_emision": "2026-01-23",
+    "estado": "pagada",
+    "metodo_pago": "transferencia",
+    "total_factura": 284160
+  },
+  {
+    "_id": "FAC-00495",
+    "id_venta": 495,
+    "fecha_emision": "2025-11-28",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 80000
+  },
+  {
+    "_id": "FAC-00496",
+    "id_venta": 496,
+    "fecha_emision": "2026-04-20",
+    "estado": "anulada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 284160
+  },
+  {
+    "_id": "FAC-00497",
+    "id_venta": 497,
+    "fecha_emision": "2026-02-06",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 466200
+  },
+  {
+    "_id": "FAC-00498",
+    "id_venta": 498,
+    "fecha_emision": "2025-10-24",
+    "estado": "pagada",
+    "metodo_pago": "tarjeta",
+    "total_factura": 233000
+  },
+  {
+    "_id": "FAC-00499",
+    "id_venta": 499,
+    "fecha_emision": "2025-05-22",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 355000
+  },
+  {
+    "_id": "FAC-00500",
+    "id_venta": 500,
+    "fecha_emision": "2025-07-06",
+    "estado": "pagada",
+    "metodo_pago": "efectivo",
+    "total_factura": 225000
+  }
+]

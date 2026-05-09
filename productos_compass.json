@@ -1,0 +1,282 @@
+[
+  {
+    "_id": "C_TAP",
+    "nombre": "Tapetes premium silicona",
+    "categoria": "Proteccion",
+    "tipo_vehiculo": "carro",
+    "precio_costo": 65000,
+    "precio_venta": 120000,
+    "marca": "AutoPro",
+    "activo": true
+  },
+  {
+    "_id": "C_SEN",
+    "nombre": "Sensores de reversa 4pts",
+    "categoria": "Seguridad",
+    "tipo_vehiculo": "carro",
+    "precio_costo": 45000,
+    "precio_venta": 85000,
+    "marca": "SensoTech",
+    "activo": true
+  },
+  {
+    "_id": "C_FOR",
+    "nombre": "Forros de asientos cuero eco",
+    "categoria": "Confort",
+    "tipo_vehiculo": "carro",
+    "precio_costo": 110000,
+    "precio_venta": 200000,
+    "marca": "ComfortDrive",
+    "activo": true
+  },
+  {
+    "_id": "C_CAM",
+    "nombre": "Camara de reversa HD",
+    "categoria": "Seguridad",
+    "tipo_vehiculo": "carro",
+    "precio_costo": 80000,
+    "precio_venta": 150000,
+    "marca": "VisionCar",
+    "activo": true
+  },
+  {
+    "_id": "C_LUC",
+    "nombre": "Luces LED interiores RGB",
+    "categoria": "Iluminacion",
+    "tipo_vehiculo": "carro",
+    "precio_costo": 22000,
+    "precio_venta": 45000,
+    "marca": "LedAuto",
+    "activo": true
+  },
+  {
+    "_id": "C_CAR",
+    "nombre": "Cargador USB doble 3.1A",
+    "categoria": "Electronica",
+    "tipo_vehiculo": "carro",
+    "precio_costo": 18000,
+    "precio_venta": 35000,
+    "marca": "PowerDrive",
+    "activo": true
+  },
+  {
+    "_id": "C_ALA",
+    "nombre": "Sistema de alarma con GPS",
+    "categoria": "Seguridad",
+    "tipo_vehiculo": "carro",
+    "precio_costo": 130000,
+    "precio_venta": 250000,
+    "marca": "SecureCar",
+    "activo": true
+  },
+  {
+    "_id": "C_PAR",
+    "nombre": "Parasol delantero XL",
+    "categoria": "Proteccion",
+    "tipo_vehiculo": "carro",
+    "precio_costo": 15000,
+    "precio_venta": 30000,
+    "marca": "SolarShield",
+    "activo": true
+  },
+  {
+    "_id": "C_ARO",
+    "nombre": "Aromatizante premium 3pack",
+    "categoria": "Confort",
+    "tipo_vehiculo": "carro",
+    "precio_costo": 12000,
+    "precio_venta": 25000,
+    "marca": "FreshCar",
+    "activo": true
+  },
+  {
+    "_id": "C_LIM",
+    "nombre": "Limpiaparabrisas premium",
+    "categoria": "Proteccion",
+    "tipo_vehiculo": "carro",
+    "precio_costo": 28000,
+    "precio_venta": 55000,
+    "marca": "ClearView",
+    "activo": true
+  },
+  {
+    "_id": "C_CUS",
+    "nombre": "Cojines lumbar ergonomicos",
+    "categoria": "Confort",
+    "tipo_vehiculo": "carro",
+    "precio_costo": 38000,
+    "precio_venta": 70000,
+    "marca": "SpineCare",
+    "activo": true
+  },
+  {
+    "_id": "C_HUD",
+    "nombre": "Pantalla HUD velocidad",
+    "categoria": "Electronica",
+    "tipo_vehiculo": "carro",
+    "precio_costo": 95000,
+    "precio_venta": 180000,
+    "marca": "DigiDrive",
+    "activo": true
+  },
+  {
+    "_id": "C_NEU",
+    "nombre": "Inflador portatil 12V",
+    "categoria": "Herramientas",
+    "tipo_vehiculo": "carro",
+    "precio_costo": 35000,
+    "precio_venta": 65000,
+    "marca": "AirPro",
+    "activo": true
+  },
+  {
+    "_id": "C_EXT",
+    "nombre": "Extintor cabina 1kg",
+    "categoria": "Seguridad",
+    "tipo_vehiculo": "carro",
+    "precio_costo": 20000,
+    "precio_venta": 40000,
+    "marca": "SafeCar",
+    "activo": true
+  },
+  {
+    "_id": "M_CAS",
+    "nombre": "Casco modular premium",
+    "categoria": "Seguridad",
+    "tipo_vehiculo": "moto",
+    "precio_costo": 240000,
+    "precio_venta": 450000,
+    "marca": "MotoShield",
+    "activo": true
+  },
+  {
+    "_id": "M_GUA",
+    "nombre": "Guantes cuero touring",
+    "categoria": "Proteccion",
+    "tipo_vehiculo": "moto",
+    "precio_costo": 52000,
+    "precio_venta": 95000,
+    "marca": "GripPro",
+    "activo": true
+  },
+  {
+    "_id": "M_CHA",
+    "nombre": "Chaleco reflectivo alta vis",
+    "categoria": "Seguridad",
+    "tipo_vehiculo": "moto",
+    "precio_costo": 40000,
+    "precio_venta": 75000,
+    "marca": "SafeRider",
+    "activo": true
+  },
+  {
+    "_id": "M_INT",
+    "nombre": "Intercomunicador Bluetooth",
+    "categoria": "Electronica",
+    "tipo_vehiculo": "moto",
+    "precio_costo": 150000,
+    "precio_venta": 280000,
+    "marca": "TalkMoto",
+    "activo": true
+  },
+  {
+    "_id": "M_BAU",
+    "nombre": "Baul trasero rigido 45L",
+    "categoria": "Carga",
+    "tipo_vehiculo": "moto",
+    "precio_costo": 120000,
+    "precio_venta": 220000,
+    "marca": "CargoMoto",
+    "activo": true
+  },
+  {
+    "_id": "M_CAR",
+    "nombre": "Cargador USB moto imperm.",
+    "categoria": "Electronica",
+    "tipo_vehiculo": "moto",
+    "precio_costo": 24000,
+    "precio_venta": 45000,
+    "marca": "PowerMoto",
+    "activo": true
+  },
+  {
+    "_id": "M_GPS",
+    "nombre": "Soporte GPS celular moto",
+    "categoria": "Navegacion",
+    "tipo_vehiculo": "moto",
+    "precio_costo": 32000,
+    "precio_venta": 60000,
+    "marca": "NaviMoto",
+    "activo": true
+  },
+  {
+    "_id": "M_CUB",
+    "nombre": "Cubierta impermeable moto",
+    "categoria": "Proteccion",
+    "tipo_vehiculo": "moto",
+    "precio_costo": 28000,
+    "precio_venta": 55000,
+    "marca": "RainShield",
+    "activo": true
+  },
+  {
+    "_id": "M_MAN",
+    "nombre": "Manoplas calefactoras",
+    "categoria": "Confort",
+    "tipo_vehiculo": "moto",
+    "precio_costo": 70000,
+    "precio_venta": 130000,
+    "marca": "WarmRide",
+    "activo": true
+  },
+  {
+    "_id": "M_ALF",
+    "nombre": "Alfombra taller antidesliz",
+    "categoria": "Herramientas",
+    "tipo_vehiculo": "moto",
+    "precio_costo": 18000,
+    "precio_venta": 35000,
+    "marca": "WorkMat",
+    "activo": true
+  },
+  {
+    "_id": "M_EXT",
+    "nombre": "Extintor moto 500g",
+    "categoria": "Seguridad",
+    "tipo_vehiculo": "moto",
+    "precio_costo": 19000,
+    "precio_venta": 38000,
+    "marca": "SafeMoto",
+    "activo": true
+  },
+  {
+    "_id": "M_CEL",
+    "nombre": "Alarma GPS antirrobo",
+    "categoria": "Seguridad",
+    "tipo_vehiculo": "moto",
+    "precio_costo": 105000,
+    "precio_venta": 195000,
+    "marca": "TrackMoto",
+    "activo": true
+  },
+  {
+    "_id": "M_ROD",
+    "nombre": "Rodilleras articuladas",
+    "categoria": "Proteccion",
+    "tipo_vehiculo": "moto",
+    "precio_costo": 46000,
+    "precio_venta": 85000,
+    "marca": "KneeGuard",
+    "activo": true
+  },
+  {
+    "_id": "M_BOT",
+    "nombre": "Botas moto touring impermeables",
+    "categoria": "Proteccion",
+    "tipo_vehiculo": "moto",
+    "precio_costo": 205000,
+    "precio_venta": 380000,
+    "marca": "BootPro",
+    "activo": true
+  }
+]

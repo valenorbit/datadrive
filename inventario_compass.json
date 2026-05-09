@@ -1,0 +1,282 @@
+[
+  {
+    "_id": 1,
+    "codigo_producto": "C_TAP",
+    "stock_actual": 116,
+    "stock_minimo": 12,
+    "stock_maximo": 127,
+    "ubicacion": "Sucursal Cali",
+    "fecha_ultima_entrada": "2025-09-11",
+    "fecha_ultima_salida": "2025-08-31"
+  },
+  {
+    "_id": 2,
+    "codigo_producto": "C_SEN",
+    "stock_actual": 120,
+    "stock_minimo": 14,
+    "stock_maximo": 191,
+    "ubicacion": "Sucursal Medellin",
+    "fecha_ultima_entrada": "2026-02-22",
+    "fecha_ultima_salida": "2025-10-14"
+  },
+  {
+    "_id": 3,
+    "codigo_producto": "C_FOR",
+    "stock_actual": 105,
+    "stock_minimo": 13,
+    "stock_maximo": 115,
+    "ubicacion": "Sucursal Medellin",
+    "fecha_ultima_entrada": "2025-05-20",
+    "fecha_ultima_salida": "2025-07-26"
+  },
+  {
+    "_id": 4,
+    "codigo_producto": "C_CAM",
+    "stock_actual": 81,
+    "stock_minimo": 7,
+    "stock_maximo": 86,
+    "ubicacion": "Sucursal Cali",
+    "fecha_ultima_entrada": "2025-12-09",
+    "fecha_ultima_salida": "2025-11-24"
+  },
+  {
+    "_id": 5,
+    "codigo_producto": "C_LUC",
+    "stock_actual": 69,
+    "stock_minimo": 13,
+    "stock_maximo": 84,
+    "ubicacion": "Sucursal Cali",
+    "fecha_ultima_entrada": "2025-10-08",
+    "fecha_ultima_salida": "2026-01-10"
+  },
+  {
+    "_id": 6,
+    "codigo_producto": "C_CAR",
+    "stock_actual": 118,
+    "stock_minimo": 15,
+    "stock_maximo": 179,
+    "ubicacion": "Bodega Principal Bogota",
+    "fecha_ultima_entrada": "2026-01-17",
+    "fecha_ultima_salida": "2025-07-30"
+  },
+  {
+    "_id": 7,
+    "codigo_producto": "C_ALA",
+    "stock_actual": 97,
+    "stock_minimo": 13,
+    "stock_maximo": 138,
+    "ubicacion": "Sucursal Medellin",
+    "fecha_ultima_entrada": "2025-11-14",
+    "fecha_ultima_salida": "2026-03-23"
+  },
+  {
+    "_id": 8,
+    "codigo_producto": "C_PAR",
+    "stock_actual": 9,
+    "stock_minimo": 15,
+    "stock_maximo": 106,
+    "ubicacion": "Sucursal Medellin",
+    "fecha_ultima_entrada": "2025-08-06",
+    "fecha_ultima_salida": "2025-10-09"
+  },
+  {
+    "_id": 9,
+    "codigo_producto": "C_ARO",
+    "stock_actual": 49,
+    "stock_minimo": 10,
+    "stock_maximo": 158,
+    "ubicacion": "Sucursal Medellin",
+    "fecha_ultima_entrada": "2025-05-23",
+    "fecha_ultima_salida": "2026-01-10"
+  },
+  {
+    "_id": 10,
+    "codigo_producto": "C_LIM",
+    "stock_actual": 41,
+    "stock_minimo": 8,
+    "stock_maximo": 114,
+    "ubicacion": "Sucursal Medellin",
+    "fecha_ultima_entrada": "2025-05-01",
+    "fecha_ultima_salida": "2026-02-22"
+  },
+  {
+    "_id": 11,
+    "codigo_producto": "C_CUS",
+    "stock_actual": 54,
+    "stock_minimo": 7,
+    "stock_maximo": 143,
+    "ubicacion": "Sucursal Medellin",
+    "fecha_ultima_entrada": "2026-01-31",
+    "fecha_ultima_salida": "2025-09-09"
+  },
+  {
+    "_id": 12,
+    "codigo_producto": "C_HUD",
+    "stock_actual": 97,
+    "stock_minimo": 10,
+    "stock_maximo": 126,
+    "ubicacion": "Sucursal Medellin",
+    "fecha_ultima_entrada": "2025-11-03",
+    "fecha_ultima_salida": "2026-01-07"
+  },
+  {
+    "_id": 13,
+    "codigo_producto": "C_NEU",
+    "stock_actual": 31,
+    "stock_minimo": 14,
+    "stock_maximo": 96,
+    "ubicacion": "Sucursal Cali",
+    "fecha_ultima_entrada": "2025-06-05",
+    "fecha_ultima_salida": "2025-11-17"
+  },
+  {
+    "_id": 14,
+    "codigo_producto": "C_EXT",
+    "stock_actual": 112,
+    "stock_minimo": 6,
+    "stock_maximo": 172,
+    "ubicacion": "Sucursal Medellin",
+    "fecha_ultima_entrada": "2025-10-08",
+    "fecha_ultima_salida": "2025-08-03"
+  },
+  {
+    "_id": 15,
+    "codigo_producto": "M_CAS",
+    "stock_actual": 79,
+    "stock_minimo": 11,
+    "stock_maximo": 189,
+    "ubicacion": "Sucursal Medellin",
+    "fecha_ultima_entrada": "2025-10-01",
+    "fecha_ultima_salida": "2026-02-15"
+  },
+  {
+    "_id": 16,
+    "codigo_producto": "M_GUA",
+    "stock_actual": 110,
+    "stock_minimo": 7,
+    "stock_maximo": 140,
+    "ubicacion": "Bodega Principal Bogota",
+    "fecha_ultima_entrada": "2025-10-06",
+    "fecha_ultima_salida": "2025-12-27"
+  },
+  {
+    "_id": 17,
+    "codigo_producto": "M_CHA",
+    "stock_actual": 71,
+    "stock_minimo": 7,
+    "stock_maximo": 194,
+    "ubicacion": "Sucursal Cali",
+    "fecha_ultima_entrada": "2025-10-15",
+    "fecha_ultima_salida": "2025-12-24"
+  },
+  {
+    "_id": 18,
+    "codigo_producto": "M_INT",
+    "stock_actual": 100,
+    "stock_minimo": 10,
+    "stock_maximo": 180,
+    "ubicacion": "Sucursal Medellin",
+    "fecha_ultima_entrada": "2025-09-29",
+    "fecha_ultima_salida": "2026-03-11"
+  },
+  {
+    "_id": 19,
+    "codigo_producto": "M_BAU",
+    "stock_actual": 79,
+    "stock_minimo": 14,
+    "stock_maximo": 86,
+    "ubicacion": "Sucursal Medellin",
+    "fecha_ultima_entrada": "2025-07-05",
+    "fecha_ultima_salida": "2025-09-07"
+  },
+  {
+    "_id": 20,
+    "codigo_producto": "M_CAR",
+    "stock_actual": 28,
+    "stock_minimo": 5,
+    "stock_maximo": 107,
+    "ubicacion": "Sucursal Medellin",
+    "fecha_ultima_entrada": "2025-12-02",
+    "fecha_ultima_salida": "2025-12-12"
+  },
+  {
+    "_id": 21,
+    "codigo_producto": "M_GPS",
+    "stock_actual": 88,
+    "stock_minimo": 6,
+    "stock_maximo": 137,
+    "ubicacion": "Sucursal Cali",
+    "fecha_ultima_entrada": "2025-07-29",
+    "fecha_ultima_salida": "2026-04-12"
+  },
+  {
+    "_id": 22,
+    "codigo_producto": "M_CUB",
+    "stock_actual": 54,
+    "stock_minimo": 10,
+    "stock_maximo": 151,
+    "ubicacion": "Sucursal Cali",
+    "fecha_ultima_entrada": "2026-02-16",
+    "fecha_ultima_salida": "2025-11-02"
+  },
+  {
+    "_id": 23,
+    "codigo_producto": "M_MAN",
+    "stock_actual": 52,
+    "stock_minimo": 5,
+    "stock_maximo": 132,
+    "ubicacion": "Bodega Principal Bogota",
+    "fecha_ultima_entrada": "2025-11-24",
+    "fecha_ultima_salida": "2026-03-08"
+  },
+  {
+    "_id": 24,
+    "codigo_producto": "M_ALF",
+    "stock_actual": 94,
+    "stock_minimo": 14,
+    "stock_maximo": 105,
+    "ubicacion": "Sucursal Cali",
+    "fecha_ultima_entrada": "2025-05-01",
+    "fecha_ultima_salida": "2025-11-03"
+  },
+  {
+    "_id": 25,
+    "codigo_producto": "M_EXT",
+    "stock_actual": 91,
+    "stock_minimo": 13,
+    "stock_maximo": 102,
+    "ubicacion": "Sucursal Medellin",
+    "fecha_ultima_entrada": "2025-09-24",
+    "fecha_ultima_salida": "2025-09-16"
+  },
+  {
+    "_id": 26,
+    "codigo_producto": "M_CEL",
+    "stock_actual": 94,
+    "stock_minimo": 13,
+    "stock_maximo": 142,
+    "ubicacion": "Sucursal Cali",
+    "fecha_ultima_entrada": "2025-12-07",
+    "fecha_ultima_salida": "2026-03-24"
+  },
+  {
+    "_id": 27,
+    "codigo_producto": "M_ROD",
+    "stock_actual": 18,
+    "stock_minimo": 11,
+    "stock_maximo": 158,
+    "ubicacion": "Sucursal Medellin",
+    "fecha_ultima_entrada": "2025-10-12",
+    "fecha_ultima_salida": "2026-01-25"
+  },
+  {
+    "_id": 28,
+    "codigo_producto": "M_BOT",
+    "stock_actual": 26,
+    "stock_minimo": 7,
+    "stock_maximo": 161,
+    "ubicacion": "Sucursal Medellin",
+    "fecha_ultima_entrada": "2025-12-13",
+    "fecha_ultima_salida": "2026-01-13"
+  }
+]

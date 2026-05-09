@@ -1,0 +1,5002 @@
+[
+  {
+    "_id": 1,
+    "id_cliente": 38,
+    "fecha_venta": "2026-03-31",
+    "canal": "web",
+    "subtotal": 335000,
+    "descuento_pesos": 0,
+    "total": 335000,
+    "id_bundle": null
+  },
+  {
+    "_id": 2,
+    "id_cliente": 107,
+    "fecha_venta": "2025-07-04",
+    "canal": "tienda",
+    "subtotal": 320000,
+    "descuento_pesos": 35840,
+    "total": 284160,
+    "id_bundle": "KIT-002"
+  },
+  {
+    "_id": 3,
+    "id_cliente": 96,
+    "fecha_venta": "2025-05-20",
+    "canal": "web",
+    "subtotal": 355000,
+    "descuento_pesos": 56800,
+    "total": 298200,
+    "id_bundle": "KIT-004"
+  },
+  {
+    "_id": 4,
+    "id_cliente": 10,
+    "fecha_venta": "2025-09-25",
+    "canal": "telefono",
+    "subtotal": 465000,
+    "descuento_pesos": 46500,
+    "total": 418500,
+    "id_bundle": "KIT-011"
+  },
+  {
+    "_id": 5,
+    "id_cliente": 115,
+    "fecha_venta": "2025-09-10",
+    "canal": "web",
+    "subtotal": 310000,
+    "descuento_pesos": 0,
+    "total": 310000,
+    "id_bundle": null
+  },
+  {
+    "_id": 6,
+    "id_cliente": 141,
+    "fecha_venta": "2025-08-30",
+    "canal": "tienda",
+    "subtotal": 233000,
+    "descuento_pesos": 0,
+    "total": 233000,
+    "id_bundle": null
+  },
+  {
+    "_id": 7,
+    "id_cliente": 78,
+    "fecha_venta": "2025-07-18",
+    "canal": "telefono",
+    "subtotal": 570000,
+    "descuento_pesos": 63840,
+    "total": 506160,
+    "id_bundle": "KIT-002"
+  },
+  {
+    "_id": 8,
+    "id_cliente": 29,
+    "fecha_venta": "2025-06-29",
+    "canal": "telefono",
+    "subtotal": 320000,
+    "descuento_pesos": 0,
+    "total": 320000,
+    "id_bundle": null
+  },
+  {
+    "_id": 9,
+    "id_cliente": 184,
+    "fecha_venta": "2026-04-19",
+    "canal": "web",
+    "subtotal": 775000,
+    "descuento_pesos": 104625,
+    "total": 670375,
+    "id_bundle": "KIT-009"
+  },
+  {
+    "_id": 10,
+    "id_cliente": 48,
+    "fecha_venta": "2026-02-11",
+    "canal": "web",
+    "subtotal": 825000,
+    "descuento_pesos": 117150,
+    "total": 707850,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 11,
+    "id_cliente": 100,
+    "fecha_venta": "2025-06-21",
+    "canal": "web",
+    "subtotal": 320000,
+    "descuento_pesos": 0,
+    "total": 320000,
+    "id_bundle": null
+  },
+  {
+    "_id": 12,
+    "id_cliente": 192,
+    "fecha_venta": "2026-03-06",
+    "canal": "web",
+    "subtotal": 235000,
+    "descuento_pesos": 37600,
+    "total": 197400,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 13,
+    "id_cliente": 198,
+    "fecha_venta": "2025-12-10",
+    "canal": "tienda",
+    "subtotal": 1010000,
+    "descuento_pesos": 143420,
+    "total": 866580,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 14,
+    "id_cliente": 140,
+    "fecha_venta": "2025-05-24",
+    "canal": "telefono",
+    "subtotal": 105000,
+    "descuento_pesos": 0,
+    "total": 105000,
+    "id_bundle": null
+  },
+  {
+    "_id": 15,
+    "id_cliente": 162,
+    "fecha_venta": "2025-05-23",
+    "canal": "telefono",
+    "subtotal": 80000,
+    "descuento_pesos": 0,
+    "total": 80000,
+    "id_bundle": null
+  },
+  {
+    "_id": 16,
+    "id_cliente": 76,
+    "fecha_venta": "2025-06-24",
+    "canal": "web",
+    "subtotal": 255000,
+    "descuento_pesos": 20400,
+    "total": 234600,
+    "id_bundle": "KIT-006"
+  },
+  {
+    "_id": 17,
+    "id_cliente": 140,
+    "fecha_venta": "2025-08-27",
+    "canal": "tienda",
+    "subtotal": 360000,
+    "descuento_pesos": 0,
+    "total": 360000,
+    "id_bundle": null
+  },
+  {
+    "_id": 18,
+    "id_cliente": 200,
+    "fecha_venta": "2025-09-04",
+    "canal": "web",
+    "subtotal": 235000,
+    "descuento_pesos": 37600,
+    "total": 197400,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 19,
+    "id_cliente": 112,
+    "fecha_venta": "2026-01-21",
+    "canal": "web",
+    "subtotal": 150000,
+    "descuento_pesos": 0,
+    "total": 150000,
+    "id_bundle": null
+  },
+  {
+    "_id": 20,
+    "id_cliente": 128,
+    "fecha_venta": "2026-03-12",
+    "canal": "web",
+    "subtotal": 233000,
+    "descuento_pesos": 0,
+    "total": 233000,
+    "id_bundle": null
+  },
+  {
+    "_id": 21,
+    "id_cliente": 21,
+    "fecha_venta": "2025-05-21",
+    "canal": "telefono",
+    "subtotal": 335000,
+    "descuento_pesos": 0,
+    "total": 335000,
+    "id_bundle": null
+  },
+  {
+    "_id": 22,
+    "id_cliente": 27,
+    "fecha_venta": "2026-02-19",
+    "canal": "web",
+    "subtotal": 320000,
+    "descuento_pesos": 35840,
+    "total": 284160,
+    "id_bundle": "KIT-002"
+  },
+  {
+    "_id": 23,
+    "id_cliente": 43,
+    "fecha_venta": "2025-08-17",
+    "canal": "tienda",
+    "subtotal": 233000,
+    "descuento_pesos": 0,
+    "total": 233000,
+    "id_bundle": null
+  },
+  {
+    "_id": 24,
+    "id_cliente": 71,
+    "fecha_venta": "2026-04-05",
+    "canal": "tienda",
+    "subtotal": 555000,
+    "descuento_pesos": 88800,
+    "total": 466200,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 25,
+    "id_cliente": 132,
+    "fecha_venta": "2026-05-02",
+    "canal": "tienda",
+    "subtotal": 825000,
+    "descuento_pesos": 117150,
+    "total": 707850,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 26,
+    "id_cliente": 9,
+    "fecha_venta": "2026-02-11",
+    "canal": "web",
+    "subtotal": 410000,
+    "descuento_pesos": 55350,
+    "total": 354650,
+    "id_bundle": "KIT-009"
+  },
+  {
+    "_id": 27,
+    "id_cliente": 146,
+    "fecha_venta": "2025-12-08",
+    "canal": "web",
+    "subtotal": 235000,
+    "descuento_pesos": 37600,
+    "total": 197400,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 28,
+    "id_cliente": 114,
+    "fecha_venta": "2025-08-28",
+    "canal": "web",
+    "subtotal": 615000,
+    "descuento_pesos": 98400,
+    "total": 516600,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 29,
+    "id_cliente": 167,
+    "fecha_venta": "2025-12-23",
+    "canal": "telefono",
+    "subtotal": 405000,
+    "descuento_pesos": 45360,
+    "total": 359640,
+    "id_bundle": "KIT-002"
+  },
+  {
+    "_id": 30,
+    "id_cliente": 133,
+    "fecha_venta": "2026-03-05",
+    "canal": "web",
+    "subtotal": 415000,
+    "descuento_pesos": 66400,
+    "total": 348600,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 31,
+    "id_cliente": 55,
+    "fecha_venta": "2025-09-27",
+    "canal": "tienda",
+    "subtotal": 255000,
+    "descuento_pesos": 0,
+    "total": 255000,
+    "id_bundle": null
+  },
+  {
+    "_id": 32,
+    "id_cliente": 116,
+    "fecha_venta": "2025-05-11",
+    "canal": "tienda",
+    "subtotal": 485000,
+    "descuento_pesos": 77600,
+    "total": 407400,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 33,
+    "id_cliente": 182,
+    "fecha_venta": "2025-07-28",
+    "canal": "web",
+    "subtotal": 730000,
+    "descuento_pesos": 89060,
+    "total": 640940,
+    "id_bundle": "KIT-008"
+  },
+  {
+    "_id": 34,
+    "id_cliente": 93,
+    "fecha_venta": "2026-04-30",
+    "canal": "tienda",
+    "subtotal": 730000,
+    "descuento_pesos": 89060,
+    "total": 640940,
+    "id_bundle": "KIT-008"
+  },
+  {
+    "_id": 35,
+    "id_cliente": 93,
+    "fecha_venta": "2025-12-10",
+    "canal": "telefono",
+    "subtotal": 325000,
+    "descuento_pesos": 43875,
+    "total": 281125,
+    "id_bundle": "KIT-009"
+  },
+  {
+    "_id": 36,
+    "id_cliente": 17,
+    "fecha_venta": "2025-10-29",
+    "canal": "telefono",
+    "subtotal": 405000,
+    "descuento_pesos": 45360,
+    "total": 359640,
+    "id_bundle": "KIT-002"
+  },
+  {
+    "_id": 37,
+    "id_cliente": 148,
+    "fecha_venta": "2025-09-27",
+    "canal": "tienda",
+    "subtotal": 775000,
+    "descuento_pesos": 94550,
+    "total": 680450,
+    "id_bundle": "KIT-008"
+  },
+  {
+    "_id": 38,
+    "id_cliente": 175,
+    "fecha_venta": "2025-07-26",
+    "canal": "telefono",
+    "subtotal": 385000,
+    "descuento_pesos": 46200,
+    "total": 338800,
+    "id_bundle": "KIT-012"
+  },
+  {
+    "_id": 39,
+    "id_cliente": 197,
+    "fecha_venta": "2025-08-26",
+    "canal": "tienda",
+    "subtotal": 485000,
+    "descuento_pesos": 77600,
+    "total": 407400,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 40,
+    "id_cliente": 78,
+    "fecha_venta": "2025-10-27",
+    "canal": "web",
+    "subtotal": 665000,
+    "descuento_pesos": 106400,
+    "total": 558600,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 41,
+    "id_cliente": 21,
+    "fecha_venta": "2025-06-29",
+    "canal": "tienda",
+    "subtotal": 240000,
+    "descuento_pesos": 0,
+    "total": 240000,
+    "id_bundle": null
+  },
+  {
+    "_id": 42,
+    "id_cliente": 129,
+    "fecha_venta": "2025-06-24",
+    "canal": "tienda",
+    "subtotal": 610000,
+    "descuento_pesos": 97600,
+    "total": 512400,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 43,
+    "id_cliente": 145,
+    "fecha_venta": "2025-11-18",
+    "canal": "tienda",
+    "subtotal": 545000,
+    "descuento_pesos": 77390,
+    "total": 467610,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 44,
+    "id_cliente": 167,
+    "fecha_venta": "2025-06-26",
+    "canal": "telefono",
+    "subtotal": 270000,
+    "descuento_pesos": 43200,
+    "total": 226800,
+    "id_bundle": "KIT-004"
+  },
+  {
+    "_id": 45,
+    "id_cliente": 161,
+    "fecha_venta": "2025-11-07",
+    "canal": "tienda",
+    "subtotal": 605000,
+    "descuento_pesos": 81675,
+    "total": 523325,
+    "id_bundle": "KIT-009"
+  },
+  {
+    "_id": 46,
+    "id_cliente": 117,
+    "fecha_venta": "2025-10-31",
+    "canal": "web",
+    "subtotal": 320000,
+    "descuento_pesos": 35840,
+    "total": 284160,
+    "id_bundle": "KIT-002"
+  },
+  {
+    "_id": 47,
+    "id_cliente": 119,
+    "fecha_venta": "2026-03-13",
+    "canal": "web",
+    "subtotal": 270000,
+    "descuento_pesos": 43200,
+    "total": 226800,
+    "id_bundle": "KIT-004"
+  },
+  {
+    "_id": 48,
+    "id_cliente": 103,
+    "fecha_venta": "2025-09-20",
+    "canal": "telefono",
+    "subtotal": 405000,
+    "descuento_pesos": 45360,
+    "total": 359640,
+    "id_bundle": "KIT-002"
+  },
+  {
+    "_id": 49,
+    "id_cliente": 62,
+    "fecha_venta": "2025-05-30",
+    "canal": "tienda",
+    "subtotal": 275000,
+    "descuento_pesos": 0,
+    "total": 275000,
+    "id_bundle": null
+  },
+  {
+    "_id": 50,
+    "id_cliente": 75,
+    "fecha_venta": "2025-12-29",
+    "canal": "tienda",
+    "subtotal": 225000,
+    "descuento_pesos": 0,
+    "total": 225000,
+    "id_bundle": null
+  },
+  {
+    "_id": 51,
+    "id_cliente": 148,
+    "fecha_venta": "2026-02-06",
+    "canal": "web",
+    "subtotal": 233000,
+    "descuento_pesos": 0,
+    "total": 233000,
+    "id_bundle": null
+  },
+  {
+    "_id": 52,
+    "id_cliente": 128,
+    "fecha_venta": "2025-07-10",
+    "canal": "tienda",
+    "subtotal": 1010000,
+    "descuento_pesos": 143420,
+    "total": 866580,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 53,
+    "id_cliente": 62,
+    "fecha_venta": "2025-11-17",
+    "canal": "tienda",
+    "subtotal": 1010000,
+    "descuento_pesos": 143420,
+    "total": 866580,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 54,
+    "id_cliente": 153,
+    "fecha_venta": "2025-06-17",
+    "canal": "web",
+    "subtotal": 150000,
+    "descuento_pesos": 0,
+    "total": 150000,
+    "id_bundle": null
+  },
+  {
+    "_id": 55,
+    "id_cliente": 28,
+    "fecha_venta": "2026-02-14",
+    "canal": "web",
+    "subtotal": 150000,
+    "descuento_pesos": 12000,
+    "total": 138000,
+    "id_bundle": "KIT-006"
+  },
+  {
+    "_id": 56,
+    "id_cliente": 103,
+    "fecha_venta": "2025-10-05",
+    "canal": "web",
+    "subtotal": 320000,
+    "descuento_pesos": 35840,
+    "total": 284160,
+    "id_bundle": "KIT-002"
+  },
+  {
+    "_id": 57,
+    "id_cliente": 19,
+    "fecha_venta": "2026-03-25",
+    "canal": "web",
+    "subtotal": 225000,
+    "descuento_pesos": 0,
+    "total": 225000,
+    "id_bundle": null
+  },
+  {
+    "_id": 58,
+    "id_cliente": 33,
+    "fecha_venta": "2026-03-20",
+    "canal": "telefono",
+    "subtotal": 730000,
+    "descuento_pesos": 89060,
+    "total": 640940,
+    "id_bundle": "KIT-008"
+  },
+  {
+    "_id": 59,
+    "id_cliente": 51,
+    "fecha_venta": "2025-11-09",
+    "canal": "tienda",
+    "subtotal": 255000,
+    "descuento_pesos": 0,
+    "total": 255000,
+    "id_bundle": null
+  },
+  {
+    "_id": 60,
+    "id_cliente": 36,
+    "fecha_venta": "2026-02-27",
+    "canal": "telefono",
+    "subtotal": 233000,
+    "descuento_pesos": 0,
+    "total": 233000,
+    "id_bundle": null
+  },
+  {
+    "_id": 61,
+    "id_cliente": 156,
+    "fecha_venta": "2025-08-14",
+    "canal": "telefono",
+    "subtotal": 150000,
+    "descuento_pesos": 0,
+    "total": 150000,
+    "id_bundle": null
+  },
+  {
+    "_id": 62,
+    "id_cliente": 101,
+    "fecha_venta": "2026-05-03",
+    "canal": "telefono",
+    "subtotal": 225000,
+    "descuento_pesos": 0,
+    "total": 225000,
+    "id_bundle": null
+  },
+  {
+    "_id": 63,
+    "id_cliente": 182,
+    "fecha_venta": "2025-06-12",
+    "canal": "web",
+    "subtotal": 635000,
+    "descuento_pesos": 0,
+    "total": 635000,
+    "id_bundle": null
+  },
+  {
+    "_id": 64,
+    "id_cliente": 107,
+    "fecha_venta": "2025-05-31",
+    "canal": "telefono",
+    "subtotal": 1010000,
+    "descuento_pesos": 143420,
+    "total": 866580,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 65,
+    "id_cliente": 68,
+    "fecha_venta": "2026-04-11",
+    "canal": "telefono",
+    "subtotal": 555000,
+    "descuento_pesos": 88800,
+    "total": 466200,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 66,
+    "id_cliente": 150,
+    "fecha_venta": "2025-09-01",
+    "canal": "web",
+    "subtotal": 313000,
+    "descuento_pesos": 0,
+    "total": 313000,
+    "id_bundle": null
+  },
+  {
+    "_id": 67,
+    "id_cliente": 9,
+    "fecha_venta": "2025-10-03",
+    "canal": "tienda",
+    "subtotal": 255000,
+    "descuento_pesos": 0,
+    "total": 255000,
+    "id_bundle": null
+  },
+  {
+    "_id": 68,
+    "id_cliente": 81,
+    "fecha_venta": "2025-06-17",
+    "canal": "web",
+    "subtotal": 420000,
+    "descuento_pesos": 0,
+    "total": 420000,
+    "id_bundle": null
+  },
+  {
+    "_id": 69,
+    "id_cliente": 189,
+    "fecha_venta": "2025-09-04",
+    "canal": "tienda",
+    "subtotal": 295000,
+    "descuento_pesos": 47200,
+    "total": 247800,
+    "id_bundle": "KIT-004"
+  },
+  {
+    "_id": 70,
+    "id_cliente": 170,
+    "fecha_venta": "2025-06-28",
+    "canal": "tienda",
+    "subtotal": 175000,
+    "descuento_pesos": 0,
+    "total": 175000,
+    "id_bundle": null
+  },
+  {
+    "_id": 71,
+    "id_cliente": 140,
+    "fecha_venta": "2025-11-18",
+    "canal": "telefono",
+    "subtotal": 105000,
+    "descuento_pesos": 0,
+    "total": 105000,
+    "id_bundle": null
+  },
+  {
+    "_id": 72,
+    "id_cliente": 50,
+    "fecha_venta": "2025-09-27",
+    "canal": "web",
+    "subtotal": 1230000,
+    "descuento_pesos": 174660,
+    "total": 1055340,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 73,
+    "id_cliente": 177,
+    "fecha_venta": "2025-12-26",
+    "canal": "web",
+    "subtotal": 233000,
+    "descuento_pesos": 0,
+    "total": 233000,
+    "id_bundle": null
+  },
+  {
+    "_id": 74,
+    "id_cliente": 74,
+    "fecha_venta": "2026-03-29",
+    "canal": "web",
+    "subtotal": 320000,
+    "descuento_pesos": 35840,
+    "total": 284160,
+    "id_bundle": "KIT-002"
+  },
+  {
+    "_id": 75,
+    "id_cliente": 198,
+    "fecha_venta": "2025-11-10",
+    "canal": "telefono",
+    "subtotal": 825000,
+    "descuento_pesos": 117150,
+    "total": 707850,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 76,
+    "id_cliente": 114,
+    "fecha_venta": "2025-07-30",
+    "canal": "tienda",
+    "subtotal": 585000,
+    "descuento_pesos": 93600,
+    "total": 491400,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 77,
+    "id_cliente": 144,
+    "fecha_venta": "2025-11-13",
+    "canal": "telefono",
+    "subtotal": 380000,
+    "descuento_pesos": 60800,
+    "total": 319200,
+    "id_bundle": "KIT-004"
+  },
+  {
+    "_id": 78,
+    "id_cliente": 63,
+    "fecha_venta": "2025-11-05",
+    "canal": "tienda",
+    "subtotal": 545000,
+    "descuento_pesos": 77390,
+    "total": 467610,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 79,
+    "id_cliente": 26,
+    "fecha_venta": "2025-08-23",
+    "canal": "tienda",
+    "subtotal": 105000,
+    "descuento_pesos": 8400,
+    "total": 96600,
+    "id_bundle": "KIT-006"
+  },
+  {
+    "_id": 80,
+    "id_cliente": 141,
+    "fecha_venta": "2026-04-16",
+    "canal": "web",
+    "subtotal": 1048000,
+    "descuento_pesos": 148816,
+    "total": 899184,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 81,
+    "id_cliente": 83,
+    "fecha_venta": "2025-09-21",
+    "canal": "telefono",
+    "subtotal": 225000,
+    "descuento_pesos": 0,
+    "total": 225000,
+    "id_bundle": null
+  },
+  {
+    "_id": 82,
+    "id_cliente": 137,
+    "fecha_venta": "2026-05-02",
+    "canal": "tienda",
+    "subtotal": 295000,
+    "descuento_pesos": 47200,
+    "total": 247800,
+    "id_bundle": "KIT-004"
+  },
+  {
+    "_id": 83,
+    "id_cliente": 10,
+    "fecha_venta": "2026-04-22",
+    "canal": "tienda",
+    "subtotal": 320000,
+    "descuento_pesos": 0,
+    "total": 320000,
+    "id_bundle": null
+  },
+  {
+    "_id": 84,
+    "id_cliente": 3,
+    "fecha_venta": "2026-04-04",
+    "canal": "web",
+    "subtotal": 405000,
+    "descuento_pesos": 45360,
+    "total": 359640,
+    "id_bundle": "KIT-002"
+  },
+  {
+    "_id": 85,
+    "id_cliente": 165,
+    "fecha_venta": "2025-06-13",
+    "canal": "telefono",
+    "subtotal": 385000,
+    "descuento_pesos": 46200,
+    "total": 338800,
+    "id_bundle": "KIT-012"
+  },
+  {
+    "_id": 86,
+    "id_cliente": 50,
+    "fecha_venta": "2026-03-15",
+    "canal": "telefono",
+    "subtotal": 750000,
+    "descuento_pesos": 106500,
+    "total": 643500,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 87,
+    "id_cliente": 4,
+    "fecha_venta": "2026-03-29",
+    "canal": "telefono",
+    "subtotal": 295000,
+    "descuento_pesos": 47200,
+    "total": 247800,
+    "id_bundle": "KIT-004"
+  },
+  {
+    "_id": 88,
+    "id_cliente": 157,
+    "fecha_venta": "2025-08-03",
+    "canal": "web",
+    "subtotal": 335000,
+    "descuento_pesos": 0,
+    "total": 335000,
+    "id_bundle": null
+  },
+  {
+    "_id": 89,
+    "id_cliente": 23,
+    "fecha_venta": "2026-02-05",
+    "canal": "tienda",
+    "subtotal": 105000,
+    "descuento_pesos": 8400,
+    "total": 96600,
+    "id_bundle": "KIT-006"
+  },
+  {
+    "_id": 90,
+    "id_cliente": 64,
+    "fecha_venta": "2025-09-10",
+    "canal": "web",
+    "subtotal": 235000,
+    "descuento_pesos": 37600,
+    "total": 197400,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 91,
+    "id_cliente": 150,
+    "fecha_venta": "2025-07-30",
+    "canal": "telefono",
+    "subtotal": 233000,
+    "descuento_pesos": 0,
+    "total": 233000,
+    "id_bundle": null
+  },
+  {
+    "_id": 92,
+    "id_cliente": 16,
+    "fecha_venta": "2025-12-30",
+    "canal": "web",
+    "subtotal": 600000,
+    "descuento_pesos": 96000,
+    "total": 504000,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 93,
+    "id_cliente": 177,
+    "fecha_venta": "2025-11-18",
+    "canal": "web",
+    "subtotal": 730000,
+    "descuento_pesos": 89060,
+    "total": 640940,
+    "id_bundle": "KIT-008"
+  },
+  {
+    "_id": 94,
+    "id_cliente": 57,
+    "fecha_venta": "2025-09-23",
+    "canal": "telefono",
+    "subtotal": 485000,
+    "descuento_pesos": 77600,
+    "total": 407400,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 95,
+    "id_cliente": 107,
+    "fecha_venta": "2026-03-31",
+    "canal": "telefono",
+    "subtotal": 275000,
+    "descuento_pesos": 0,
+    "total": 275000,
+    "id_bundle": null
+  },
+  {
+    "_id": 96,
+    "id_cliente": 175,
+    "fecha_venta": "2026-04-25",
+    "canal": "telefono",
+    "subtotal": 675000,
+    "descuento_pesos": 95850,
+    "total": 579150,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 97,
+    "id_cliente": 20,
+    "fecha_venta": "2026-02-17",
+    "canal": "telefono",
+    "subtotal": 1010000,
+    "descuento_pesos": 143420,
+    "total": 866580,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 98,
+    "id_cliente": 147,
+    "fecha_venta": "2025-08-28",
+    "canal": "web",
+    "subtotal": 215000,
+    "descuento_pesos": 0,
+    "total": 215000,
+    "id_bundle": null
+  },
+  {
+    "_id": 99,
+    "id_cliente": 184,
+    "fecha_venta": "2026-04-23",
+    "canal": "web",
+    "subtotal": 255000,
+    "descuento_pesos": 0,
+    "total": 255000,
+    "id_bundle": null
+  },
+  {
+    "_id": 100,
+    "id_cliente": 34,
+    "fecha_venta": "2025-10-21",
+    "canal": "tienda",
+    "subtotal": 730000,
+    "descuento_pesos": 89060,
+    "total": 640940,
+    "id_bundle": "KIT-008"
+  },
+  {
+    "_id": 101,
+    "id_cliente": 173,
+    "fecha_venta": "2025-06-05",
+    "canal": "web",
+    "subtotal": 675000,
+    "descuento_pesos": 95850,
+    "total": 579150,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 102,
+    "id_cliente": 191,
+    "fecha_venta": "2025-09-02",
+    "canal": "web",
+    "subtotal": 1010000,
+    "descuento_pesos": 143420,
+    "total": 866580,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 103,
+    "id_cliente": 139,
+    "fecha_venta": "2025-05-24",
+    "canal": "web",
+    "subtotal": 320000,
+    "descuento_pesos": 35840,
+    "total": 284160,
+    "id_bundle": "KIT-002"
+  },
+  {
+    "_id": 104,
+    "id_cliente": 105,
+    "fecha_venta": "2025-10-16",
+    "canal": "telefono",
+    "subtotal": 485000,
+    "descuento_pesos": 77600,
+    "total": 407400,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 105,
+    "id_cliente": 98,
+    "fecha_venta": "2025-11-29",
+    "canal": "web",
+    "subtotal": 150000,
+    "descuento_pesos": 0,
+    "total": 150000,
+    "id_bundle": null
+  },
+  {
+    "_id": 106,
+    "id_cliente": 168,
+    "fecha_venta": "2025-09-22",
+    "canal": "telefono",
+    "subtotal": 335000,
+    "descuento_pesos": 0,
+    "total": 335000,
+    "id_bundle": null
+  },
+  {
+    "_id": 107,
+    "id_cliente": 187,
+    "fecha_venta": "2025-06-10",
+    "canal": "web",
+    "subtotal": 1010000,
+    "descuento_pesos": 143420,
+    "total": 866580,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 108,
+    "id_cliente": 137,
+    "fecha_venta": "2025-08-24",
+    "canal": "web",
+    "subtotal": 105000,
+    "descuento_pesos": 8400,
+    "total": 96600,
+    "id_bundle": "KIT-006"
+  },
+  {
+    "_id": 109,
+    "id_cliente": 71,
+    "fecha_venta": "2026-02-22",
+    "canal": "tienda",
+    "subtotal": 270000,
+    "descuento_pesos": 43200,
+    "total": 226800,
+    "id_bundle": "KIT-004"
+  },
+  {
+    "_id": 110,
+    "id_cliente": 62,
+    "fecha_venta": "2025-10-16",
+    "canal": "web",
+    "subtotal": 1045000,
+    "descuento_pesos": 148390,
+    "total": 896610,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 111,
+    "id_cliente": 63,
+    "fecha_venta": "2025-08-24",
+    "canal": "telefono",
+    "subtotal": 288000,
+    "descuento_pesos": 0,
+    "total": 288000,
+    "id_bundle": null
+  },
+  {
+    "_id": 112,
+    "id_cliente": 36,
+    "fecha_venta": "2026-04-08",
+    "canal": "telefono",
+    "subtotal": 385000,
+    "descuento_pesos": 46200,
+    "total": 338800,
+    "id_bundle": "KIT-012"
+  },
+  {
+    "_id": 113,
+    "id_cliente": 148,
+    "fecha_venta": "2026-01-18",
+    "canal": "tienda",
+    "subtotal": 255000,
+    "descuento_pesos": 0,
+    "total": 255000,
+    "id_bundle": null
+  },
+  {
+    "_id": 114,
+    "id_cliente": 170,
+    "fecha_venta": "2025-11-26",
+    "canal": "tienda",
+    "subtotal": 260000,
+    "descuento_pesos": 0,
+    "total": 260000,
+    "id_bundle": null
+  },
+  {
+    "_id": 115,
+    "id_cliente": 161,
+    "fecha_venta": "2026-04-02",
+    "canal": "tienda",
+    "subtotal": 825000,
+    "descuento_pesos": 117150,
+    "total": 707850,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 116,
+    "id_cliente": 135,
+    "fecha_venta": "2025-12-28",
+    "canal": "tienda",
+    "subtotal": 80000,
+    "descuento_pesos": 0,
+    "total": 80000,
+    "id_bundle": null
+  },
+  {
+    "_id": 117,
+    "id_cliente": 48,
+    "fecha_venta": "2025-07-20",
+    "canal": "tienda",
+    "subtotal": 675000,
+    "descuento_pesos": 95850,
+    "total": 579150,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 118,
+    "id_cliente": 119,
+    "fecha_venta": "2025-09-20",
+    "canal": "telefono",
+    "subtotal": 400000,
+    "descuento_pesos": 0,
+    "total": 400000,
+    "id_bundle": null
+  },
+  {
+    "_id": 119,
+    "id_cliente": 100,
+    "fecha_venta": "2025-07-18",
+    "canal": "tienda",
+    "subtotal": 1055000,
+    "descuento_pesos": 149810,
+    "total": 905190,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 120,
+    "id_cliente": 24,
+    "fecha_venta": "2025-09-11",
+    "canal": "tienda",
+    "subtotal": 215000,
+    "descuento_pesos": 0,
+    "total": 215000,
+    "id_bundle": null
+  },
+  {
+    "_id": 121,
+    "id_cliente": 173,
+    "fecha_venta": "2026-02-19",
+    "canal": "tienda",
+    "subtotal": 255000,
+    "descuento_pesos": 0,
+    "total": 255000,
+    "id_bundle": null
+  },
+  {
+    "_id": 122,
+    "id_cliente": 123,
+    "fecha_venta": "2026-02-07",
+    "canal": "web",
+    "subtotal": 270000,
+    "descuento_pesos": 43200,
+    "total": 226800,
+    "id_bundle": "KIT-004"
+  },
+  {
+    "_id": 123,
+    "id_cliente": 49,
+    "fecha_venta": "2025-09-19",
+    "canal": "tienda",
+    "subtotal": 360000,
+    "descuento_pesos": 57600,
+    "total": 302400,
+    "id_bundle": "KIT-004"
+  },
+  {
+    "_id": 124,
+    "id_cliente": 102,
+    "fecha_venta": "2026-03-03",
+    "canal": "web",
+    "subtotal": 185000,
+    "descuento_pesos": 0,
+    "total": 185000,
+    "id_bundle": null
+  },
+  {
+    "_id": 125,
+    "id_cliente": 79,
+    "fecha_venta": "2025-12-13",
+    "canal": "web",
+    "subtotal": 465000,
+    "descuento_pesos": 46500,
+    "total": 418500,
+    "id_bundle": "KIT-011"
+  },
+  {
+    "_id": 126,
+    "id_cliente": 195,
+    "fecha_venta": "2026-03-02",
+    "canal": "web",
+    "subtotal": 320000,
+    "descuento_pesos": 0,
+    "total": 320000,
+    "id_bundle": null
+  },
+  {
+    "_id": 127,
+    "id_cliente": 12,
+    "fecha_venta": "2025-11-28",
+    "canal": "tienda",
+    "subtotal": 225000,
+    "descuento_pesos": 0,
+    "total": 225000,
+    "id_bundle": null
+  },
+  {
+    "_id": 128,
+    "id_cliente": 76,
+    "fecha_venta": "2025-11-09",
+    "canal": "telefono",
+    "subtotal": 555000,
+    "descuento_pesos": 88800,
+    "total": 466200,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 129,
+    "id_cliente": 141,
+    "fecha_venta": "2025-08-28",
+    "canal": "web",
+    "subtotal": 825000,
+    "descuento_pesos": 117150,
+    "total": 707850,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 130,
+    "id_cliente": 118,
+    "fecha_venta": "2025-07-17",
+    "canal": "tienda",
+    "subtotal": 325000,
+    "descuento_pesos": 43875,
+    "total": 281125,
+    "id_bundle": "KIT-009"
+  },
+  {
+    "_id": 131,
+    "id_cliente": 48,
+    "fecha_venta": "2026-01-23",
+    "canal": "tienda",
+    "subtotal": 1010000,
+    "descuento_pesos": 143420,
+    "total": 866580,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 132,
+    "id_cliente": 20,
+    "fecha_venta": "2026-01-15",
+    "canal": "web",
+    "subtotal": 320000,
+    "descuento_pesos": 0,
+    "total": 320000,
+    "id_bundle": null
+  },
+  {
+    "_id": 133,
+    "id_cliente": 18,
+    "fecha_venta": "2025-06-23",
+    "canal": "web",
+    "subtotal": 445000,
+    "descuento_pesos": 71200,
+    "total": 373800,
+    "id_bundle": "KIT-004"
+  },
+  {
+    "_id": 134,
+    "id_cliente": 159,
+    "fecha_venta": "2025-06-01",
+    "canal": "web",
+    "subtotal": 555000,
+    "descuento_pesos": 88800,
+    "total": 466200,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 135,
+    "id_cliente": 2,
+    "fecha_venta": "2025-07-03",
+    "canal": "tienda",
+    "subtotal": 215000,
+    "descuento_pesos": 0,
+    "total": 215000,
+    "id_bundle": null
+  },
+  {
+    "_id": 136,
+    "id_cliente": 138,
+    "fecha_venta": "2025-07-25",
+    "canal": "telefono",
+    "subtotal": 465000,
+    "descuento_pesos": 46500,
+    "total": 418500,
+    "id_bundle": "KIT-011"
+  },
+  {
+    "_id": 137,
+    "id_cliente": 28,
+    "fecha_venta": "2026-03-25",
+    "canal": "tienda",
+    "subtotal": 350000,
+    "descuento_pesos": 39200,
+    "total": 310800,
+    "id_bundle": "KIT-002"
+  },
+  {
+    "_id": 138,
+    "id_cliente": 91,
+    "fecha_venta": "2025-07-28",
+    "canal": "web",
+    "subtotal": 405000,
+    "descuento_pesos": 45360,
+    "total": 359640,
+    "id_bundle": "KIT-002"
+  },
+  {
+    "_id": 139,
+    "id_cliente": 145,
+    "fecha_venta": "2026-04-21",
+    "canal": "web",
+    "subtotal": 1010000,
+    "descuento_pesos": 143420,
+    "total": 866580,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 140,
+    "id_cliente": 24,
+    "fecha_venta": "2025-12-10",
+    "canal": "web",
+    "subtotal": 105000,
+    "descuento_pesos": 8400,
+    "total": 96600,
+    "id_bundle": "KIT-006"
+  },
+  {
+    "_id": 141,
+    "id_cliente": 180,
+    "fecha_venta": "2026-03-09",
+    "canal": "telefono",
+    "subtotal": 525000,
+    "descuento_pesos": 84000,
+    "total": 441000,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 142,
+    "id_cliente": 136,
+    "fecha_venta": "2025-06-09",
+    "canal": "telefono",
+    "subtotal": 300000,
+    "descuento_pesos": 0,
+    "total": 300000,
+    "id_bundle": null
+  },
+  {
+    "_id": 143,
+    "id_cliente": 12,
+    "fecha_venta": "2025-11-21",
+    "canal": "telefono",
+    "subtotal": 195000,
+    "descuento_pesos": 0,
+    "total": 195000,
+    "id_bundle": null
+  },
+  {
+    "_id": 144,
+    "id_cliente": 81,
+    "fecha_venta": "2025-11-19",
+    "canal": "tienda",
+    "subtotal": 545000,
+    "descuento_pesos": 77390,
+    "total": 467610,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 145,
+    "id_cliente": 77,
+    "fecha_venta": "2026-03-09",
+    "canal": "web",
+    "subtotal": 485000,
+    "descuento_pesos": 77600,
+    "total": 407400,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 146,
+    "id_cliente": 99,
+    "fecha_venta": "2026-01-02",
+    "canal": "telefono",
+    "subtotal": 415000,
+    "descuento_pesos": 66400,
+    "total": 348600,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 147,
+    "id_cliente": 14,
+    "fecha_venta": "2026-02-02",
+    "canal": "web",
+    "subtotal": 730000,
+    "descuento_pesos": 89060,
+    "total": 640940,
+    "id_bundle": "KIT-008"
+  },
+  {
+    "_id": 148,
+    "id_cliente": 199,
+    "fecha_venta": "2025-09-13",
+    "canal": "web",
+    "subtotal": 325000,
+    "descuento_pesos": 43875,
+    "total": 281125,
+    "id_bundle": "KIT-009"
+  },
+  {
+    "_id": 149,
+    "id_cliente": 142,
+    "fecha_venta": "2026-02-15",
+    "canal": "telefono",
+    "subtotal": 415000,
+    "descuento_pesos": 66400,
+    "total": 348600,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 150,
+    "id_cliente": 198,
+    "fecha_venta": "2025-05-13",
+    "canal": "tienda",
+    "subtotal": 745000,
+    "descuento_pesos": 74500,
+    "total": 670500,
+    "id_bundle": "KIT-011"
+  },
+  {
+    "_id": 151,
+    "id_cliente": 40,
+    "fecha_venta": "2026-04-21",
+    "canal": "tienda",
+    "subtotal": 225000,
+    "descuento_pesos": 0,
+    "total": 225000,
+    "id_bundle": null
+  },
+  {
+    "_id": 152,
+    "id_cliente": 93,
+    "fecha_venta": "2025-07-05",
+    "canal": "web",
+    "subtotal": 315000,
+    "descuento_pesos": 50400,
+    "total": 264600,
+    "id_bundle": "KIT-004"
+  },
+  {
+    "_id": 153,
+    "id_cliente": 34,
+    "fecha_venta": "2026-04-22",
+    "canal": "telefono",
+    "subtotal": 515000,
+    "descuento_pesos": 82400,
+    "total": 432600,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 154,
+    "id_cliente": 27,
+    "fecha_venta": "2026-02-06",
+    "canal": "telefono",
+    "subtotal": 260000,
+    "descuento_pesos": 41600,
+    "total": 218400,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 155,
+    "id_cliente": 99,
+    "fecha_venta": "2025-09-21",
+    "canal": "telefono",
+    "subtotal": 485000,
+    "descuento_pesos": 77600,
+    "total": 407400,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 156,
+    "id_cliente": 147,
+    "fecha_venta": "2026-04-01",
+    "canal": "tienda",
+    "subtotal": 465000,
+    "descuento_pesos": 0,
+    "total": 465000,
+    "id_bundle": null
+  },
+  {
+    "_id": 157,
+    "id_cliente": 69,
+    "fecha_venta": "2025-10-29",
+    "canal": "web",
+    "subtotal": 375000,
+    "descuento_pesos": 42000,
+    "total": 333000,
+    "id_bundle": "KIT-002"
+  },
+  {
+    "_id": 158,
+    "id_cliente": 124,
+    "fecha_venta": "2025-07-04",
+    "canal": "telefono",
+    "subtotal": 895000,
+    "descuento_pesos": 127090,
+    "total": 767910,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 159,
+    "id_cliente": 118,
+    "fecha_venta": "2025-10-05",
+    "canal": "web",
+    "subtotal": 730000,
+    "descuento_pesos": 89060,
+    "total": 640940,
+    "id_bundle": "KIT-008"
+  },
+  {
+    "_id": 160,
+    "id_cliente": 85,
+    "fecha_venta": "2025-12-16",
+    "canal": "telefono",
+    "subtotal": 175000,
+    "descuento_pesos": 0,
+    "total": 175000,
+    "id_bundle": null
+  },
+  {
+    "_id": 161,
+    "id_cliente": 83,
+    "fecha_venta": "2025-07-27",
+    "canal": "web",
+    "subtotal": 465000,
+    "descuento_pesos": 46500,
+    "total": 418500,
+    "id_bundle": "KIT-011"
+  },
+  {
+    "_id": 162,
+    "id_cliente": 102,
+    "fecha_venta": "2025-12-26",
+    "canal": "web",
+    "subtotal": 260000,
+    "descuento_pesos": 0,
+    "total": 260000,
+    "id_bundle": null
+  },
+  {
+    "_id": 163,
+    "id_cliente": 84,
+    "fecha_venta": "2025-05-09",
+    "canal": "web",
+    "subtotal": 310000,
+    "descuento_pesos": 0,
+    "total": 310000,
+    "id_bundle": null
+  },
+  {
+    "_id": 164,
+    "id_cliente": 152,
+    "fecha_venta": "2025-09-19",
+    "canal": "tienda",
+    "subtotal": 280000,
+    "descuento_pesos": 0,
+    "total": 280000,
+    "id_bundle": null
+  },
+  {
+    "_id": 165,
+    "id_cliente": 113,
+    "fecha_venta": "2026-01-19",
+    "canal": "web",
+    "subtotal": 415000,
+    "descuento_pesos": 66400,
+    "total": 348600,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 166,
+    "id_cliente": 163,
+    "fecha_venta": "2025-08-07",
+    "canal": "telefono",
+    "subtotal": 503000,
+    "descuento_pesos": 50300,
+    "total": 452700,
+    "id_bundle": "KIT-011"
+  },
+  {
+    "_id": 167,
+    "id_cliente": 19,
+    "fecha_venta": "2026-01-22",
+    "canal": "telefono",
+    "subtotal": 275000,
+    "descuento_pesos": 0,
+    "total": 275000,
+    "id_bundle": null
+  },
+  {
+    "_id": 168,
+    "id_cliente": 140,
+    "fecha_venta": "2025-07-01",
+    "canal": "telefono",
+    "subtotal": 545000,
+    "descuento_pesos": 77390,
+    "total": 467610,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 169,
+    "id_cliente": 28,
+    "fecha_venta": "2026-03-24",
+    "canal": "tienda",
+    "subtotal": 485000,
+    "descuento_pesos": 77600,
+    "total": 407400,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 170,
+    "id_cliente": 145,
+    "fecha_venta": "2025-10-07",
+    "canal": "web",
+    "subtotal": 825000,
+    "descuento_pesos": 117150,
+    "total": 707850,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 171,
+    "id_cliente": 3,
+    "fecha_venta": "2026-03-31",
+    "canal": "telefono",
+    "subtotal": 345000,
+    "descuento_pesos": 38640,
+    "total": 306360,
+    "id_bundle": "KIT-002"
+  },
+  {
+    "_id": 172,
+    "id_cliente": 115,
+    "fecha_venta": "2026-01-22",
+    "canal": "telefono",
+    "subtotal": 80000,
+    "descuento_pesos": 0,
+    "total": 80000,
+    "id_bundle": null
+  },
+  {
+    "_id": 173,
+    "id_cliente": 89,
+    "fecha_venta": "2026-03-15",
+    "canal": "web",
+    "subtotal": 235000,
+    "descuento_pesos": 37600,
+    "total": 197400,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 174,
+    "id_cliente": 187,
+    "fecha_venta": "2025-08-17",
+    "canal": "web",
+    "subtotal": 325000,
+    "descuento_pesos": 43875,
+    "total": 281125,
+    "id_bundle": "KIT-009"
+  },
+  {
+    "_id": 175,
+    "id_cliente": 90,
+    "fecha_venta": "2025-07-25",
+    "canal": "web",
+    "subtotal": 470000,
+    "descuento_pesos": 0,
+    "total": 470000,
+    "id_bundle": null
+  },
+  {
+    "_id": 176,
+    "id_cliente": 77,
+    "fecha_venta": "2025-11-15",
+    "canal": "tienda",
+    "subtotal": 235000,
+    "descuento_pesos": 37600,
+    "total": 197400,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 177,
+    "id_cliente": 174,
+    "fecha_venta": "2025-07-29",
+    "canal": "telefono",
+    "subtotal": 415000,
+    "descuento_pesos": 66400,
+    "total": 348600,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 178,
+    "id_cliente": 85,
+    "fecha_venta": "2026-02-08",
+    "canal": "tienda",
+    "subtotal": 215000,
+    "descuento_pesos": 0,
+    "total": 215000,
+    "id_bundle": null
+  },
+  {
+    "_id": 179,
+    "id_cliente": 48,
+    "fecha_venta": "2026-02-03",
+    "canal": "tienda",
+    "subtotal": 825000,
+    "descuento_pesos": 117150,
+    "total": 707850,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 180,
+    "id_cliente": 116,
+    "fecha_venta": "2025-05-08",
+    "canal": "telefono",
+    "subtotal": 225000,
+    "descuento_pesos": 0,
+    "total": 225000,
+    "id_bundle": null
+  },
+  {
+    "_id": 181,
+    "id_cliente": 72,
+    "fecha_venta": "2026-03-10",
+    "canal": "telefono",
+    "subtotal": 415000,
+    "descuento_pesos": 66400,
+    "total": 348600,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 182,
+    "id_cliente": 94,
+    "fecha_venta": "2025-10-20",
+    "canal": "telefono",
+    "subtotal": 200000,
+    "descuento_pesos": 0,
+    "total": 200000,
+    "id_bundle": null
+  },
+  {
+    "_id": 183,
+    "id_cliente": 153,
+    "fecha_venta": "2026-01-13",
+    "canal": "tienda",
+    "subtotal": 105000,
+    "descuento_pesos": 8400,
+    "total": 96600,
+    "id_bundle": "KIT-006"
+  },
+  {
+    "_id": 184,
+    "id_cliente": 118,
+    "fecha_venta": "2025-05-17",
+    "canal": "web",
+    "subtotal": 293000,
+    "descuento_pesos": 0,
+    "total": 293000,
+    "id_bundle": null
+  },
+  {
+    "_id": 185,
+    "id_cliente": 173,
+    "fecha_venta": "2025-07-04",
+    "canal": "web",
+    "subtotal": 325000,
+    "descuento_pesos": 43875,
+    "total": 281125,
+    "id_bundle": "KIT-009"
+  },
+  {
+    "_id": 186,
+    "id_cliente": 96,
+    "fecha_venta": "2025-11-09",
+    "canal": "telefono",
+    "subtotal": 545000,
+    "descuento_pesos": 87200,
+    "total": 457800,
+    "id_bundle": "KIT-004"
+  },
+  {
+    "_id": 187,
+    "id_cliente": 109,
+    "fecha_venta": "2025-10-12",
+    "canal": "telefono",
+    "subtotal": 485000,
+    "descuento_pesos": 77600,
+    "total": 407400,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 188,
+    "id_cliente": 126,
+    "fecha_venta": "2025-09-07",
+    "canal": "telefono",
+    "subtotal": 440000,
+    "descuento_pesos": 49280,
+    "total": 390720,
+    "id_bundle": "KIT-002"
+  },
+  {
+    "_id": 189,
+    "id_cliente": 3,
+    "fecha_venta": "2025-06-06",
+    "canal": "telefono",
+    "subtotal": 215000,
+    "descuento_pesos": 0,
+    "total": 215000,
+    "id_bundle": null
+  },
+  {
+    "_id": 190,
+    "id_cliente": 105,
+    "fecha_venta": "2025-09-08",
+    "canal": "web",
+    "subtotal": 555000,
+    "descuento_pesos": 88800,
+    "total": 466200,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 191,
+    "id_cliente": 22,
+    "fecha_venta": "2026-02-22",
+    "canal": "web",
+    "subtotal": 340000,
+    "descuento_pesos": 0,
+    "total": 340000,
+    "id_bundle": null
+  },
+  {
+    "_id": 192,
+    "id_cliente": 58,
+    "fecha_venta": "2025-06-17",
+    "canal": "telefono",
+    "subtotal": 280000,
+    "descuento_pesos": 0,
+    "total": 280000,
+    "id_bundle": null
+  },
+  {
+    "_id": 193,
+    "id_cliente": 147,
+    "fecha_venta": "2025-06-20",
+    "canal": "telefono",
+    "subtotal": 345000,
+    "descuento_pesos": 38640,
+    "total": 306360,
+    "id_bundle": "KIT-002"
+  },
+  {
+    "_id": 194,
+    "id_cliente": 140,
+    "fecha_venta": "2026-01-11",
+    "canal": "telefono",
+    "subtotal": 1010000,
+    "descuento_pesos": 143420,
+    "total": 866580,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 195,
+    "id_cliente": 9,
+    "fecha_venta": "2025-06-12",
+    "canal": "web",
+    "subtotal": 655000,
+    "descuento_pesos": 0,
+    "total": 655000,
+    "id_bundle": null
+  },
+  {
+    "_id": 196,
+    "id_cliente": 54,
+    "fecha_venta": "2026-02-04",
+    "canal": "web",
+    "subtotal": 415000,
+    "descuento_pesos": 66400,
+    "total": 348600,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 197,
+    "id_cliente": 43,
+    "fecha_venta": "2025-07-11",
+    "canal": "tienda",
+    "subtotal": 535000,
+    "descuento_pesos": 0,
+    "total": 535000,
+    "id_bundle": null
+  },
+  {
+    "_id": 198,
+    "id_cliente": 137,
+    "fecha_venta": "2025-07-12",
+    "canal": "web",
+    "subtotal": 405000,
+    "descuento_pesos": 45360,
+    "total": 359640,
+    "id_bundle": "KIT-002"
+  },
+  {
+    "_id": 199,
+    "id_cliente": 147,
+    "fecha_venta": "2026-04-10",
+    "canal": "telefono",
+    "subtotal": 405000,
+    "descuento_pesos": 45360,
+    "total": 359640,
+    "id_bundle": "KIT-002"
+  },
+  {
+    "_id": 200,
+    "id_cliente": 193,
+    "fecha_venta": "2026-01-06",
+    "canal": "web",
+    "subtotal": 825000,
+    "descuento_pesos": 117150,
+    "total": 707850,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 201,
+    "id_cliente": 64,
+    "fecha_venta": "2026-02-13",
+    "canal": "telefono",
+    "subtotal": 485000,
+    "descuento_pesos": 77600,
+    "total": 407400,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 202,
+    "id_cliente": 37,
+    "fecha_venta": "2025-07-31",
+    "canal": "web",
+    "subtotal": 225000,
+    "descuento_pesos": 0,
+    "total": 225000,
+    "id_bundle": null
+  },
+  {
+    "_id": 203,
+    "id_cliente": 20,
+    "fecha_venta": "2025-09-20",
+    "canal": "web",
+    "subtotal": 825000,
+    "descuento_pesos": 117150,
+    "total": 707850,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 204,
+    "id_cliente": 178,
+    "fecha_venta": "2026-02-02",
+    "canal": "web",
+    "subtotal": 150000,
+    "descuento_pesos": 0,
+    "total": 150000,
+    "id_bundle": null
+  },
+  {
+    "_id": 205,
+    "id_cliente": 199,
+    "fecha_venta": "2026-03-14",
+    "canal": "telefono",
+    "subtotal": 320000,
+    "descuento_pesos": 0,
+    "total": 320000,
+    "id_bundle": null
+  },
+  {
+    "_id": 206,
+    "id_cliente": 137,
+    "fecha_venta": "2025-12-10",
+    "canal": "web",
+    "subtotal": 355000,
+    "descuento_pesos": 28400,
+    "total": 326600,
+    "id_bundle": "KIT-006"
+  },
+  {
+    "_id": 207,
+    "id_cliente": 73,
+    "fecha_venta": "2025-08-24",
+    "canal": "telefono",
+    "subtotal": 555000,
+    "descuento_pesos": 88800,
+    "total": 466200,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 208,
+    "id_cliente": 175,
+    "fecha_venta": "2026-02-08",
+    "canal": "web",
+    "subtotal": 675000,
+    "descuento_pesos": 95850,
+    "total": 579150,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 209,
+    "id_cliente": 41,
+    "fecha_venta": "2026-04-26",
+    "canal": "tienda",
+    "subtotal": 175000,
+    "descuento_pesos": 0,
+    "total": 175000,
+    "id_bundle": null
+  },
+  {
+    "_id": 210,
+    "id_cliente": 41,
+    "fecha_venta": "2025-08-18",
+    "canal": "tienda",
+    "subtotal": 335000,
+    "descuento_pesos": 0,
+    "total": 335000,
+    "id_bundle": null
+  },
+  {
+    "_id": 211,
+    "id_cliente": 22,
+    "fecha_venta": "2026-05-08",
+    "canal": "tienda",
+    "subtotal": 105000,
+    "descuento_pesos": 0,
+    "total": 105000,
+    "id_bundle": null
+  },
+  {
+    "_id": 212,
+    "id_cliente": 161,
+    "fecha_venta": "2025-10-14",
+    "canal": "web",
+    "subtotal": 465000,
+    "descuento_pesos": 46500,
+    "total": 418500,
+    "id_bundle": "KIT-011"
+  },
+  {
+    "_id": 213,
+    "id_cliente": 1,
+    "fecha_venta": "2025-11-28",
+    "canal": "telefono",
+    "subtotal": 1010000,
+    "descuento_pesos": 143420,
+    "total": 866580,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 214,
+    "id_cliente": 3,
+    "fecha_venta": "2026-04-16",
+    "canal": "web",
+    "subtotal": 235000,
+    "descuento_pesos": 37600,
+    "total": 197400,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 215,
+    "id_cliente": 19,
+    "fecha_venta": "2026-04-05",
+    "canal": "tienda",
+    "subtotal": 1010000,
+    "descuento_pesos": 143420,
+    "total": 866580,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 216,
+    "id_cliente": 77,
+    "fecha_venta": "2025-11-15",
+    "canal": "telefono",
+    "subtotal": 485000,
+    "descuento_pesos": 77600,
+    "total": 407400,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 217,
+    "id_cliente": 136,
+    "fecha_venta": "2025-12-18",
+    "canal": "web",
+    "subtotal": 295000,
+    "descuento_pesos": 47200,
+    "total": 247800,
+    "id_bundle": "KIT-004"
+  },
+  {
+    "_id": 218,
+    "id_cliente": 161,
+    "fecha_venta": "2026-01-27",
+    "canal": "telefono",
+    "subtotal": 293000,
+    "descuento_pesos": 0,
+    "total": 293000,
+    "id_bundle": null
+  },
+  {
+    "_id": 219,
+    "id_cliente": 23,
+    "fecha_venta": "2025-12-25",
+    "canal": "telefono",
+    "subtotal": 215000,
+    "descuento_pesos": 0,
+    "total": 215000,
+    "id_bundle": null
+  },
+  {
+    "_id": 220,
+    "id_cliente": 110,
+    "fecha_venta": "2025-07-08",
+    "canal": "web",
+    "subtotal": 105000,
+    "descuento_pesos": 0,
+    "total": 105000,
+    "id_bundle": null
+  },
+  {
+    "_id": 221,
+    "id_cliente": 142,
+    "fecha_venta": "2025-09-11",
+    "canal": "web",
+    "subtotal": 465000,
+    "descuento_pesos": 46500,
+    "total": 418500,
+    "id_bundle": "KIT-011"
+  },
+  {
+    "_id": 222,
+    "id_cliente": 53,
+    "fecha_venta": "2025-08-31",
+    "canal": "telefono",
+    "subtotal": 215000,
+    "descuento_pesos": 0,
+    "total": 215000,
+    "id_bundle": null
+  },
+  {
+    "_id": 223,
+    "id_cliente": 166,
+    "fecha_venta": "2025-06-09",
+    "canal": "web",
+    "subtotal": 235000,
+    "descuento_pesos": 37600,
+    "total": 197400,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 224,
+    "id_cliente": 62,
+    "fecha_venta": "2025-10-28",
+    "canal": "telefono",
+    "subtotal": 275000,
+    "descuento_pesos": 0,
+    "total": 275000,
+    "id_bundle": null
+  },
+  {
+    "_id": 225,
+    "id_cliente": 82,
+    "fecha_venta": "2025-05-18",
+    "canal": "web",
+    "subtotal": 325000,
+    "descuento_pesos": 43875,
+    "total": 281125,
+    "id_bundle": "KIT-009"
+  },
+  {
+    "_id": 226,
+    "id_cliente": 196,
+    "fecha_venta": "2026-03-05",
+    "canal": "tienda",
+    "subtotal": 275000,
+    "descuento_pesos": 0,
+    "total": 275000,
+    "id_bundle": null
+  },
+  {
+    "_id": 227,
+    "id_cliente": 4,
+    "fecha_venta": "2026-02-15",
+    "canal": "telefono",
+    "subtotal": 405000,
+    "descuento_pesos": 45360,
+    "total": 359640,
+    "id_bundle": "KIT-002"
+  },
+  {
+    "_id": 228,
+    "id_cliente": 109,
+    "fecha_venta": "2025-09-02",
+    "canal": "telefono",
+    "subtotal": 295000,
+    "descuento_pesos": 47200,
+    "total": 247800,
+    "id_bundle": "KIT-004"
+  },
+  {
+    "_id": 229,
+    "id_cliente": 72,
+    "fecha_venta": "2026-03-05",
+    "canal": "tienda",
+    "subtotal": 320000,
+    "descuento_pesos": 35840,
+    "total": 284160,
+    "id_bundle": "KIT-002"
+  },
+  {
+    "_id": 230,
+    "id_cliente": 101,
+    "fecha_venta": "2025-08-28",
+    "canal": "telefono",
+    "subtotal": 225000,
+    "descuento_pesos": 0,
+    "total": 225000,
+    "id_bundle": null
+  },
+  {
+    "_id": 231,
+    "id_cliente": 179,
+    "fecha_venta": "2025-05-11",
+    "canal": "tienda",
+    "subtotal": 335000,
+    "descuento_pesos": 0,
+    "total": 335000,
+    "id_bundle": null
+  },
+  {
+    "_id": 232,
+    "id_cliente": 112,
+    "fecha_venta": "2025-06-13",
+    "canal": "tienda",
+    "subtotal": 320000,
+    "descuento_pesos": 35840,
+    "total": 284160,
+    "id_bundle": "KIT-002"
+  },
+  {
+    "_id": 233,
+    "id_cliente": 31,
+    "fecha_venta": "2026-05-05",
+    "canal": "tienda",
+    "subtotal": 235000,
+    "descuento_pesos": 37600,
+    "total": 197400,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 234,
+    "id_cliente": 89,
+    "fecha_venta": "2026-03-27",
+    "canal": "tienda",
+    "subtotal": 215000,
+    "descuento_pesos": 0,
+    "total": 215000,
+    "id_bundle": null
+  },
+  {
+    "_id": 235,
+    "id_cliente": 192,
+    "fecha_venta": "2025-06-07",
+    "canal": "tienda",
+    "subtotal": 415000,
+    "descuento_pesos": 66400,
+    "total": 348600,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 236,
+    "id_cliente": 70,
+    "fecha_venta": "2025-09-02",
+    "canal": "telefono",
+    "subtotal": 580000,
+    "descuento_pesos": 69600,
+    "total": 510400,
+    "id_bundle": "KIT-012"
+  },
+  {
+    "_id": 237,
+    "id_cliente": 117,
+    "fecha_venta": "2025-06-11",
+    "canal": "telefono",
+    "subtotal": 215000,
+    "descuento_pesos": 0,
+    "total": 215000,
+    "id_bundle": null
+  },
+  {
+    "_id": 238,
+    "id_cliente": 41,
+    "fecha_venta": "2025-05-24",
+    "canal": "telefono",
+    "subtotal": 405000,
+    "descuento_pesos": 45360,
+    "total": 359640,
+    "id_bundle": "KIT-002"
+  },
+  {
+    "_id": 239,
+    "id_cliente": 190,
+    "fecha_venta": "2025-10-24",
+    "canal": "tienda",
+    "subtotal": 255000,
+    "descuento_pesos": 0,
+    "total": 255000,
+    "id_bundle": null
+  },
+  {
+    "_id": 240,
+    "id_cliente": 94,
+    "fecha_venta": "2025-06-13",
+    "canal": "tienda",
+    "subtotal": 225000,
+    "descuento_pesos": 0,
+    "total": 225000,
+    "id_bundle": null
+  },
+  {
+    "_id": 241,
+    "id_cliente": 58,
+    "fecha_venta": "2026-01-26",
+    "canal": "web",
+    "subtotal": 260000,
+    "descuento_pesos": 0,
+    "total": 260000,
+    "id_bundle": null
+  },
+  {
+    "_id": 242,
+    "id_cliente": 31,
+    "fecha_venta": "2025-09-06",
+    "canal": "tienda",
+    "subtotal": 730000,
+    "descuento_pesos": 89060,
+    "total": 640940,
+    "id_bundle": "KIT-008"
+  },
+  {
+    "_id": 243,
+    "id_cliente": 103,
+    "fecha_venta": "2025-09-27",
+    "canal": "web",
+    "subtotal": 485000,
+    "descuento_pesos": 77600,
+    "total": 407400,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 244,
+    "id_cliente": 142,
+    "fecha_venta": "2026-04-15",
+    "canal": "telefono",
+    "subtotal": 300000,
+    "descuento_pesos": 0,
+    "total": 300000,
+    "id_bundle": null
+  },
+  {
+    "_id": 245,
+    "id_cliente": 119,
+    "fecha_venta": "2026-01-11",
+    "canal": "tienda",
+    "subtotal": 80000,
+    "descuento_pesos": 0,
+    "total": 80000,
+    "id_bundle": null
+  },
+  {
+    "_id": 246,
+    "id_cliente": 39,
+    "fecha_venta": "2025-08-25",
+    "canal": "tienda",
+    "subtotal": 235000,
+    "descuento_pesos": 37600,
+    "total": 197400,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 247,
+    "id_cliente": 163,
+    "fecha_venta": "2026-02-08",
+    "canal": "web",
+    "subtotal": 320000,
+    "descuento_pesos": 0,
+    "total": 320000,
+    "id_bundle": null
+  },
+  {
+    "_id": 248,
+    "id_cliente": 189,
+    "fecha_venta": "2025-07-14",
+    "canal": "telefono",
+    "subtotal": 295000,
+    "descuento_pesos": 47200,
+    "total": 247800,
+    "id_bundle": "KIT-004"
+  },
+  {
+    "_id": 249,
+    "id_cliente": 126,
+    "fecha_venta": "2026-02-24",
+    "canal": "telefono",
+    "subtotal": 235000,
+    "descuento_pesos": 37600,
+    "total": 197400,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 250,
+    "id_cliente": 12,
+    "fecha_venta": "2026-02-27",
+    "canal": "web",
+    "subtotal": 190000,
+    "descuento_pesos": 0,
+    "total": 190000,
+    "id_bundle": null
+  },
+  {
+    "_id": 251,
+    "id_cliente": 192,
+    "fecha_venta": "2026-01-05",
+    "canal": "tienda",
+    "subtotal": 320000,
+    "descuento_pesos": 35840,
+    "total": 284160,
+    "id_bundle": "KIT-002"
+  },
+  {
+    "_id": 252,
+    "id_cliente": 152,
+    "fecha_venta": "2025-09-09",
+    "canal": "tienda",
+    "subtotal": 295000,
+    "descuento_pesos": 47200,
+    "total": 247800,
+    "id_bundle": "KIT-004"
+  },
+  {
+    "_id": 253,
+    "id_cliente": 81,
+    "fecha_venta": "2026-01-05",
+    "canal": "telefono",
+    "subtotal": 1010000,
+    "descuento_pesos": 143420,
+    "total": 866580,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 254,
+    "id_cliente": 116,
+    "fecha_venta": "2025-12-02",
+    "canal": "telefono",
+    "subtotal": 555000,
+    "descuento_pesos": 88800,
+    "total": 466200,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 255,
+    "id_cliente": 28,
+    "fecha_venta": "2025-08-13",
+    "canal": "web",
+    "subtotal": 485000,
+    "descuento_pesos": 77600,
+    "total": 407400,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 256,
+    "id_cliente": 198,
+    "fecha_venta": "2025-06-25",
+    "canal": "web",
+    "subtotal": 105000,
+    "descuento_pesos": 8400,
+    "total": 96600,
+    "id_bundle": "KIT-006"
+  },
+  {
+    "_id": 257,
+    "id_cliente": 41,
+    "fecha_venta": "2025-06-26",
+    "canal": "telefono",
+    "subtotal": 415000,
+    "descuento_pesos": 66400,
+    "total": 348600,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 258,
+    "id_cliente": 56,
+    "fecha_venta": "2026-04-10",
+    "canal": "tienda",
+    "subtotal": 335000,
+    "descuento_pesos": 0,
+    "total": 335000,
+    "id_bundle": null
+  },
+  {
+    "_id": 259,
+    "id_cliente": 102,
+    "fecha_venta": "2025-12-14",
+    "canal": "tienda",
+    "subtotal": 260000,
+    "descuento_pesos": 0,
+    "total": 260000,
+    "id_bundle": null
+  },
+  {
+    "_id": 260,
+    "id_cliente": 116,
+    "fecha_venta": "2025-11-05",
+    "canal": "tienda",
+    "subtotal": 215000,
+    "descuento_pesos": 0,
+    "total": 215000,
+    "id_bundle": null
+  },
+  {
+    "_id": 261,
+    "id_cliente": 36,
+    "fecha_venta": "2025-12-10",
+    "canal": "tienda",
+    "subtotal": 1110000,
+    "descuento_pesos": 135420,
+    "total": 974580,
+    "id_bundle": "KIT-008"
+  },
+  {
+    "_id": 262,
+    "id_cliente": 96,
+    "fecha_venta": "2025-12-04",
+    "canal": "tienda",
+    "subtotal": 555000,
+    "descuento_pesos": 88800,
+    "total": 466200,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 263,
+    "id_cliente": 20,
+    "fecha_venta": "2026-01-02",
+    "canal": "telefono",
+    "subtotal": 545000,
+    "descuento_pesos": 77390,
+    "total": 467610,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 264,
+    "id_cliente": 24,
+    "fecha_venta": "2025-06-04",
+    "canal": "tienda",
+    "subtotal": 150000,
+    "descuento_pesos": 0,
+    "total": 150000,
+    "id_bundle": null
+  },
+  {
+    "_id": 265,
+    "id_cliente": 13,
+    "fecha_venta": "2026-04-17",
+    "canal": "telefono",
+    "subtotal": 325000,
+    "descuento_pesos": 43875,
+    "total": 281125,
+    "id_bundle": "KIT-009"
+  },
+  {
+    "_id": 266,
+    "id_cliente": 8,
+    "fecha_venta": "2026-04-07",
+    "canal": "web",
+    "subtotal": 105000,
+    "descuento_pesos": 8400,
+    "total": 96600,
+    "id_bundle": "KIT-006"
+  },
+  {
+    "_id": 267,
+    "id_cliente": 71,
+    "fecha_venta": "2026-04-03",
+    "canal": "tienda",
+    "subtotal": 405000,
+    "descuento_pesos": 45360,
+    "total": 359640,
+    "id_bundle": "KIT-002"
+  },
+  {
+    "_id": 268,
+    "id_cliente": 166,
+    "fecha_venta": "2025-06-27",
+    "canal": "web",
+    "subtotal": 405000,
+    "descuento_pesos": 45360,
+    "total": 359640,
+    "id_bundle": "KIT-002"
+  },
+  {
+    "_id": 269,
+    "id_cliente": 72,
+    "fecha_venta": "2025-06-08",
+    "canal": "telefono",
+    "subtotal": 255000,
+    "descuento_pesos": 20400,
+    "total": 234600,
+    "id_bundle": "KIT-006"
+  },
+  {
+    "_id": 270,
+    "id_cliente": 98,
+    "fecha_venta": "2025-11-30",
+    "canal": "telefono",
+    "subtotal": 825000,
+    "descuento_pesos": 117150,
+    "total": 707850,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 271,
+    "id_cliente": 145,
+    "fecha_venta": "2025-10-28",
+    "canal": "tienda",
+    "subtotal": 385000,
+    "descuento_pesos": 46200,
+    "total": 338800,
+    "id_bundle": "KIT-012"
+  },
+  {
+    "_id": 272,
+    "id_cliente": 153,
+    "fecha_venta": "2025-07-02",
+    "canal": "tienda",
+    "subtotal": 335000,
+    "descuento_pesos": 53600,
+    "total": 281400,
+    "id_bundle": "KIT-004"
+  },
+  {
+    "_id": 273,
+    "id_cliente": 197,
+    "fecha_venta": "2025-09-12",
+    "canal": "tienda",
+    "subtotal": 225000,
+    "descuento_pesos": 0,
+    "total": 225000,
+    "id_bundle": null
+  },
+  {
+    "_id": 274,
+    "id_cliente": 69,
+    "fecha_venta": "2025-08-14",
+    "canal": "tienda",
+    "subtotal": 215000,
+    "descuento_pesos": 0,
+    "total": 215000,
+    "id_bundle": null
+  },
+  {
+    "_id": 275,
+    "id_cliente": 91,
+    "fecha_venta": "2025-08-13",
+    "canal": "tienda",
+    "subtotal": 150000,
+    "descuento_pesos": 0,
+    "total": 150000,
+    "id_bundle": null
+  },
+  {
+    "_id": 276,
+    "id_cliente": 189,
+    "fecha_venta": "2026-02-06",
+    "canal": "tienda",
+    "subtotal": 295000,
+    "descuento_pesos": 47200,
+    "total": 247800,
+    "id_bundle": "KIT-004"
+  },
+  {
+    "_id": 277,
+    "id_cliente": 145,
+    "fecha_venta": "2025-12-23",
+    "canal": "telefono",
+    "subtotal": 1010000,
+    "descuento_pesos": 143420,
+    "total": 866580,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 278,
+    "id_cliente": 126,
+    "fecha_venta": "2025-07-18",
+    "canal": "tienda",
+    "subtotal": 235000,
+    "descuento_pesos": 37600,
+    "total": 197400,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 279,
+    "id_cliente": 1,
+    "fecha_venta": "2025-12-10",
+    "canal": "tienda",
+    "subtotal": 105000,
+    "descuento_pesos": 0,
+    "total": 105000,
+    "id_bundle": null
+  },
+  {
+    "_id": 280,
+    "id_cliente": 83,
+    "fecha_venta": "2025-08-09",
+    "canal": "tienda",
+    "subtotal": 375000,
+    "descuento_pesos": 42000,
+    "total": 333000,
+    "id_bundle": "KIT-002"
+  },
+  {
+    "_id": 281,
+    "id_cliente": 19,
+    "fecha_venta": "2025-09-27",
+    "canal": "web",
+    "subtotal": 105000,
+    "descuento_pesos": 0,
+    "total": 105000,
+    "id_bundle": null
+  },
+  {
+    "_id": 282,
+    "id_cliente": 87,
+    "fecha_venta": "2025-12-30",
+    "canal": "telefono",
+    "subtotal": 405000,
+    "descuento_pesos": 45360,
+    "total": 359640,
+    "id_bundle": "KIT-002"
+  },
+  {
+    "_id": 283,
+    "id_cliente": 167,
+    "fecha_venta": "2025-09-12",
+    "canal": "telefono",
+    "subtotal": 105000,
+    "descuento_pesos": 0,
+    "total": 105000,
+    "id_bundle": null
+  },
+  {
+    "_id": 284,
+    "id_cliente": 171,
+    "fecha_venta": "2025-06-15",
+    "canal": "web",
+    "subtotal": 225000,
+    "descuento_pesos": 0,
+    "total": 225000,
+    "id_bundle": null
+  },
+  {
+    "_id": 285,
+    "id_cliente": 46,
+    "fecha_venta": "2025-12-20",
+    "canal": "web",
+    "subtotal": 475000,
+    "descuento_pesos": 76000,
+    "total": 399000,
+    "id_bundle": "KIT-004"
+  },
+  {
+    "_id": 286,
+    "id_cliente": 47,
+    "fecha_venta": "2026-02-13",
+    "canal": "tienda",
+    "subtotal": 225000,
+    "descuento_pesos": 0,
+    "total": 225000,
+    "id_bundle": null
+  },
+  {
+    "_id": 287,
+    "id_cliente": 128,
+    "fecha_venta": "2025-06-27",
+    "canal": "tienda",
+    "subtotal": 325000,
+    "descuento_pesos": 43875,
+    "total": 281125,
+    "id_bundle": "KIT-009"
+  },
+  {
+    "_id": 288,
+    "id_cliente": 43,
+    "fecha_venta": "2025-06-02",
+    "canal": "telefono",
+    "subtotal": 825000,
+    "descuento_pesos": 117150,
+    "total": 707850,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 289,
+    "id_cliente": 3,
+    "fecha_venta": "2026-04-06",
+    "canal": "web",
+    "subtotal": 585000,
+    "descuento_pesos": 65520,
+    "total": 519480,
+    "id_bundle": "KIT-002"
+  },
+  {
+    "_id": 290,
+    "id_cliente": 185,
+    "fecha_venta": "2026-02-08",
+    "canal": "tienda",
+    "subtotal": 265000,
+    "descuento_pesos": 42400,
+    "total": 222600,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 291,
+    "id_cliente": 97,
+    "fecha_venta": "2025-05-15",
+    "canal": "web",
+    "subtotal": 80000,
+    "descuento_pesos": 0,
+    "total": 80000,
+    "id_bundle": null
+  },
+  {
+    "_id": 292,
+    "id_cliente": 42,
+    "fecha_venta": "2025-06-24",
+    "canal": "web",
+    "subtotal": 655000,
+    "descuento_pesos": 0,
+    "total": 655000,
+    "id_bundle": null
+  },
+  {
+    "_id": 293,
+    "id_cliente": 67,
+    "fecha_venta": "2025-09-06",
+    "canal": "tienda",
+    "subtotal": 320000,
+    "descuento_pesos": 35840,
+    "total": 284160,
+    "id_bundle": "KIT-002"
+  },
+  {
+    "_id": 294,
+    "id_cliente": 87,
+    "fecha_venta": "2025-08-01",
+    "canal": "telefono",
+    "subtotal": 225000,
+    "descuento_pesos": 0,
+    "total": 225000,
+    "id_bundle": null
+  },
+  {
+    "_id": 295,
+    "id_cliente": 168,
+    "fecha_venta": "2025-12-02",
+    "canal": "tienda",
+    "subtotal": 485000,
+    "descuento_pesos": 77600,
+    "total": 407400,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 296,
+    "id_cliente": 85,
+    "fecha_venta": "2026-01-11",
+    "canal": "telefono",
+    "subtotal": 270000,
+    "descuento_pesos": 43200,
+    "total": 226800,
+    "id_bundle": "KIT-004"
+  },
+  {
+    "_id": 297,
+    "id_cliente": 170,
+    "fecha_venta": "2026-01-09",
+    "canal": "web",
+    "subtotal": 405000,
+    "descuento_pesos": 45360,
+    "total": 359640,
+    "id_bundle": "KIT-002"
+  },
+  {
+    "_id": 298,
+    "id_cliente": 40,
+    "fecha_venta": "2025-08-25",
+    "canal": "tienda",
+    "subtotal": 545000,
+    "descuento_pesos": 77390,
+    "total": 467610,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 299,
+    "id_cliente": 52,
+    "fecha_venta": "2025-11-29",
+    "canal": "web",
+    "subtotal": 805000,
+    "descuento_pesos": 98210,
+    "total": 706790,
+    "id_bundle": "KIT-008"
+  },
+  {
+    "_id": 300,
+    "id_cliente": 30,
+    "fecha_venta": "2025-06-07",
+    "canal": "web",
+    "subtotal": 225000,
+    "descuento_pesos": 0,
+    "total": 225000,
+    "id_bundle": null
+  },
+  {
+    "_id": 301,
+    "id_cliente": 165,
+    "fecha_venta": "2025-07-31",
+    "canal": "web",
+    "subtotal": 385000,
+    "descuento_pesos": 46200,
+    "total": 338800,
+    "id_bundle": "KIT-012"
+  },
+  {
+    "_id": 302,
+    "id_cliente": 115,
+    "fecha_venta": "2025-11-18",
+    "canal": "tienda",
+    "subtotal": 265000,
+    "descuento_pesos": 42400,
+    "total": 222600,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 303,
+    "id_cliente": 39,
+    "fecha_venta": "2025-05-09",
+    "canal": "tienda",
+    "subtotal": 255000,
+    "descuento_pesos": 0,
+    "total": 255000,
+    "id_bundle": null
+  },
+  {
+    "_id": 304,
+    "id_cliente": 194,
+    "fecha_venta": "2025-11-23",
+    "canal": "telefono",
+    "subtotal": 705000,
+    "descuento_pesos": 0,
+    "total": 705000,
+    "id_bundle": null
+  },
+  {
+    "_id": 305,
+    "id_cliente": 147,
+    "fecha_venta": "2025-09-20",
+    "canal": "web",
+    "subtotal": 195000,
+    "descuento_pesos": 0,
+    "total": 195000,
+    "id_bundle": null
+  },
+  {
+    "_id": 306,
+    "id_cliente": 31,
+    "fecha_venta": "2025-12-26",
+    "canal": "tienda",
+    "subtotal": 255000,
+    "descuento_pesos": 0,
+    "total": 255000,
+    "id_bundle": null
+  },
+  {
+    "_id": 307,
+    "id_cliente": 11,
+    "fecha_venta": "2025-10-01",
+    "canal": "tienda",
+    "subtotal": 175000,
+    "descuento_pesos": 14000,
+    "total": 161000,
+    "id_bundle": "KIT-006"
+  },
+  {
+    "_id": 308,
+    "id_cliente": 82,
+    "fecha_venta": "2025-12-10",
+    "canal": "tienda",
+    "subtotal": 1010000,
+    "descuento_pesos": 143420,
+    "total": 866580,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 309,
+    "id_cliente": 142,
+    "fecha_venta": "2026-04-29",
+    "canal": "web",
+    "subtotal": 555000,
+    "descuento_pesos": 88800,
+    "total": 466200,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 310,
+    "id_cliente": 29,
+    "fecha_venta": "2026-02-16",
+    "canal": "telefono",
+    "subtotal": 260000,
+    "descuento_pesos": 0,
+    "total": 260000,
+    "id_bundle": null
+  },
+  {
+    "_id": 311,
+    "id_cliente": 145,
+    "fecha_venta": "2026-04-11",
+    "canal": "web",
+    "subtotal": 895000,
+    "descuento_pesos": 127090,
+    "total": 767910,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 312,
+    "id_cliente": 99,
+    "fecha_venta": "2026-01-12",
+    "canal": "web",
+    "subtotal": 555000,
+    "descuento_pesos": 88800,
+    "total": 466200,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 313,
+    "id_cliente": 71,
+    "fecha_venta": "2025-07-26",
+    "canal": "telefono",
+    "subtotal": 160000,
+    "descuento_pesos": 12800,
+    "total": 147200,
+    "id_bundle": "KIT-006"
+  },
+  {
+    "_id": 314,
+    "id_cliente": 102,
+    "fecha_venta": "2025-08-13",
+    "canal": "tienda",
+    "subtotal": 150000,
+    "descuento_pesos": 0,
+    "total": 150000,
+    "id_bundle": null
+  },
+  {
+    "_id": 315,
+    "id_cliente": 69,
+    "fecha_venta": "2025-10-06",
+    "canal": "web",
+    "subtotal": 150000,
+    "descuento_pesos": 0,
+    "total": 150000,
+    "id_bundle": null
+  },
+  {
+    "_id": 316,
+    "id_cliente": 126,
+    "fecha_venta": "2025-08-27",
+    "canal": "tienda",
+    "subtotal": 335000,
+    "descuento_pesos": 0,
+    "total": 335000,
+    "id_bundle": null
+  },
+  {
+    "_id": 317,
+    "id_cliente": 191,
+    "fecha_venta": "2025-06-06",
+    "canal": "web",
+    "subtotal": 275000,
+    "descuento_pesos": 0,
+    "total": 275000,
+    "id_bundle": null
+  },
+  {
+    "_id": 318,
+    "id_cliente": 49,
+    "fecha_venta": "2026-02-28",
+    "canal": "telefono",
+    "subtotal": 215000,
+    "descuento_pesos": 0,
+    "total": 215000,
+    "id_bundle": null
+  },
+  {
+    "_id": 319,
+    "id_cliente": 15,
+    "fecha_venta": "2026-02-09",
+    "canal": "web",
+    "subtotal": 215000,
+    "descuento_pesos": 0,
+    "total": 215000,
+    "id_bundle": null
+  },
+  {
+    "_id": 320,
+    "id_cliente": 35,
+    "fecha_venta": "2025-06-08",
+    "canal": "tienda",
+    "subtotal": 415000,
+    "descuento_pesos": 66400,
+    "total": 348600,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 321,
+    "id_cliente": 52,
+    "fecha_venta": "2025-10-15",
+    "canal": "tienda",
+    "subtotal": 770000,
+    "descuento_pesos": 0,
+    "total": 770000,
+    "id_bundle": null
+  },
+  {
+    "_id": 322,
+    "id_cliente": 71,
+    "fecha_venta": "2025-06-06",
+    "canal": "web",
+    "subtotal": 80000,
+    "descuento_pesos": 0,
+    "total": 80000,
+    "id_bundle": null
+  },
+  {
+    "_id": 323,
+    "id_cliente": 62,
+    "fecha_venta": "2025-06-02",
+    "canal": "tienda",
+    "subtotal": 105000,
+    "descuento_pesos": 0,
+    "total": 105000,
+    "id_bundle": null
+  },
+  {
+    "_id": 324,
+    "id_cliente": 89,
+    "fecha_venta": "2026-03-03",
+    "canal": "telefono",
+    "subtotal": 485000,
+    "descuento_pesos": 77600,
+    "total": 407400,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 325,
+    "id_cliente": 8,
+    "fecha_venta": "2026-01-07",
+    "canal": "tienda",
+    "subtotal": 105000,
+    "descuento_pesos": 8400,
+    "total": 96600,
+    "id_bundle": "KIT-006"
+  },
+  {
+    "_id": 326,
+    "id_cliente": 174,
+    "fecha_venta": "2026-01-20",
+    "canal": "tienda",
+    "subtotal": 520000,
+    "descuento_pesos": 83200,
+    "total": 436800,
+    "id_bundle": "KIT-004"
+  },
+  {
+    "_id": 327,
+    "id_cliente": 34,
+    "fecha_venta": "2026-02-03",
+    "canal": "tienda",
+    "subtotal": 190000,
+    "descuento_pesos": 0,
+    "total": 190000,
+    "id_bundle": null
+  },
+  {
+    "_id": 328,
+    "id_cliente": 183,
+    "fecha_venta": "2025-07-27",
+    "canal": "web",
+    "subtotal": 295000,
+    "descuento_pesos": 47200,
+    "total": 247800,
+    "id_bundle": "KIT-004"
+  },
+  {
+    "_id": 329,
+    "id_cliente": 65,
+    "fecha_venta": "2025-06-06",
+    "canal": "telefono",
+    "subtotal": 105000,
+    "descuento_pesos": 8400,
+    "total": 96600,
+    "id_bundle": "KIT-006"
+  },
+  {
+    "_id": 330,
+    "id_cliente": 150,
+    "fecha_venta": "2026-01-23",
+    "canal": "telefono",
+    "subtotal": 768000,
+    "descuento_pesos": 93696,
+    "total": 674304,
+    "id_bundle": "KIT-008"
+  },
+  {
+    "_id": 331,
+    "id_cliente": 77,
+    "fecha_venta": "2025-06-18",
+    "canal": "web",
+    "subtotal": 555000,
+    "descuento_pesos": 88800,
+    "total": 466200,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 332,
+    "id_cliente": 67,
+    "fecha_venta": "2025-08-11",
+    "canal": "web",
+    "subtotal": 555000,
+    "descuento_pesos": 88800,
+    "total": 466200,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 333,
+    "id_cliente": 133,
+    "fecha_venta": "2025-06-12",
+    "canal": "web",
+    "subtotal": 705000,
+    "descuento_pesos": 0,
+    "total": 705000,
+    "id_bundle": null
+  },
+  {
+    "_id": 334,
+    "id_cliente": 185,
+    "fecha_venta": "2026-03-08",
+    "canal": "web",
+    "subtotal": 235000,
+    "descuento_pesos": 37600,
+    "total": 197400,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 335,
+    "id_cliente": 100,
+    "fecha_venta": "2025-06-11",
+    "canal": "tienda",
+    "subtotal": 233000,
+    "descuento_pesos": 0,
+    "total": 233000,
+    "id_bundle": null
+  },
+  {
+    "_id": 336,
+    "id_cliente": 176,
+    "fecha_venta": "2026-04-18",
+    "canal": "telefono",
+    "subtotal": 385000,
+    "descuento_pesos": 46200,
+    "total": 338800,
+    "id_bundle": "KIT-012"
+  },
+  {
+    "_id": 337,
+    "id_cliente": 44,
+    "fecha_venta": "2025-09-05",
+    "canal": "tienda",
+    "subtotal": 320000,
+    "descuento_pesos": 0,
+    "total": 320000,
+    "id_bundle": null
+  },
+  {
+    "_id": 338,
+    "id_cliente": 121,
+    "fecha_venta": "2025-11-30",
+    "canal": "tienda",
+    "subtotal": 325000,
+    "descuento_pesos": 43875,
+    "total": 281125,
+    "id_bundle": "KIT-009"
+  },
+  {
+    "_id": 339,
+    "id_cliente": 57,
+    "fecha_venta": "2025-07-08",
+    "canal": "web",
+    "subtotal": 120000,
+    "descuento_pesos": 0,
+    "total": 120000,
+    "id_bundle": null
+  },
+  {
+    "_id": 340,
+    "id_cliente": 67,
+    "fecha_venta": "2026-02-23",
+    "canal": "web",
+    "subtotal": 265000,
+    "descuento_pesos": 0,
+    "total": 265000,
+    "id_bundle": null
+  },
+  {
+    "_id": 341,
+    "id_cliente": 121,
+    "fecha_venta": "2025-09-11",
+    "canal": "web",
+    "subtotal": 1010000,
+    "descuento_pesos": 143420,
+    "total": 866580,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 342,
+    "id_cliente": 106,
+    "fecha_venta": "2026-02-28",
+    "canal": "tienda",
+    "subtotal": 235000,
+    "descuento_pesos": 37600,
+    "total": 197400,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 343,
+    "id_cliente": 105,
+    "fecha_venta": "2026-03-08",
+    "canal": "tienda",
+    "subtotal": 225000,
+    "descuento_pesos": 0,
+    "total": 225000,
+    "id_bundle": null
+  },
+  {
+    "_id": 344,
+    "id_cliente": 200,
+    "fecha_venta": "2025-05-28",
+    "canal": "tienda",
+    "subtotal": 320000,
+    "descuento_pesos": 35840,
+    "total": 284160,
+    "id_bundle": "KIT-002"
+  },
+  {
+    "_id": 345,
+    "id_cliente": 2,
+    "fecha_venta": "2026-03-21",
+    "canal": "telefono",
+    "subtotal": 240000,
+    "descuento_pesos": 0,
+    "total": 240000,
+    "id_bundle": null
+  },
+  {
+    "_id": 346,
+    "id_cliente": 196,
+    "fecha_venta": "2025-06-18",
+    "canal": "telefono",
+    "subtotal": 710000,
+    "descuento_pesos": 100820,
+    "total": 609180,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 347,
+    "id_cliente": 110,
+    "fecha_venta": "2025-12-08",
+    "canal": "telefono",
+    "subtotal": 275000,
+    "descuento_pesos": 0,
+    "total": 275000,
+    "id_bundle": null
+  },
+  {
+    "_id": 348,
+    "id_cliente": 4,
+    "fecha_venta": "2026-04-09",
+    "canal": "tienda",
+    "subtotal": 150000,
+    "descuento_pesos": 0,
+    "total": 150000,
+    "id_bundle": null
+  },
+  {
+    "_id": 349,
+    "id_cliente": 161,
+    "fecha_venta": "2026-03-02",
+    "canal": "web",
+    "subtotal": 233000,
+    "descuento_pesos": 0,
+    "total": 233000,
+    "id_bundle": null
+  },
+  {
+    "_id": 350,
+    "id_cliente": 99,
+    "fecha_venta": "2026-02-21",
+    "canal": "tienda",
+    "subtotal": 215000,
+    "descuento_pesos": 0,
+    "total": 215000,
+    "id_bundle": null
+  },
+  {
+    "_id": 351,
+    "id_cliente": 75,
+    "fecha_venta": "2026-01-30",
+    "canal": "telefono",
+    "subtotal": 275000,
+    "descuento_pesos": 0,
+    "total": 275000,
+    "id_bundle": null
+  },
+  {
+    "_id": 352,
+    "id_cliente": 176,
+    "fecha_venta": "2025-10-16",
+    "canal": "web",
+    "subtotal": 325000,
+    "descuento_pesos": 43875,
+    "total": 281125,
+    "id_bundle": "KIT-009"
+  },
+  {
+    "_id": 353,
+    "id_cliente": 104,
+    "fecha_venta": "2025-09-18",
+    "canal": "tienda",
+    "subtotal": 415000,
+    "descuento_pesos": 66400,
+    "total": 348600,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 354,
+    "id_cliente": 32,
+    "fecha_venta": "2025-08-20",
+    "canal": "web",
+    "subtotal": 105000,
+    "descuento_pesos": 0,
+    "total": 105000,
+    "id_bundle": null
+  },
+  {
+    "_id": 355,
+    "id_cliente": 153,
+    "fecha_venta": "2026-04-15",
+    "canal": "tienda",
+    "subtotal": 235000,
+    "descuento_pesos": 37600,
+    "total": 197400,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 356,
+    "id_cliente": 107,
+    "fecha_venta": "2025-10-15",
+    "canal": "web",
+    "subtotal": 150000,
+    "descuento_pesos": 0,
+    "total": 150000,
+    "id_bundle": null
+  },
+  {
+    "_id": 357,
+    "id_cliente": 53,
+    "fecha_venta": "2025-09-07",
+    "canal": "web",
+    "subtotal": 295000,
+    "descuento_pesos": 47200,
+    "total": 247800,
+    "id_bundle": "KIT-004"
+  },
+  {
+    "_id": 358,
+    "id_cliente": 170,
+    "fecha_venta": "2025-09-20",
+    "canal": "tienda",
+    "subtotal": 270000,
+    "descuento_pesos": 0,
+    "total": 270000,
+    "id_bundle": null
+  },
+  {
+    "_id": 359,
+    "id_cliente": 131,
+    "fecha_venta": "2025-11-26",
+    "canal": "tienda",
+    "subtotal": 385000,
+    "descuento_pesos": 46200,
+    "total": 338800,
+    "id_bundle": "KIT-012"
+  },
+  {
+    "_id": 360,
+    "id_cliente": 51,
+    "fecha_venta": "2025-07-14",
+    "canal": "tienda",
+    "subtotal": 475000,
+    "descuento_pesos": 0,
+    "total": 475000,
+    "id_bundle": null
+  },
+  {
+    "_id": 361,
+    "id_cliente": 76,
+    "fecha_venta": "2026-04-16",
+    "canal": "telefono",
+    "subtotal": 110000,
+    "descuento_pesos": 0,
+    "total": 110000,
+    "id_bundle": null
+  },
+  {
+    "_id": 362,
+    "id_cliente": 61,
+    "fecha_venta": "2026-04-03",
+    "canal": "telefono",
+    "subtotal": 235000,
+    "descuento_pesos": 37600,
+    "total": 197400,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 363,
+    "id_cliente": 24,
+    "fecha_venta": "2025-10-08",
+    "canal": "web",
+    "subtotal": 415000,
+    "descuento_pesos": 66400,
+    "total": 348600,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 364,
+    "id_cliente": 76,
+    "fecha_venta": "2025-12-28",
+    "canal": "tienda",
+    "subtotal": 215000,
+    "descuento_pesos": 0,
+    "total": 215000,
+    "id_bundle": null
+  },
+  {
+    "_id": 365,
+    "id_cliente": 93,
+    "fecha_venta": "2025-10-16",
+    "canal": "telefono",
+    "subtotal": 825000,
+    "descuento_pesos": 117150,
+    "total": 707850,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 366,
+    "id_cliente": 195,
+    "fecha_venta": "2025-06-14",
+    "canal": "telefono",
+    "subtotal": 1010000,
+    "descuento_pesos": 143420,
+    "total": 866580,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 367,
+    "id_cliente": 92,
+    "fecha_venta": "2025-05-12",
+    "canal": "web",
+    "subtotal": 150000,
+    "descuento_pesos": 0,
+    "total": 150000,
+    "id_bundle": null
+  },
+  {
+    "_id": 368,
+    "id_cliente": 88,
+    "fecha_venta": "2025-12-28",
+    "canal": "web",
+    "subtotal": 325000,
+    "descuento_pesos": 43875,
+    "total": 281125,
+    "id_bundle": "KIT-009"
+  },
+  {
+    "_id": 369,
+    "id_cliente": 108,
+    "fecha_venta": "2026-03-22",
+    "canal": "tienda",
+    "subtotal": 555000,
+    "descuento_pesos": 88800,
+    "total": 466200,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 370,
+    "id_cliente": 41,
+    "fecha_venta": "2026-02-20",
+    "canal": "web",
+    "subtotal": 320000,
+    "descuento_pesos": 35840,
+    "total": 284160,
+    "id_bundle": "KIT-002"
+  },
+  {
+    "_id": 371,
+    "id_cliente": 47,
+    "fecha_venta": "2025-06-28",
+    "canal": "telefono",
+    "subtotal": 225000,
+    "descuento_pesos": 0,
+    "total": 225000,
+    "id_bundle": null
+  },
+  {
+    "_id": 372,
+    "id_cliente": 124,
+    "fecha_venta": "2025-06-14",
+    "canal": "web",
+    "subtotal": 1010000,
+    "descuento_pesos": 143420,
+    "total": 866580,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 373,
+    "id_cliente": 67,
+    "fecha_venta": "2026-02-07",
+    "canal": "telefono",
+    "subtotal": 555000,
+    "descuento_pesos": 88800,
+    "total": 466200,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 374,
+    "id_cliente": 172,
+    "fecha_venta": "2025-08-25",
+    "canal": "telefono",
+    "subtotal": 335000,
+    "descuento_pesos": 0,
+    "total": 335000,
+    "id_bundle": null
+  },
+  {
+    "_id": 375,
+    "id_cliente": 111,
+    "fecha_venta": "2026-01-22",
+    "canal": "web",
+    "subtotal": 555000,
+    "descuento_pesos": 88800,
+    "total": 466200,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 376,
+    "id_cliente": 143,
+    "fecha_venta": "2025-09-20",
+    "canal": "tienda",
+    "subtotal": 150000,
+    "descuento_pesos": 0,
+    "total": 150000,
+    "id_bundle": null
+  },
+  {
+    "_id": 377,
+    "id_cliente": 127,
+    "fecha_venta": "2025-07-14",
+    "canal": "web",
+    "subtotal": 400000,
+    "descuento_pesos": 0,
+    "total": 400000,
+    "id_bundle": null
+  },
+  {
+    "_id": 378,
+    "id_cliente": 72,
+    "fecha_venta": "2025-11-02",
+    "canal": "telefono",
+    "subtotal": 235000,
+    "descuento_pesos": 37600,
+    "total": 197400,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 379,
+    "id_cliente": 61,
+    "fecha_venta": "2025-06-12",
+    "canal": "web",
+    "subtotal": 320000,
+    "descuento_pesos": 35840,
+    "total": 284160,
+    "id_bundle": "KIT-002"
+  },
+  {
+    "_id": 380,
+    "id_cliente": 115,
+    "fecha_venta": "2025-09-10",
+    "canal": "tienda",
+    "subtotal": 110000,
+    "descuento_pesos": 0,
+    "total": 110000,
+    "id_bundle": null
+  },
+  {
+    "_id": 381,
+    "id_cliente": 106,
+    "fecha_venta": "2025-11-13",
+    "canal": "tienda",
+    "subtotal": 235000,
+    "descuento_pesos": 37600,
+    "total": 197400,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 382,
+    "id_cliente": 131,
+    "fecha_venta": "2025-09-30",
+    "canal": "web",
+    "subtotal": 363000,
+    "descuento_pesos": 49005,
+    "total": 313995,
+    "id_bundle": "KIT-009"
+  },
+  {
+    "_id": 383,
+    "id_cliente": 58,
+    "fecha_venta": "2025-07-27",
+    "canal": "telefono",
+    "subtotal": 335000,
+    "descuento_pesos": 0,
+    "total": 335000,
+    "id_bundle": null
+  },
+  {
+    "_id": 384,
+    "id_cliente": 184,
+    "fecha_venta": "2025-12-18",
+    "canal": "tienda",
+    "subtotal": 825000,
+    "descuento_pesos": 117150,
+    "total": 707850,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 385,
+    "id_cliente": 1,
+    "fecha_venta": "2026-02-10",
+    "canal": "web",
+    "subtotal": 105000,
+    "descuento_pesos": 0,
+    "total": 105000,
+    "id_bundle": null
+  },
+  {
+    "_id": 386,
+    "id_cliente": 180,
+    "fecha_venta": "2026-05-03",
+    "canal": "tienda",
+    "subtotal": 320000,
+    "descuento_pesos": 35840,
+    "total": 284160,
+    "id_bundle": "KIT-002"
+  },
+  {
+    "_id": 387,
+    "id_cliente": 66,
+    "fecha_venta": "2025-10-09",
+    "canal": "tienda",
+    "subtotal": 310000,
+    "descuento_pesos": 0,
+    "total": 310000,
+    "id_bundle": null
+  },
+  {
+    "_id": 388,
+    "id_cliente": 184,
+    "fecha_venta": "2026-03-17",
+    "canal": "telefono",
+    "subtotal": 105000,
+    "descuento_pesos": 0,
+    "total": 105000,
+    "id_bundle": null
+  },
+  {
+    "_id": 389,
+    "id_cliente": 198,
+    "fecha_venta": "2026-04-07",
+    "canal": "telefono",
+    "subtotal": 320000,
+    "descuento_pesos": 0,
+    "total": 320000,
+    "id_bundle": null
+  },
+  {
+    "_id": 390,
+    "id_cliente": 128,
+    "fecha_venta": "2026-02-02",
+    "canal": "telefono",
+    "subtotal": 545000,
+    "descuento_pesos": 77390,
+    "total": 467610,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 391,
+    "id_cliente": 131,
+    "fecha_venta": "2025-05-12",
+    "canal": "telefono",
+    "subtotal": 255000,
+    "descuento_pesos": 0,
+    "total": 255000,
+    "id_bundle": null
+  },
+  {
+    "_id": 392,
+    "id_cliente": 188,
+    "fecha_venta": "2026-04-14",
+    "canal": "telefono",
+    "subtotal": 380000,
+    "descuento_pesos": 51300,
+    "total": 328700,
+    "id_bundle": "KIT-009"
+  },
+  {
+    "_id": 393,
+    "id_cliente": 130,
+    "fecha_venta": "2026-02-15",
+    "canal": "telefono",
+    "subtotal": 1010000,
+    "descuento_pesos": 143420,
+    "total": 866580,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 394,
+    "id_cliente": 102,
+    "fecha_venta": "2025-10-08",
+    "canal": "tienda",
+    "subtotal": 80000,
+    "descuento_pesos": 0,
+    "total": 80000,
+    "id_bundle": null
+  },
+  {
+    "_id": 395,
+    "id_cliente": 155,
+    "fecha_venta": "2026-04-12",
+    "canal": "web",
+    "subtotal": 295000,
+    "descuento_pesos": 47200,
+    "total": 247800,
+    "id_bundle": "KIT-004"
+  },
+  {
+    "_id": 396,
+    "id_cliente": 183,
+    "fecha_venta": "2025-06-30",
+    "canal": "tienda",
+    "subtotal": 295000,
+    "descuento_pesos": 47200,
+    "total": 247800,
+    "id_bundle": "KIT-004"
+  },
+  {
+    "_id": 397,
+    "id_cliente": 160,
+    "fecha_venta": "2025-07-15",
+    "canal": "tienda",
+    "subtotal": 278000,
+    "descuento_pesos": 0,
+    "total": 278000,
+    "id_bundle": null
+  },
+  {
+    "_id": 398,
+    "id_cliente": 182,
+    "fecha_venta": "2025-09-20",
+    "canal": "web",
+    "subtotal": 730000,
+    "descuento_pesos": 89060,
+    "total": 640940,
+    "id_bundle": "KIT-008"
+  },
+  {
+    "_id": 399,
+    "id_cliente": 173,
+    "fecha_venta": "2025-07-06",
+    "canal": "web",
+    "subtotal": 233000,
+    "descuento_pesos": 0,
+    "total": 233000,
+    "id_bundle": null
+  },
+  {
+    "_id": 400,
+    "id_cliente": 134,
+    "fecha_venta": "2025-07-01",
+    "canal": "telefono",
+    "subtotal": 270000,
+    "descuento_pesos": 43200,
+    "total": 226800,
+    "id_bundle": "KIT-004"
+  },
+  {
+    "_id": 401,
+    "id_cliente": 69,
+    "fecha_venta": "2026-02-15",
+    "canal": "telefono",
+    "subtotal": 415000,
+    "descuento_pesos": 66400,
+    "total": 348600,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 402,
+    "id_cliente": 16,
+    "fecha_venta": "2025-07-26",
+    "canal": "telefono",
+    "subtotal": 295000,
+    "descuento_pesos": 47200,
+    "total": 247800,
+    "id_bundle": "KIT-004"
+  },
+  {
+    "_id": 403,
+    "id_cliente": 116,
+    "fecha_venta": "2025-09-24",
+    "canal": "telefono",
+    "subtotal": 320000,
+    "descuento_pesos": 35840,
+    "total": 284160,
+    "id_bundle": "KIT-002"
+  },
+  {
+    "_id": 404,
+    "id_cliente": 191,
+    "fecha_venta": "2025-09-29",
+    "canal": "telefono",
+    "subtotal": 825000,
+    "descuento_pesos": 117150,
+    "total": 707850,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 405,
+    "id_cliente": 98,
+    "fecha_venta": "2026-03-13",
+    "canal": "web",
+    "subtotal": 415000,
+    "descuento_pesos": 66400,
+    "total": 348600,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 406,
+    "id_cliente": 4,
+    "fecha_venta": "2025-08-23",
+    "canal": "tienda",
+    "subtotal": 350000,
+    "descuento_pesos": 56000,
+    "total": 294000,
+    "id_bundle": "KIT-004"
+  },
+  {
+    "_id": 407,
+    "id_cliente": 199,
+    "fecha_venta": "2025-10-30",
+    "canal": "web",
+    "subtotal": 233000,
+    "descuento_pesos": 0,
+    "total": 233000,
+    "id_bundle": null
+  },
+  {
+    "_id": 408,
+    "id_cliente": 48,
+    "fecha_venta": "2025-08-20",
+    "canal": "web",
+    "subtotal": 325000,
+    "descuento_pesos": 43875,
+    "total": 281125,
+    "id_bundle": "KIT-009"
+  },
+  {
+    "_id": 409,
+    "id_cliente": 72,
+    "fecha_venta": "2026-04-24",
+    "canal": "web",
+    "subtotal": 415000,
+    "descuento_pesos": 0,
+    "total": 415000,
+    "id_bundle": null
+  },
+  {
+    "_id": 410,
+    "id_cliente": 120,
+    "fecha_venta": "2026-03-28",
+    "canal": "tienda",
+    "subtotal": 233000,
+    "descuento_pesos": 0,
+    "total": 233000,
+    "id_bundle": null
+  },
+  {
+    "_id": 411,
+    "id_cliente": 199,
+    "fecha_venta": "2025-09-20",
+    "canal": "web",
+    "subtotal": 1010000,
+    "descuento_pesos": 143420,
+    "total": 866580,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 412,
+    "id_cliente": 19,
+    "fecha_venta": "2026-01-21",
+    "canal": "tienda",
+    "subtotal": 675000,
+    "descuento_pesos": 95850,
+    "total": 579150,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 413,
+    "id_cliente": 130,
+    "fecha_venta": "2026-01-13",
+    "canal": "web",
+    "subtotal": 325000,
+    "descuento_pesos": 43875,
+    "total": 281125,
+    "id_bundle": "KIT-009"
+  },
+  {
+    "_id": 414,
+    "id_cliente": 57,
+    "fecha_venta": "2025-09-13",
+    "canal": "web",
+    "subtotal": 185000,
+    "descuento_pesos": 0,
+    "total": 185000,
+    "id_bundle": null
+  },
+  {
+    "_id": 415,
+    "id_cliente": 193,
+    "fecha_venta": "2025-06-03",
+    "canal": "telefono",
+    "subtotal": 465000,
+    "descuento_pesos": 46500,
+    "total": 418500,
+    "id_bundle": "KIT-011"
+  },
+  {
+    "_id": 416,
+    "id_cliente": 172,
+    "fecha_venta": "2025-06-24",
+    "canal": "telefono",
+    "subtotal": 80000,
+    "descuento_pesos": 0,
+    "total": 80000,
+    "id_bundle": null
+  },
+  {
+    "_id": 417,
+    "id_cliente": 11,
+    "fecha_venta": "2026-03-28",
+    "canal": "tienda",
+    "subtotal": 555000,
+    "descuento_pesos": 88800,
+    "total": 466200,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 418,
+    "id_cliente": 139,
+    "fecha_venta": "2025-12-10",
+    "canal": "telefono",
+    "subtotal": 515000,
+    "descuento_pesos": 61800,
+    "total": 453200,
+    "id_bundle": "KIT-012"
+  },
+  {
+    "_id": 419,
+    "id_cliente": 125,
+    "fecha_venta": "2025-09-26",
+    "canal": "web",
+    "subtotal": 583000,
+    "descuento_pesos": 82786,
+    "total": 500214,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 420,
+    "id_cliente": 25,
+    "fecha_venta": "2025-05-30",
+    "canal": "telefono",
+    "subtotal": 485000,
+    "descuento_pesos": 77600,
+    "total": 407400,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 421,
+    "id_cliente": 54,
+    "fecha_venta": "2025-05-09",
+    "canal": "telefono",
+    "subtotal": 555000,
+    "descuento_pesos": 88800,
+    "total": 466200,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 422,
+    "id_cliente": 53,
+    "fecha_venta": "2025-10-25",
+    "canal": "telefono",
+    "subtotal": 215000,
+    "descuento_pesos": 0,
+    "total": 215000,
+    "id_bundle": null
+  },
+  {
+    "_id": 423,
+    "id_cliente": 7,
+    "fecha_venta": "2025-07-13",
+    "canal": "tienda",
+    "subtotal": 275000,
+    "descuento_pesos": 0,
+    "total": 275000,
+    "id_bundle": null
+  },
+  {
+    "_id": 424,
+    "id_cliente": 46,
+    "fecha_venta": "2026-03-30",
+    "canal": "tienda",
+    "subtotal": 415000,
+    "descuento_pesos": 66400,
+    "total": 348600,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 425,
+    "id_cliente": 100,
+    "fecha_venta": "2025-09-19",
+    "canal": "web",
+    "subtotal": 275000,
+    "descuento_pesos": 0,
+    "total": 275000,
+    "id_bundle": null
+  },
+  {
+    "_id": 426,
+    "id_cliente": 173,
+    "fecha_venta": "2025-07-29",
+    "canal": "telefono",
+    "subtotal": 730000,
+    "descuento_pesos": 89060,
+    "total": 640940,
+    "id_bundle": "KIT-008"
+  },
+  {
+    "_id": 427,
+    "id_cliente": 194,
+    "fecha_venta": "2025-12-20",
+    "canal": "tienda",
+    "subtotal": 233000,
+    "descuento_pesos": 0,
+    "total": 233000,
+    "id_bundle": null
+  },
+  {
+    "_id": 428,
+    "id_cliente": 75,
+    "fecha_venta": "2026-02-14",
+    "canal": "tienda",
+    "subtotal": 675000,
+    "descuento_pesos": 95850,
+    "total": 579150,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 429,
+    "id_cliente": 98,
+    "fecha_venta": "2026-05-04",
+    "canal": "web",
+    "subtotal": 415000,
+    "descuento_pesos": 66400,
+    "total": 348600,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 430,
+    "id_cliente": 35,
+    "fecha_venta": "2025-12-12",
+    "canal": "web",
+    "subtotal": 295000,
+    "descuento_pesos": 47200,
+    "total": 247800,
+    "id_bundle": "KIT-004"
+  },
+  {
+    "_id": 431,
+    "id_cliente": 174,
+    "fecha_venta": "2026-02-19",
+    "canal": "web",
+    "subtotal": 150000,
+    "descuento_pesos": 0,
+    "total": 150000,
+    "id_bundle": null
+  },
+  {
+    "_id": 432,
+    "id_cliente": 32,
+    "fecha_venta": "2025-05-12",
+    "canal": "telefono",
+    "subtotal": 580000,
+    "descuento_pesos": 82360,
+    "total": 497640,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 433,
+    "id_cliente": 79,
+    "fecha_venta": "2025-07-04",
+    "canal": "tienda",
+    "subtotal": 1010000,
+    "descuento_pesos": 143420,
+    "total": 866580,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 434,
+    "id_cliente": 42,
+    "fecha_venta": "2025-06-15",
+    "canal": "tienda",
+    "subtotal": 705000,
+    "descuento_pesos": 95175,
+    "total": 609825,
+    "id_bundle": "KIT-009"
+  },
+  {
+    "_id": 435,
+    "id_cliente": 172,
+    "fecha_venta": "2026-04-26",
+    "canal": "telefono",
+    "subtotal": 415000,
+    "descuento_pesos": 66400,
+    "total": 348600,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 436,
+    "id_cliente": 75,
+    "fecha_venta": "2025-07-23",
+    "canal": "telefono",
+    "subtotal": 825000,
+    "descuento_pesos": 117150,
+    "total": 707850,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 437,
+    "id_cliente": 85,
+    "fecha_venta": "2026-02-11",
+    "canal": "tienda",
+    "subtotal": 150000,
+    "descuento_pesos": 0,
+    "total": 150000,
+    "id_bundle": null
+  },
+  {
+    "_id": 438,
+    "id_cliente": 50,
+    "fecha_venta": "2025-05-26",
+    "canal": "telefono",
+    "subtotal": 105000,
+    "descuento_pesos": 0,
+    "total": 105000,
+    "id_bundle": null
+  },
+  {
+    "_id": 439,
+    "id_cliente": 145,
+    "fecha_venta": "2025-11-13",
+    "canal": "web",
+    "subtotal": 255000,
+    "descuento_pesos": 0,
+    "total": 255000,
+    "id_bundle": null
+  },
+  {
+    "_id": 440,
+    "id_cliente": 81,
+    "fecha_venta": "2026-03-02",
+    "canal": "telefono",
+    "subtotal": 1010000,
+    "descuento_pesos": 143420,
+    "total": 866580,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 441,
+    "id_cliente": 93,
+    "fecha_venta": "2026-02-14",
+    "canal": "web",
+    "subtotal": 405000,
+    "descuento_pesos": 45360,
+    "total": 359640,
+    "id_bundle": "KIT-002"
+  },
+  {
+    "_id": 442,
+    "id_cliente": 92,
+    "fecha_venta": "2025-07-22",
+    "canal": "tienda",
+    "subtotal": 415000,
+    "descuento_pesos": 66400,
+    "total": 348600,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 443,
+    "id_cliente": 72,
+    "fecha_venta": "2025-12-14",
+    "canal": "tienda",
+    "subtotal": 335000,
+    "descuento_pesos": 0,
+    "total": 335000,
+    "id_bundle": null
+  },
+  {
+    "_id": 444,
+    "id_cliente": 187,
+    "fecha_venta": "2025-07-12",
+    "canal": "telefono",
+    "subtotal": 730000,
+    "descuento_pesos": 89060,
+    "total": 640940,
+    "id_bundle": "KIT-008"
+  },
+  {
+    "_id": 445,
+    "id_cliente": 197,
+    "fecha_venta": "2025-05-29",
+    "canal": "web",
+    "subtotal": 345000,
+    "descuento_pesos": 38640,
+    "total": 306360,
+    "id_bundle": "KIT-002"
+  },
+  {
+    "_id": 446,
+    "id_cliente": 168,
+    "fecha_venta": "2025-10-12",
+    "canal": "telefono",
+    "subtotal": 665000,
+    "descuento_pesos": 106400,
+    "total": 558600,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 447,
+    "id_cliente": 119,
+    "fecha_venta": "2025-11-10",
+    "canal": "web",
+    "subtotal": 215000,
+    "descuento_pesos": 0,
+    "total": 215000,
+    "id_bundle": null
+  },
+  {
+    "_id": 448,
+    "id_cliente": 170,
+    "fecha_venta": "2025-05-28",
+    "canal": "telefono",
+    "subtotal": 270000,
+    "descuento_pesos": 43200,
+    "total": 226800,
+    "id_bundle": "KIT-004"
+  },
+  {
+    "_id": 449,
+    "id_cliente": 115,
+    "fecha_venta": "2025-11-07",
+    "canal": "tienda",
+    "subtotal": 540000,
+    "descuento_pesos": 86400,
+    "total": 453600,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 450,
+    "id_cliente": 11,
+    "fecha_venta": "2025-08-23",
+    "canal": "tienda",
+    "subtotal": 270000,
+    "descuento_pesos": 43200,
+    "total": 226800,
+    "id_bundle": "KIT-004"
+  },
+  {
+    "_id": 451,
+    "id_cliente": 60,
+    "fecha_venta": "2026-04-22",
+    "canal": "web",
+    "subtotal": 235000,
+    "descuento_pesos": 37600,
+    "total": 197400,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 452,
+    "id_cliente": 117,
+    "fecha_venta": "2025-09-12",
+    "canal": "tienda",
+    "subtotal": 220000,
+    "descuento_pesos": 0,
+    "total": 220000,
+    "id_bundle": null
+  },
+  {
+    "_id": 453,
+    "id_cliente": 190,
+    "fecha_venta": "2026-04-14",
+    "canal": "tienda",
+    "subtotal": 405000,
+    "descuento_pesos": 45360,
+    "total": 359640,
+    "id_bundle": "KIT-002"
+  },
+  {
+    "_id": 454,
+    "id_cliente": 94,
+    "fecha_venta": "2025-06-29",
+    "canal": "telefono",
+    "subtotal": 255000,
+    "descuento_pesos": 0,
+    "total": 255000,
+    "id_bundle": null
+  },
+  {
+    "_id": 455,
+    "id_cliente": 58,
+    "fecha_venta": "2025-11-05",
+    "canal": "web",
+    "subtotal": 215000,
+    "descuento_pesos": 0,
+    "total": 215000,
+    "id_bundle": null
+  },
+  {
+    "_id": 456,
+    "id_cliente": 129,
+    "fecha_venta": "2026-02-18",
+    "canal": "tienda",
+    "subtotal": 350000,
+    "descuento_pesos": 39200,
+    "total": 310800,
+    "id_bundle": "KIT-002"
+  },
+  {
+    "_id": 457,
+    "id_cliente": 55,
+    "fecha_venta": "2025-12-02",
+    "canal": "telefono",
+    "subtotal": 520000,
+    "descuento_pesos": 83200,
+    "total": 436800,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 458,
+    "id_cliente": 107,
+    "fecha_venta": "2026-03-21",
+    "canal": "web",
+    "subtotal": 825000,
+    "descuento_pesos": 117150,
+    "total": 707850,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 459,
+    "id_cliente": 54,
+    "fecha_venta": "2025-07-26",
+    "canal": "tienda",
+    "subtotal": 265000,
+    "descuento_pesos": 0,
+    "total": 265000,
+    "id_bundle": null
+  },
+  {
+    "_id": 460,
+    "id_cliente": 33,
+    "fecha_venta": "2025-09-06",
+    "canal": "telefono",
+    "subtotal": 255000,
+    "descuento_pesos": 0,
+    "total": 255000,
+    "id_bundle": null
+  },
+  {
+    "_id": 461,
+    "id_cliente": 147,
+    "fecha_venta": "2025-07-30",
+    "canal": "telefono",
+    "subtotal": 530000,
+    "descuento_pesos": 84800,
+    "total": 445200,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 462,
+    "id_cliente": 185,
+    "fecha_venta": "2025-08-06",
+    "canal": "tienda",
+    "subtotal": 385000,
+    "descuento_pesos": 46200,
+    "total": 338800,
+    "id_bundle": "KIT-012"
+  },
+  {
+    "_id": 463,
+    "id_cliente": 156,
+    "fecha_venta": "2025-12-05",
+    "canal": "tienda",
+    "subtotal": 175000,
+    "descuento_pesos": 0,
+    "total": 175000,
+    "id_bundle": null
+  },
+  {
+    "_id": 464,
+    "id_cliente": 150,
+    "fecha_venta": "2025-05-20",
+    "canal": "telefono",
+    "subtotal": 320000,
+    "descuento_pesos": 0,
+    "total": 320000,
+    "id_bundle": null
+  },
+  {
+    "_id": 465,
+    "id_cliente": 43,
+    "fecha_venta": "2025-08-07",
+    "canal": "telefono",
+    "subtotal": 233000,
+    "descuento_pesos": 0,
+    "total": 233000,
+    "id_bundle": null
+  },
+  {
+    "_id": 466,
+    "id_cliente": 59,
+    "fecha_venta": "2025-10-25",
+    "canal": "tienda",
+    "subtotal": 105000,
+    "descuento_pesos": 8400,
+    "total": 96600,
+    "id_bundle": "KIT-006"
+  },
+  {
+    "_id": 467,
+    "id_cliente": 39,
+    "fecha_venta": "2025-12-04",
+    "canal": "telefono",
+    "subtotal": 520000,
+    "descuento_pesos": 52000,
+    "total": 468000,
+    "id_bundle": "KIT-011"
+  },
+  {
+    "_id": 468,
+    "id_cliente": 24,
+    "fecha_venta": "2026-04-15",
+    "canal": "telefono",
+    "subtotal": 175000,
+    "descuento_pesos": 0,
+    "total": 175000,
+    "id_bundle": null
+  },
+  {
+    "_id": 469,
+    "id_cliente": 134,
+    "fecha_venta": "2025-09-12",
+    "canal": "telefono",
+    "subtotal": 335000,
+    "descuento_pesos": 0,
+    "total": 335000,
+    "id_bundle": null
+  },
+  {
+    "_id": 470,
+    "id_cliente": 59,
+    "fecha_venta": "2025-09-21",
+    "canal": "web",
+    "subtotal": 415000,
+    "descuento_pesos": 66400,
+    "total": 348600,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 471,
+    "id_cliente": 109,
+    "fecha_venta": "2025-07-28",
+    "canal": "tienda",
+    "subtotal": 550000,
+    "descuento_pesos": 88000,
+    "total": 462000,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 472,
+    "id_cliente": 66,
+    "fecha_venta": "2026-05-02",
+    "canal": "telefono",
+    "subtotal": 450000,
+    "descuento_pesos": 72000,
+    "total": 378000,
+    "id_bundle": "KIT-004"
+  },
+  {
+    "_id": 473,
+    "id_cliente": 134,
+    "fecha_venta": "2025-07-02",
+    "canal": "telefono",
+    "subtotal": 235000,
+    "descuento_pesos": 37600,
+    "total": 197400,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 474,
+    "id_cliente": 93,
+    "fecha_venta": "2025-11-19",
+    "canal": "web",
+    "subtotal": 270000,
+    "descuento_pesos": 43200,
+    "total": 226800,
+    "id_bundle": "KIT-004"
+  },
+  {
+    "_id": 475,
+    "id_cliente": 145,
+    "fecha_venta": "2025-05-27",
+    "canal": "web",
+    "subtotal": 105000,
+    "descuento_pesos": 0,
+    "total": 105000,
+    "id_bundle": null
+  },
+  {
+    "_id": 476,
+    "id_cliente": 142,
+    "fecha_venta": "2026-01-03",
+    "canal": "web",
+    "subtotal": 825000,
+    "descuento_pesos": 117150,
+    "total": 707850,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 477,
+    "id_cliente": 65,
+    "fecha_venta": "2025-08-29",
+    "canal": "web",
+    "subtotal": 225000,
+    "descuento_pesos": 0,
+    "total": 225000,
+    "id_bundle": null
+  },
+  {
+    "_id": 478,
+    "id_cliente": 192,
+    "fecha_venta": "2025-08-18",
+    "canal": "tienda",
+    "subtotal": 270000,
+    "descuento_pesos": 43200,
+    "total": 226800,
+    "id_bundle": "KIT-004"
+  },
+  {
+    "_id": 479,
+    "id_cliente": 131,
+    "fecha_venta": "2025-12-29",
+    "canal": "telefono",
+    "subtotal": 415000,
+    "descuento_pesos": 66400,
+    "total": 348600,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 480,
+    "id_cliente": 100,
+    "fecha_venta": "2025-11-03",
+    "canal": "web",
+    "subtotal": 825000,
+    "descuento_pesos": 117150,
+    "total": 707850,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 481,
+    "id_cliente": 23,
+    "fecha_venta": "2025-10-11",
+    "canal": "telefono",
+    "subtotal": 355000,
+    "descuento_pesos": 39760,
+    "total": 315240,
+    "id_bundle": "KIT-002"
+  },
+  {
+    "_id": 482,
+    "id_cliente": 103,
+    "fecha_venta": "2025-09-01",
+    "canal": "telefono",
+    "subtotal": 465000,
+    "descuento_pesos": 46500,
+    "total": 418500,
+    "id_bundle": "KIT-011"
+  },
+  {
+    "_id": 483,
+    "id_cliente": 199,
+    "fecha_venta": "2025-08-30",
+    "canal": "tienda",
+    "subtotal": 320000,
+    "descuento_pesos": 0,
+    "total": 320000,
+    "id_bundle": null
+  },
+  {
+    "_id": 484,
+    "id_cliente": 50,
+    "fecha_venta": "2025-05-20",
+    "canal": "telefono",
+    "subtotal": 545000,
+    "descuento_pesos": 77390,
+    "total": 467610,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 485,
+    "id_cliente": 173,
+    "fecha_venta": "2026-04-10",
+    "canal": "tienda",
+    "subtotal": 545000,
+    "descuento_pesos": 77390,
+    "total": 467610,
+    "id_bundle": "KIT-007"
+  },
+  {
+    "_id": 486,
+    "id_cliente": 71,
+    "fecha_venta": "2025-08-14",
+    "canal": "web",
+    "subtotal": 415000,
+    "descuento_pesos": 66400,
+    "total": 348600,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 487,
+    "id_cliente": 133,
+    "fecha_venta": "2025-11-28",
+    "canal": "tienda",
+    "subtotal": 235000,
+    "descuento_pesos": 37600,
+    "total": 197400,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 488,
+    "id_cliente": 186,
+    "fecha_venta": "2025-10-23",
+    "canal": "web",
+    "subtotal": 335000,
+    "descuento_pesos": 0,
+    "total": 335000,
+    "id_bundle": null
+  },
+  {
+    "_id": 489,
+    "id_cliente": 58,
+    "fecha_venta": "2025-09-27",
+    "canal": "web",
+    "subtotal": 225000,
+    "descuento_pesos": 0,
+    "total": 225000,
+    "id_bundle": null
+  },
+  {
+    "_id": 490,
+    "id_cliente": 67,
+    "fecha_venta": "2025-06-12",
+    "canal": "telefono",
+    "subtotal": 485000,
+    "descuento_pesos": 77600,
+    "total": 407400,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 491,
+    "id_cliente": 88,
+    "fecha_venta": "2025-09-27",
+    "canal": "telefono",
+    "subtotal": 730000,
+    "descuento_pesos": 89060,
+    "total": 640940,
+    "id_bundle": "KIT-008"
+  },
+  {
+    "_id": 492,
+    "id_cliente": 178,
+    "fecha_venta": "2025-11-03",
+    "canal": "web",
+    "subtotal": 175000,
+    "descuento_pesos": 0,
+    "total": 175000,
+    "id_bundle": null
+  },
+  {
+    "_id": 493,
+    "id_cliente": 199,
+    "fecha_venta": "2026-04-01",
+    "canal": "tienda",
+    "subtotal": 275000,
+    "descuento_pesos": 0,
+    "total": 275000,
+    "id_bundle": null
+  },
+  {
+    "_id": 494,
+    "id_cliente": 67,
+    "fecha_venta": "2026-01-23",
+    "canal": "telefono",
+    "subtotal": 320000,
+    "descuento_pesos": 35840,
+    "total": 284160,
+    "id_bundle": "KIT-002"
+  },
+  {
+    "_id": 495,
+    "id_cliente": 106,
+    "fecha_venta": "2025-11-28",
+    "canal": "telefono",
+    "subtotal": 80000,
+    "descuento_pesos": 0,
+    "total": 80000,
+    "id_bundle": null
+  },
+  {
+    "_id": 496,
+    "id_cliente": 74,
+    "fecha_venta": "2026-04-20",
+    "canal": "tienda",
+    "subtotal": 320000,
+    "descuento_pesos": 35840,
+    "total": 284160,
+    "id_bundle": "KIT-002"
+  },
+  {
+    "_id": 497,
+    "id_cliente": 122,
+    "fecha_venta": "2026-02-06",
+    "canal": "web",
+    "subtotal": 555000,
+    "descuento_pesos": 88800,
+    "total": 466200,
+    "id_bundle": "KIT-001"
+  },
+  {
+    "_id": 498,
+    "id_cliente": 128,
+    "fecha_venta": "2025-10-24",
+    "canal": "web",
+    "subtotal": 233000,
+    "descuento_pesos": 0,
+    "total": 233000,
+    "id_bundle": null
+  },
+  {
+    "_id": 499,
+    "id_cliente": 52,
+    "fecha_venta": "2025-05-22",
+    "canal": "tienda",
+    "subtotal": 355000,
+    "descuento_pesos": 0,
+    "total": 355000,
+    "id_bundle": null
+  },
+  {
+    "_id": 500,
+    "id_cliente": 21,
+    "fecha_venta": "2025-07-06",
+    "canal": "telefono",
+    "subtotal": 225000,
+    "descuento_pesos": 0,
+    "total": 225000,
+    "id_bundle": null
+  }
+]

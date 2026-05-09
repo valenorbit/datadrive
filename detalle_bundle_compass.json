@@ -1,0 +1,152 @@
+[
+  {
+    "_id": 1,
+    "id_bundle": "KIT-001",
+    "codigo_producto": "C_SEN"
+  },
+  {
+    "_id": 2,
+    "id_bundle": "KIT-001",
+    "codigo_producto": "C_CAM"
+  },
+  {
+    "_id": 3,
+    "id_bundle": "KIT-002",
+    "codigo_producto": "C_FOR"
+  },
+  {
+    "_id": 4,
+    "id_bundle": "KIT-002",
+    "codigo_producto": "C_TAP"
+  },
+  {
+    "_id": 5,
+    "id_bundle": "KIT-003",
+    "codigo_producto": "C_TAP"
+  },
+  {
+    "_id": 6,
+    "id_bundle": "KIT-003",
+    "codigo_producto": "C_SEN"
+  },
+  {
+    "_id": 7,
+    "id_bundle": "KIT-003",
+    "codigo_producto": "C_FOR"
+  },
+  {
+    "_id": 8,
+    "id_bundle": "KIT-004",
+    "codigo_producto": "C_CUS"
+  },
+  {
+    "_id": 9,
+    "id_bundle": "KIT-004",
+    "codigo_producto": "C_FOR"
+  },
+  {
+    "_id": 10,
+    "id_bundle": "KIT-005",
+    "codigo_producto": "C_SEN"
+  },
+  {
+    "_id": 11,
+    "id_bundle": "KIT-005",
+    "codigo_producto": "C_CAM"
+  },
+  {
+    "_id": 12,
+    "id_bundle": "KIT-005",
+    "codigo_producto": "C_ALA"
+  },
+  {
+    "_id": 13,
+    "id_bundle": "KIT-006",
+    "codigo_producto": "C_NEU"
+  },
+  {
+    "_id": 14,
+    "id_bundle": "KIT-006",
+    "codigo_producto": "C_EXT"
+  },
+  {
+    "_id": 15,
+    "id_bundle": "KIT-007",
+    "codigo_producto": "M_CAS"
+  },
+  {
+    "_id": 16,
+    "id_bundle": "KIT-007",
+    "codigo_producto": "M_GUA"
+  },
+  {
+    "_id": 17,
+    "id_bundle": "KIT-008",
+    "codigo_producto": "M_CAS"
+  },
+  {
+    "_id": 18,
+    "id_bundle": "KIT-008",
+    "codigo_producto": "M_INT"
+  },
+  {
+    "_id": 19,
+    "id_bundle": "KIT-009",
+    "codigo_producto": "M_BAU"
+  },
+  {
+    "_id": 20,
+    "id_bundle": "KIT-009",
+    "codigo_producto": "M_CAR"
+  },
+  {
+    "_id": 21,
+    "id_bundle": "KIT-009",
+    "codigo_producto": "M_GPS"
+  },
+  {
+    "_id": 22,
+    "id_bundle": "KIT-010",
+    "codigo_producto": "M_CAS"
+  },
+  {
+    "_id": 23,
+    "id_bundle": "KIT-010",
+    "codigo_producto": "M_GUA"
+  },
+  {
+    "_id": 24,
+    "id_bundle": "KIT-010",
+    "codigo_producto": "M_ROD"
+  },
+  {
+    "_id": 25,
+    "id_bundle": "KIT-010",
+    "codigo_producto": "M_BOT"
+  },
+  {
+    "_id": 26,
+    "id_bundle": "KIT-011",
+    "codigo_producto": "M_ROD"
+  },
+  {
+    "_id": 27,
+    "id_bundle": "KIT-011",
+    "codigo_producto": "M_BOT"
+  },
+  {
+    "_id": 28,
+    "id_bundle": "KIT-012",
+    "codigo_producto": "M_INT"
+  },
+  {
+    "_id": 29,
+    "id_bundle": "KIT-012",
+    "codigo_producto": "M_GPS"
+  },
+  {
+    "_id": 30,
+    "id_bundle": "KIT-012",
+    "codigo_producto": "M_CAR"
+  }
+]
