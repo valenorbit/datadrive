@@ -5,7 +5,6 @@
 
 -- ─────────────────────────────────────────────────────────────────
 -- PASO 0: Eliminar todo usando un cursor dinámico
--- (elimina FK automáticamente sin importar el nombre que SQL Server les asignó)
 -- ─────────────────────────────────────────────────────────────────
 DECLARE @sql NVARCHAR(MAX) = '';
 
@@ -2846,13 +2845,8 @@ GO
 
 
 
--- ═══════════════════════════════════════════════════════════════
--- ═══════════════════════════════════════════════════════════════════
--- PROYECTO: DataDrive — Consultas Analíticas
--- Ejecutar DESPUÉS de DataDrive_1_ESTRUCTURA_Y_DATOS.sql
--- ═══════════════════════════════════════════════════════════════════
 
--- MÓDULO ANALÍTICO — MEJORAS SOLICITADAS POR EL PROFESOR
+--  MEJORAS SOLICITADAS 
 -- Incluye: métricas inteligentes, consultas analíticas,
 -- modelos de recomendación basados en lift/confianza,
 -- análisis automatizado y lógica de decisión basada en datos
