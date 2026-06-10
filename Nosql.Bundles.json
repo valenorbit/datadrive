@@ -1,0 +1,318 @@
+[{
+  "_id": {
+    "$oid": "6a238d6a292a843168ee12de"
+  },
+  "id_bundle": "KIT-001",
+  "nombre": "Kit Interior Premium",
+  "tipo_vehiculo": "carro",
+  "descuento_pct": 15,
+  "lift": 2.1,
+  "confianza": 0.8,
+  "activo": true,
+  "componentes": [
+    {
+      "codigo": "C_SEN",
+      "nombre": "Sensores de reversa 4pts",
+      "precio_venta": 85000
+    },
+    {
+      "codigo": "C_CAM",
+      "nombre": "Camara de reversa HD",
+      "precio_venta": 150000
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a238d6a292a843168ee12df"
+  },
+  "id_bundle": "KIT-002",
+  "nombre": "Kit Seguridad Vial Car",
+  "tipo_vehiculo": "carro",
+  "descuento_pct": 18,
+  "lift": 2.3,
+  "confianza": 0.75,
+  "activo": true,
+  "componentes": [
+    {
+      "codigo": "C_FOR",
+      "nombre": "Forros de asientos cuero eco",
+      "precio_venta": 200000
+    },
+    {
+      "codigo": "C_TAP",
+      "nombre": "Tapetes premium silicona",
+      "precio_venta": 120000
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a238d6a292a843168ee12e0"
+  },
+  "id_bundle": "KIT-003",
+  "nombre": "Kit Visual Auto",
+  "tipo_vehiculo": "carro",
+  "descuento_pct": 20,
+  "lift": 1.9,
+  "confianza": 0.7,
+  "activo": true,
+  "componentes": [
+    {
+      "codigo": "C_TAP",
+      "nombre": "Tapetes premium silicona",
+      "precio_venta": 120000
+    },
+    {
+      "codigo": "C_SEN",
+      "nombre": "Sensores de reversa 4pts",
+      "precio_venta": 85000
+    },
+    {
+      "codigo": "C_FOR",
+      "nombre": "Forros de asientos cuero eco",
+      "precio_venta": 200000
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a238d6a292a843168ee12e1"
+  },
+  "id_bundle": "KIT-004",
+  "nombre": "Kit Emergencias Auto",
+  "tipo_vehiculo": "carro",
+  "descuento_pct": 12,
+  "lift": 1.8,
+  "confianza": 0.72,
+  "activo": true,
+  "componentes": [
+    {
+      "codigo": "C_CUS",
+      "nombre": "Cojines lumbar ergonomicos",
+      "precio_venta": 70000
+    },
+    {
+      "codigo": "C_FOR",
+      "nombre": "Forros de asientos cuero eco",
+      "precio_venta": 200000
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a238d6a292a843168ee12e2"
+  },
+  "id_bundle": "KIT-005",
+  "nombre": "Kit Confort Premium Car",
+  "tipo_vehiculo": "carro",
+  "descuento_pct": 16,
+  "lift": 2,
+  "confianza": 0.78,
+  "activo": true,
+  "componentes": [
+    {
+      "codigo": "C_SEN",
+      "nombre": "Sensores de reversa 4pts",
+      "precio_venta": 85000
+    },
+    {
+      "codigo": "C_CAM",
+      "nombre": "Camara de reversa HD",
+      "precio_venta": 150000
+    },
+    {
+      "codigo": "C_ALA",
+      "nombre": "Sistema de alarma con GPS",
+      "precio_venta": 250000
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a238d6a292a843168ee12e3"
+  },
+  "id_bundle": "KIT-006",
+  "nombre": "Kit Electronica Car",
+  "tipo_vehiculo": "carro",
+  "descuento_pct": 14,
+  "lift": 1.7,
+  "confianza": 0.68,
+  "activo": true,
+  "componentes": [
+    {
+      "codigo": "C_NEU",
+      "nombre": "Inflador portatil 12V",
+      "precio_venta": 65000
+    },
+    {
+      "codigo": "C_EXT",
+      "nombre": "Extintor cabina 1kg",
+      "precio_venta": 40000
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a238d6a292a843168ee12e4"
+  },
+  "id_bundle": "KIT-007",
+  "nombre": "Kit Tech Car",
+  "tipo_vehiculo": "carro",
+  "descuento_pct": 13,
+  "lift": 1.6,
+  "confianza": 0.65,
+  "activo": true,
+  "componentes": [
+    {
+      "codigo": "M_CAS",
+      "nombre": "Casco modular premium",
+      "precio_venta": 450000
+    },
+    {
+      "codigo": "M_GUA",
+      "nombre": "Guantes cuero touring",
+      "precio_venta": 95000
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a238d6a292a843168ee12e5"
+  },
+  "id_bundle": "KIT-008",
+  "nombre": "Kit Emergencias Pro Car",
+  "tipo_vehiculo": "carro",
+  "descuento_pct": 11,
+  "lift": 1.5,
+  "confianza": 0.62,
+  "activo": true,
+  "componentes": [
+    {
+      "codigo": "M_CAS",
+      "nombre": "Casco modular premium",
+      "precio_venta": 450000
+    },
+    {
+      "codigo": "M_INT",
+      "nombre": "Intercomunicador Bluetooth",
+      "precio_venta": 280000
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a238d6a292a843168ee12e6"
+  },
+  "id_bundle": "KIT-009",
+  "nombre": "Kit Seguridad Moto Plus",
+  "tipo_vehiculo": "moto",
+  "descuento_pct": 20,
+  "lift": 2.4,
+  "confianza": 0.82,
+  "activo": true,
+  "componentes": [
+    {
+      "codigo": "M_BAU",
+      "nombre": "Baul trasero rigido 45L",
+      "precio_venta": 220000
+    },
+    {
+      "codigo": "M_CAR",
+      "nombre": "Cargador USB moto imperm.",
+      "precio_venta": 45000
+    },
+    {
+      "codigo": "M_GPS",
+      "nombre": "Soporte GPS celular moto",
+      "precio_venta": 60000
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a238d6a292a843168ee12e7"
+  },
+  "id_bundle": "KIT-010",
+  "nombre": "Kit Transmision Moto",
+  "tipo_vehiculo": "moto",
+  "descuento_pct": 15,
+  "lift": 2.2,
+  "confianza": 0.78,
+  "activo": true,
+  "componentes": [
+    {
+      "codigo": "M_CAS",
+      "nombre": "Casco modular premium",
+      "precio_venta": 450000
+    },
+    {
+      "codigo": "M_GUA",
+      "nombre": "Guantes cuero touring",
+      "precio_venta": 95000
+    },
+    {
+      "codigo": "M_ROD",
+      "nombre": "Rodilleras articuladas",
+      "precio_venta": 85000
+    },
+    {
+      "codigo": "M_BOT",
+      "nombre": "Botas moto touring impermeables",
+      "precio_venta": 380000
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a238d6a292a843168ee12e8"
+  },
+  "id_bundle": "KIT-011",
+  "nombre": "Kit Custom Moto",
+  "tipo_vehiculo": "moto",
+  "descuento_pct": 18,
+  "lift": 1.9,
+  "confianza": 0.74,
+  "activo": true,
+  "componentes": [
+    {
+      "codigo": "M_ROD",
+      "nombre": "Rodilleras articuladas",
+      "precio_venta": 85000
+    },
+    {
+      "codigo": "M_BOT",
+      "nombre": "Botas moto touring impermeables",
+      "precio_venta": 380000
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a238d6a292a843168ee12e9"
+  },
+  "id_bundle": "KIT-012",
+  "nombre": "Kit Touring Moto",
+  "tipo_vehiculo": "moto",
+  "descuento_pct": 22,
+  "lift": 2.1,
+  "confianza": 0.75,
+  "activo": true,
+  "componentes": [
+    {
+      "codigo": "M_INT",
+      "nombre": "Intercomunicador Bluetooth",
+      "precio_venta": 280000
+    },
+    {
+      "codigo": "M_GPS",
+      "nombre": "Soporte GPS celular moto",
+      "precio_venta": 60000
+    },
+    {
+      "codigo": "M_CAR",
+      "nombre": "Cargador USB moto imperm.",
+      "precio_venta": 45000
+    }
+  ]
+}]
