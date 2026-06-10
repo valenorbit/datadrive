@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kits Accesorios Automotrices — Dashboard</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy:   #0D1B3E;
+    --blue:   #1A56A0;
+    --sky:    #3B82C4;
+    --teal:   #0D9488;
+    --gold:   #F59E0B;
+    --gold-l: #FEF3C7;
+    --green:  #059669;
+    --green-l:#D1FAE5;
+    --red:    #DC2626;
+    --red-l:  #FEE2E2;
+    --gray:   #64748B;
+    --lgray:  #E2E8F0;
+    --bg:     #F0F4FA;
+    --white:  #FFFFFF;
+    --text:   #1E293B;
+    --muted:  #64748B;
+    --card-shadow: 0 1px 3px rgba(13,27,62,.08), 0 4px 16px rgba(13,27,62,.06);
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    font-size: 14px;
+  }
+
+  /* ── TOP BAR ── */
+  .topbar {
+    background: var(--navy);
+    padding: 0 28px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 2px solid var(--gold);
+  }
+  .topbar-left { display: flex; align-items: center; gap: 14px; }
+  .topbar-brand { font-family: 'DM Serif Display', serif; font-size: 17px; color: #fff; letter-spacing: .02em; }
+  .topbar-brand span { color: var(--gold); }
+  .topbar-badge { background: var(--gold); color: var(--navy); font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 20px; letter-spacing: .06em; }
+  .topbar-right { display: flex; align-items: center; gap: 20px; }
+  .topbar-meta { font-size: 11px; color: #94A3B8; }
+  .pulse-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--green); box-shadow: 0 0 0 2px rgba(5,150,105,.3); animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{box-shadow:0 0 0 2px rgba(5,150,105,.3)} 50%{box-shadow:0 0 0 5px rgba(5,150,105,.1)} }
+
+  /* ── NAV TABS ── */
+  .nav-tabs {
+    background: var(--white);
+    border-bottom: 1px solid var(--lgray);
+    padding: 0 28px;
+    display: flex;
+    gap: 0;
+  }
+  .nav-tab {
+    padding: 12px 20px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--muted);
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all .2s;
+    user-select: none;
+  }
+  .nav-tab:hover { color: var(--blue); }
+  .nav-tab.active { color: var(--navy); border-bottom-color: var(--gold); }
+
+  /* ── LAYOUT ── */
+  .main { padding: 24px 28px; max-width: 1400px; margin: 0 auto; }
+  .page { display: none; }
+  .page.active { display: block; }
+
+  .section-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 22px;
+    color: var(--navy);
+    margin-bottom: 4px;
+  }
+  .section-sub { font-size: 12px; color: var(--muted); margin-bottom: 20px; }
+
+  /* ── KPI CARDS ── */
+  .kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 24px; }
+  .kpi-card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 18px 20px;
+    box-shadow: var(--card-shadow);
+    border-top: 3px solid transparent;
+    position: relative;
+    overflow: hidden;
+  }
+  .kpi-card::after {
+    content: '';
+    position: absolute;
+    right: -16px; top: -16px;
+    width: 64px; height: 64px;
+    border-radius: 50%;
+    opacity: .07;
+  }
+  .kpi-card.blue  { border-top-color: var(--blue);  } .kpi-card.blue::after  { background: var(--blue); }
+  .kpi-card.teal  { border-top-color: var(--teal);  } .kpi-card.teal::after  { background: var(--teal); }
+  .kpi-card.gold  { border-top-color: var(--gold);  } .kpi-card.gold::after  { background: var(--gold); }
+  .kpi-card.green { border-top-color: var(--green); } .kpi-card.green::after { background: var(--green); }
+  .kpi-label { font-size: 11px; color: var(--muted); font-weight: 500; text-transform: uppercase; letter-spacing: .06em; margin-bottom: 6px; }
+  .kpi-value { font-family: 'DM Serif Display', serif; font-size: 34px; color: var(--navy); line-height: 1; margin-bottom: 6px; }
+  .kpi-delta { font-size: 11px; display: flex; align-items: center; gap: 4px; }
+  .kpi-delta.up { color: var(--green); }
+  .kpi-delta.warn { color: var(--gold); }
+  .kpi-progress { height: 4px; background: var(--lgray); border-radius: 2px; margin-top: 10px; }
+  .kpi-bar { height: 100%; border-radius: 2px; }
+  .kpi-card.blue  .kpi-bar { background: var(--blue); }
+  .kpi-card.teal  .kpi-bar { background: var(--teal); }
+  .kpi-card.gold  .kpi-bar { background: var(--gold); }
+  .kpi-card.green .kpi-bar { background: var(--green); }
+
+  /* ── CHART GRID ── */
+  .chart-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+  .chart-grid-3 { display: grid; grid-template-columns: 2fr 1fr; gap: 20px; margin-bottom: 20px; }
+  .card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 20px 22px;
+    box-shadow: var(--card-shadow);
+  }
+  .card-title { font-size: 13px; font-weight: 600; color: var(--navy); margin-bottom: 2px; }
+  .card-sub { font-size: 11px; color: var(--muted); margin-bottom: 16px; }
+  .chart-wrap { position: relative; }
+
+  /* ── TABLE ── */
+  .table-wrap { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+  thead th { background: var(--navy); color: #fff; padding: 9px 12px; text-align: left; font-weight: 500; font-size: 11px; letter-spacing: .04em; }
+  tbody tr { border-bottom: 1px solid var(--lgray); transition: background .15s; }
+  tbody tr:hover { background: #F8FAFC; }
+  tbody td { padding: 9px 12px; color: var(--text); }
+
+  /* ── TAGS ── */
+  .tag { display: inline-flex; align-items: center; gap: 4px; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 20px; letter-spacing: .04em; }
+  .tag-auto  { background: #DBEAFE; color: #1E40AF; }
+  .tag-moto  { background: #CCFBF1; color: #0F766E; }
+  .tag-ok    { background: var(--green-l); color: #065F46; }
+  .tag-warn  { background: var(--gold-l); color: #92400E; }
+  .tag-low   { background: var(--red-l); color: #991B1B; }
+
+  /* ── LIFT BAR ── */
+  .lift-bar-bg { height: 6px; background: var(--lgray); border-radius: 3px; width: 80px; display: inline-block; vertical-align: middle; }
+  .lift-bar-fill { height: 100%; border-radius: 3px; background: var(--blue); }
+
+  /* ── INVENTORY BARS ── */
+  .inv-row { margin-bottom: 12px; }
+  .inv-header { display: flex; justify-content: space-between; margin-bottom: 4px; }
+  .inv-name { font-size: 12px; font-weight: 500; color: var(--text); }
+  .inv-nums { font-size: 11px; color: var(--muted); }
+  .inv-track { height: 8px; background: var(--lgray); border-radius: 4px; position: relative; }
+  .inv-fill  { height: 100%; border-radius: 4px; position: absolute; top: 0; left: 0; }
+  .inv-min   { position: absolute; top: -3px; width: 2px; height: 14px; background: var(--red); border-radius: 1px; }
+
+  /* ── PHASE TIMELINE ── */
+  .phases { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
+  .phase-card { background: var(--white); border-radius: 10px; padding: 14px; box-shadow: var(--card-shadow); border-left: 3px solid var(--lgray); }
+  .phase-card.done   { border-left-color: var(--green); }
+  .phase-card.active { border-left-color: var(--blue); }
+  .phase-card.next   { border-left-color: var(--lgray); opacity: .7; }
+  .phase-num { font-family: 'DM Serif Display', serif; font-size: 28px; color: var(--lgray); line-height: 1; margin-bottom: 4px; }
+  .phase-card.done .phase-num { color: var(--green); }
+  .phase-card.active .phase-num { color: var(--blue); }
+  .phase-title { font-size: 11px; font-weight: 600; color: var(--navy); margin-bottom: 2px; }
+  .phase-weeks { font-size: 10px; color: var(--muted); margin-bottom: 8px; }
+  .phase-pct { font-size: 18px; font-weight: 700; margin-bottom: 4px; }
+  .phase-card.done   .phase-pct { color: var(--green); }
+  .phase-card.active .phase-pct { color: var(--blue); }
+  .phase-card.next   .phase-pct { color: var(--lgray); }
+  .phase-status { font-size: 10px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; }
+  .phase-card.done   .phase-status { color: var(--green); }
+  .phase-card.active .phase-status { color: var(--blue); }
+  .phase-card.next   .phase-status { color: var(--muted); }
+  .phase-prog { height: 4px; background: var(--lgray); border-radius: 2px; margin-top: 8px; }
+  .phase-prog-fill { height: 100%; border-radius: 2px; }
+  .phase-card.done   .phase-prog-fill { background: var(--green); }
+  .phase-card.active .phase-prog-fill { background: var(--blue); }
+  .phase-card.next   .phase-prog-fill { background: var(--lgray); }
+
+  /* ── CANAL DONUT LEGEND ── */
+  .legend { display: flex; flex-direction: column; gap: 8px; justify-content: center; }
+  .legend-item { display: flex; align-items: center; gap: 8px; font-size: 12px; }
+  .legend-dot { width: 10px; height: 10px; border-radius: 2px; flex-shrink: 0; }
+  .legend-val { font-weight: 600; color: var(--navy); margin-left: auto; }
+
+  /* ── ANIMATE IN ── */
+  .fade-up { opacity: 0; transform: translateY(12px); animation: fadeUp .4s ease forwards; }
+  @keyframes fadeUp { to { opacity:1; transform:translateY(0); } }
+  .fade-up:nth-child(1) { animation-delay: .05s; }
+  .fade-up:nth-child(2) { animation-delay: .10s; }
+  .fade-up:nth-child(3) { animation-delay: .15s; }
+  .fade-up:nth-child(4) { animation-delay: .20s; }
+
+  @media (max-width: 900px) {
+    .kpi-grid { grid-template-columns: repeat(2,1fr); }
+    .chart-grid-2, .chart-grid-3 { grid-template-columns: 1fr; }
+    .phases { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<header class="topbar">
+  <div class="topbar-left">
+    <div class="topbar-brand">Kits <span>Automotrices</span></div>
+    <span class="topbar-badge">LIVE DASHBOARD</span>
+  </div>
+  <div class="topbar-right">
+    <div class="pulse-dot"></div>
+    <span class="topbar-meta">Mayo 2025 – Mayo 2026  ·  Valentina Pérez Mendoza  ·  Ing. Analítica de Datos</span>
+  </div>
+</header>
+
+<!-- NAV -->
+<nav class="nav-tabs">
+  <div class="nav-tab active" onclick="showPage('resumen')">Resumen General</div>
+  <div class="nav-tab" onclick="showPage('ventas')">Ventas & Bundles</div>
+  <div class="nav-tab" onclick="showPage('inventario')">Inventario</div>
+  <div class="nav-tab" onclick="showPage('modelo')">Motor IA</div>
+  <div class="nav-tab" onclick="showPage('fases')">Avance del Proyecto</div>
+</nav>
+
+<main class="main">
+
+<!-- ══════════════════════════════════════════
+     PAGE 1 — RESUMEN GENERAL
+══════════════════════════════════════════ -->
+<div class="page active" id="page-resumen">
+  <p class="section-title">Resumen General</p>
+  <p class="section-sub">Indicadores clave del proyecto — datos reales mayo 2025 a mayo 2026</p>
+
+  <div class="kpi-grid">
+    <div class="kpi-card blue fade-up">
+      <div class="kpi-label">Ventas totales procesadas</div>
+      <div class="kpi-value">500</div>
+      <div class="kpi-delta up">↑ 1.507 líneas de detalle analizadas</div>
+      <div class="kpi-progress"><div class="kpi-bar" style="width:100%"></div></div>
+    </div>
+    <div class="kpi-card teal fade-up">
+      <div class="kpi-label">Reducción inventario muerto</div>
+      <div class="kpi-value">31%</div>
+      <div class="kpi-delta warn">⟳ Meta: 35% — avance 89%</div>
+      <div class="kpi-progress"><div class="kpi-bar" style="width:89%"></div></div>
+    </div>
+    <div class="kpi-card gold fade-up">
+      <div class="kpi-label">Alza ticket promedio con bundles</div>
+      <div class="kpi-value">+24%</div>
+      <div class="kpi-delta warn">⟳ Meta: 28% — avance 86%</div>
+      <div class="kpi-progress"><div class="kpi-bar" style="width:86%"></div></div>
+    </div>
+    <div class="kpi-card green fade-up">
+      <div class="kpi-label">Bundles activos en POS</div>
+      <div class="kpi-value">12</div>
+      <div class="kpi-delta up">✓ 6 carro + 6 moto — 100% activos</div>
+      <div class="kpi-progress"><div class="kpi-bar" style="width:100%"></div></div>
+    </div>
+  </div>
+
+  <div class="chart-grid-2">
+    <div class="card">
+      <div class="card-title">Ventas mensuales — total vs con bundle</div>
+      <div class="card-sub">Transacciones reales mayo 2025 a mayo 2026</div>
+      <div class="chart-wrap" style="height:220px"><canvas id="c-ventas-mes"></canvas></div>
+    </div>
+    <div class="card">
+      <div class="card-title">Canal de venta</div>
+      <div class="card-sub">Distribución de las 500 transacciones</div>
+      <div style="display:flex;gap:16px;align-items:center;height:220px">
+        <div class="chart-wrap" style="width:160px;height:160px;flex-shrink:0"><canvas id="c-canal"></canvas></div>
+        <div class="legend">
+          <div class="legend-item"><div class="legend-dot" style="background:#1A56A0"></div>Tienda física<div class="legend-val">198</div></div>
+          <div class="legend-item"><div class="legend-dot" style="background:#0D9488"></div>Web / online<div class="legend-val">201</div></div>
+          <div class="legend-item"><div class="legend-dot" style="background:#F59E0B"></div>Teléfono<div class="legend-val">101</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Ticket promedio mensual — con bundles vs sin bundles (COP $)</div>
+    <div class="card-sub">El sistema incrementa el valor de compra por transacción</div>
+    <div class="chart-wrap" style="height:180px"><canvas id="c-ticket"></canvas></div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     PAGE 2 — VENTAS & BUNDLES
+══════════════════════════════════════════ -->
+<div class="page" id="page-ventas">
+  <p class="section-title">Ventas & Bundles</p>
+  <p class="section-sub">Rendimiento de los 12 kits generados por el motor FP-Growth</p>
+
+  <div class="chart-grid-2">
+    <div class="card">
+      <div class="card-title">Ventas por bundle (top 12)</div>
+      <div class="card-sub">Número de transacciones que incluyeron cada kit</div>
+      <div class="chart-wrap" style="height:280px"><canvas id="c-bundle-ventas"></canvas></div>
+    </div>
+    <div class="card">
+      <div class="card-title">Lift y confianza por bundle</div>
+      <div class="card-sub">Fuerza de la asociación detectada por FP-Growth</div>
+      <div class="chart-wrap" style="height:280px"><canvas id="c-lift"></canvas></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Catálogo completo de bundles activos</div>
+    <div class="card-sub">12 kits validados con parámetros reales del modelo</div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th><th>Nombre del Kit</th><th>Segmento</th><th>Descuento</th>
+            <th>Lift</th><th>Confianza</th><th>Asociación</th><th>Estado</th>
+          </tr>
+        </thead>
+        <tbody id="bundle-table"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     PAGE 3 — INVENTARIO
+══════════════════════════════════════════ -->
+<div class="page" id="page-inventario">
+  <p class="section-title">Inventario</p>
+  <p class="section-sub">Estado del stock real — 28 productos catalogados</p>
+
+  <div class="kpi-grid">
+    <div class="kpi-card blue fade-up">
+      <div class="kpi-label">Productos en stock normal</div>
+      <div class="kpi-value">19</div>
+      <div class="kpi-delta up">✓ Stock actual ≥ mínimo</div>
+    </div>
+    <div class="kpi-card gold fade-up">
+      <div class="kpi-label">Alertas de bajo stock</div>
+      <div class="kpi-value">4</div>
+      <div class="kpi-delta warn">⚠ Stock actual &lt; mínimo</div>
+    </div>
+    <div class="kpi-card teal fade-up">
+      <div class="kpi-label">Productos para autos</div>
+      <div class="kpi-value">14</div>
+      <div class="kpi-delta up">↑ Categorías: protección, seguridad, confort</div>
+    </div>
+    <div class="kpi-card green fade-up">
+      <div class="kpi-label">Productos para motos</div>
+      <div class="kpi-value">14</div>
+      <div class="kpi-delta up">↑ Categorías: touring, seguridad, tech</div>
+    </div>
+  </div>
+
+  <div class="chart-grid-2">
+    <div class="card">
+      <div class="card-title">Stock actual — productos para carro</div>
+      <div class="card-sub">Línea roja = stock mínimo de alerta</div>
+      <div class="chart-wrap" style="height:240px"><canvas id="c-inv-carro"></canvas></div>
+    </div>
+    <div class="card">
+      <div class="card-title">Stock actual — productos para moto</div>
+      <div class="card-sub">Línea roja = stock mínimo de alerta</div>
+      <div class="chart-wrap" style="height:240px"><canvas id="c-inv-moto"></canvas></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Detalle de alertas — productos bajo stock mínimo</div>
+    <div class="card-sub">Estos productos son candidatos prioritarios a integrar en bundles o reponer</div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Código</th><th>Producto</th><th>Stock actual</th><th>Stock mínimo</th><th>Stock máximo</th><th>Ubicación</th><th>Estado</th></tr></thead>
+        <tbody id="inv-alert-table"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     PAGE 4 — MOTOR IA
+══════════════════════════════════════════ -->
+<div class="page" id="page-modelo">
+  <p class="section-title">Motor de Inteligencia Artificial</p>
+  <p class="section-sub">Arquitectura FP-Growth + Red Neuronal — parámetros y resultados del modelo</p>
+
+  <div class="kpi-grid">
+    <div class="kpi-card blue fade-up">
+      <div class="kpi-label">Soporte mínimo (min_support)</div>
+      <div class="kpi-value">2%</div>
+      <div class="kpi-delta up">1 de cada 50 tickets</div>
+    </div>
+    <div class="kpi-card teal fade-up">
+      <div class="kpi-label">Confianza mínima</div>
+      <div class="kpi-value">40%</div>
+      <div class="kpi-delta up">Probabilidad co-compra</div>
+    </div>
+    <div class="kpi-card gold fade-up">
+      <div class="kpi-label">Lift mínimo de filtrado</div>
+      <div class="kpi-value">1.5×</div>
+      <div class="kpi-delta up">Descarta correlaciones espurias</div>
+    </div>
+    <div class="kpi-card green fade-up">
+      <div class="kpi-label">Lift máximo alcanzado</div>
+      <div class="kpi-value">4.54×</div>
+      <div class="kpi-delta up">Kit Visión Trasera + Kit Cojines</div>
+    </div>
+  </div>
+
+  <div class="chart-grid-2">
+    <div class="card">
+      <div class="card-title">Distribución de lift — todos los bundles</div>
+      <div class="card-sub">Rango 2.1 – 4.54 · todos superan el umbral mínimo de 1.5</div>
+      <div class="chart-wrap" style="height:220px"><canvas id="c-lift-dist"></canvas></div>
+    </div>
+    <div class="card">
+      <div class="card-title">Confianza vs Lift — scatter por bundle</div>
+      <div class="card-sub">Cuadrante superior derecho = bundless más fuertes</div>
+      <div class="chart-wrap" style="height:220px"><canvas id="c-scatter"></canvas></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Red Neuronal — capas y nodos activos</div>
+    <div class="card-sub">Arquitectura de 3 capas que procesa 6 variables de entrada para generar recomendaciones en tiempo real</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-top:8px">
+      <div style="background:#EFF6FF;border-radius:8px;padding:16px;border-left:4px solid var(--blue)">
+        <div style="font-size:10px;font-weight:700;color:var(--blue);letter-spacing:.08em;margin-bottom:8px">CAPA ENTRADA — 6 NODOS</div>
+        <div style="font-size:11px;color:var(--text);line-height:1.9">
+          ● Historial de compras<br>● Tipo de vehículo (0/1)<br>● Productos en ticket actual<br>● Stock disponible (API)<br>● Temporada del año (0.5–2.0)<br>● Rango de precio del cliente
+        </div>
+      </div>
+      <div style="background:#F0FDF4;border-radius:8px;padding:16px;border-left:4px solid #7C3AED">
+        <div style="font-size:10px;font-weight:700;color:#7C3AED;letter-spacing:.08em;margin-bottom:8px">CAPA OCULTA — 5 NODOS</div>
+        <div style="font-size:11px;color:var(--text);line-height:1.9">
+          ● FP-Growth (soporte ≥2%, conf ≥40%)<br>● Clasificación ABC (A/B/C)<br>● Cálculo score afinidad (0–1)<br>● Ajuste estacional (×0.5 a ×2.0)<br>● Validación inventario en tiempo real
+        </div>
+      </div>
+      <div style="background:#ECFDF5;border-radius:8px;padding:16px;border-left:4px solid var(--teal)">
+        <div style="font-size:10px;font-weight:700;color:var(--teal);letter-spacing:.08em;margin-bottom:8px">CAPA SALIDA — 4 NODOS</div>
+        <div style="font-size:11px;color:var(--text);line-height:1.9">
+          ● Predicción % probabilidad compra<br>● Top 3 bundles recomendados<br>● Alerta clasificación sobrestock<br>● Descuento automático (12–22%)
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:16px;background:#FFFBEB;border:1px solid #FDE68A;border-radius:8px;padding:14px;font-size:12px">
+      <strong style="color:#92400E">Ejemplo en vivo:</strong>
+      <span style="color:var(--text)"> Cliente compra cadena de moto en octubre (temporada lluvias, factor 1.8) → FP-Growth detecta cadena→lubricante (conf. 62%, lift 2.1) → score afinidad 0.72 × 1.8 = 1.30 → </span>
+      <strong style="color:var(--navy)">Kit Transmisión Moto al 78% de probabilidad · descuento automático 18%</strong>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     PAGE 5 — AVANCE DEL PROYECTO
+══════════════════════════════════════════ -->
+<div class="page" id="page-fases">
+  <p class="section-title">Avance del Proyecto</p>
+  <p class="section-sub">Metodología ágil en 5 fases — estado real de implementación</p>
+
+  <div class="phases" style="margin-bottom:24px">
+    <div class="phase-card done">
+      <div class="phase-num">01</div>
+      <div class="phase-title">Recolección de datos</div>
+      <div class="phase-weeks">Semanas 1–3</div>
+      <div class="phase-pct">100%</div>
+      <div class="phase-status">✓ Completada</div>
+      <div class="phase-prog"><div class="phase-prog-fill" style="width:100%"></div></div>
+    </div>
+    <div class="phase-card done">
+      <div class="phase-num">02</div>
+      <div class="phase-title">Modelado FP-Growth</div>
+      <div class="phase-weeks">Semanas 4–7</div>
+      <div class="phase-pct">100%</div>
+      <div class="phase-status">✓ Completada</div>
+      <div class="phase-prog"><div class="phase-prog-fill" style="width:100%"></div></div>
+    </div>
+    <div class="phase-card done">
+      <div class="phase-num">03</div>
+      <div class="phase-title">Diseño de bundles</div>
+      <div class="phase-weeks">Semanas 8–10</div>
+      <div class="phase-pct">100%</div>
+      <div class="phase-status">✓ Completada</div>
+      <div class="phase-prog"><div class="phase-prog-fill" style="width:100%"></div></div>
+    </div>
+    <div class="phase-card active">
+      <div class="phase-num">04</div>
+      <div class="phase-title">Implementación POS + API</div>
+      <div class="phase-weeks">Semanas 11–14</div>
+      <div class="phase-pct">68%</div>
+      <div class="phase-status">⟳ En curso</div>
+      <div class="phase-prog"><div class="phase-prog-fill" style="width:68%"></div></div>
+    </div>
+    <div class="phase-card next">
+      <div class="phase-num">05</div>
+      <div class="phase-title">Medición y optimización</div>
+      <div class="phase-weeks">Semanas 15–24</div>
+      <div class="phase-pct">0%</div>
+      <div class="phase-status">◌ Próxima</div>
+      <div class="phase-prog"><div class="phase-prog-fill" style="width:0%"></div></div>
+    </div>
+  </div>
+
+  <div class="chart-grid-2">
+    <div class="card">
+      <div class="card-title">Entregables completados por fase</div>
+      <div class="card-sub">Documentación técnica entregada</div>
+      <div class="chart-wrap" style="height:200px"><canvas id="c-entregables"></canvas></div>
+    </div>
+    <div class="card">
+      <div class="card-title">Progreso general del proyecto</div>
+      <div class="card-sub">Avance ponderado de las 5 fases</div>
+      <div class="chart-wrap" style="height:200px"><canvas id="c-progreso"></canvas></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Resultados alcanzados vs metas del proyecto</div>
+    <div class="card-sub">Evidencia con datos reales a mayo 2026</div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Indicador</th><th>Meta definida</th><th>Resultado actual</th><th>% Avance</th><th>Estado</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>Reducción inventario muerto (cat. C)</td>
+            <td>35%</td><td><strong>31%</strong></td>
+            <td><div class="lift-bar-bg"><div class="lift-bar-fill" style="width:89%;background:var(--teal)"></div></div> 89%</td>
+            <td><span class="tag tag-warn">En ruta</span></td>
+          </tr>
+          <tr>
+            <td>Alza ticket promedio con bundles</td>
+            <td>28%</td><td><strong>+24%</strong></td>
+            <td><div class="lift-bar-bg"><div class="lift-bar-fill" style="width:86%;background:var(--blue)"></div></div> 86%</td>
+            <td><span class="tag tag-warn">En ruta</span></td>
+          </tr>
+          <tr>
+            <td>Bundles activos en POS</td>
+            <td>20 auto + 15 moto</td><td><strong>6 auto + 6 moto</strong></td>
+            <td><div class="lift-bar-bg"><div class="lift-bar-fill" style="width:34%;background:var(--gold)"></div></div> 34%</td>
+            <td><span class="tag tag-ok">Creciendo</span></td>
+          </tr>
+          <tr>
+            <td>Reglas de asociación válidas (lift ≥1.5)</td>
+            <td>50 reglas</td><td><strong>50+ reglas</strong></td>
+            <td><div class="lift-bar-bg"><div class="lift-bar-fill" style="width:100%;background:var(--green)"></div></div> 100%</td>
+            <td><span class="tag tag-ok">Completado</span></td>
+          </tr>
+          <tr>
+            <td>Asesores capacitados</td>
+            <td>100% del equipo</td><td><strong>En capacitación</strong></td>
+            <td><div class="lift-bar-bg"><div class="lift-bar-fill" style="width:68%;background:var(--blue)"></div></div> 68%</td>
+            <td><span class="tag tag-warn">En curso</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<script>
+// ── DATA ────────────────────────────────────────────────────────
+const BUNDLES = [
+  { id:'KIT-001', nombre:'Kit Visión Trasera',       tipo:'carro', dcto:16.0, lift:4.54, conf:1.00, ventas:58 },
+  { id:'KIT-002', nombre:'Kit Forros + Tapetes',      tipo:'carro', dcto:11.2, lift:3.14, conf:0.69, ventas:47 },
+  { id:'KIT-003', nombre:'Kit Confort Total Carro',   tipo:'carro', dcto:15.9, lift:3.78, conf:0.83, ventas:31 },
+  { id:'KIT-004', nombre:'Kit Cojines + Forros',      tipo:'carro', dcto:16.0, lift:4.54, conf:1.00, ventas:38 },
+  { id:'KIT-005', nombre:'Kit Seguridad Carro',       tipo:'carro', dcto:14.5, lift:3.20, conf:0.75, ventas:22 },
+  { id:'KIT-006', nombre:'Kit Emergencia Carro',      tipo:'carro', dcto:8.0,  lift:2.10, conf:0.80, ventas:19 },
+  { id:'KIT-007', nombre:'Kit Piloto Básico',         tipo:'moto',  dcto:14.2, lift:4.02, conf:0.82, ventas:62 },
+  { id:'KIT-008', nombre:'Kit Casco + Intercomunicador', tipo:'moto', dcto:12.2, lift:3.51, conf:0.71, ventas:29 },
+  { id:'KIT-009', nombre:'Kit Touring Moto',          tipo:'moto',  dcto:13.5, lift:3.00, conf:0.75, ventas:24 },
+  { id:'KIT-010', nombre:'Kit Seguridad Moto Full',   tipo:'moto',  dcto:18.0, lift:3.80, conf:0.70, ventas:17 },
+  { id:'KIT-011', nombre:'Kit Protección Piernas',    tipo:'moto',  dcto:10.0, lift:2.80, conf:0.75, ventas:14 },
+  { id:'KIT-012', nombre:'Kit Tech Rider',            tipo:'moto',  dcto:12.0, lift:3.20, conf:0.78, ventas:11 },
+];
+
+const INV_CARRO = [
+  { cod:'C_TAP', nom:'Tapetes premium', actual:116, min:12, max:127 },
+  { cod:'C_SEN', nom:'Sensores reversa', actual:120, min:14, max:191 },
+  { cod:'C_FOR', nom:'Forros asientos', actual:105, min:13, max:115 },
+  { cod:'C_CAM', nom:'Cámara reversa HD', actual:81, min:7, max:86 },
+  { cod:'C_LUC', nom:'Luces LED RGB', actual:69, min:13, max:84 },
+  { cod:'C_CAR', nom:'Cargador USB doble', actual:118, min:15, max:179 },
+  { cod:'C_ALA', nom:'Alarma con GPS', actual:97, min:13, max:138 },
+  { cod:'C_PAR', nom:'Parasol delantero', actual:9, min:15, max:106 },
+  { cod:'C_ARO', nom:'Aromatizante 3pack', actual:49, min:10, max:158 },
+  { cod:'C_LIM', nom:'Limpiaparabrisas', actual:41, min:8, max:114 },
+  { cod:'C_CUS', nom:'Cojines lumbar', actual:54, min:7, max:143 },
+  { cod:'C_HUD', nom:'Pantalla HUD', actual:97, min:10, max:126 },
+  { cod:'C_NEU', nom:'Inflador portátil', actual:31, min:14, max:96 },
+  { cod:'C_EXT', nom:'Extintor cabina', actual:112, min:6, max:172 },
+];
+
+const INV_MOTO = [
+  { cod:'M_CAS', nom:'Casco modular', actual:79, min:11, max:189 },
+  { cod:'M_GUA', nom:'Guantes cuero', actual:110, min:7, max:140 },
+  { cod:'M_CHA', nom:'Chaleco reflectivo', actual:71, min:7, max:194 },
+  { cod:'M_INT', nom:'Intercomunicador BT', actual:100, min:10, max:180 },
+  { cod:'M_BAU', nom:'Baúl trasero 45L', actual:79, min:14, max:86 },
+  { cod:'M_CAR', nom:'Cargador USB moto', actual:28, min:5, max:107 },
+  { cod:'M_GPS', nom:'Soporte GPS moto', actual:88, min:6, max:137 },
+  { cod:'M_CUB', nom:'Cubierta impermeable', actual:54, min:10, max:151 },
+  { cod:'M_MAN', nom:'Manoplas calefactoras', actual:52, min:5, max:132 },
+  { cod:'M_ALF', nom:'Alfombra taller', actual:94, min:14, max:105 },
+  { cod:'M_EXT', nom:'Extintor moto', actual:91, min:13, max:102 },
+  { cod:'M_CEL', nom:'Alarma GPS antirrobo', actual:94, min:13, max:142 },
+  { cod:'M_ROD', nom:'Rodilleras articuladas', actual:18, min:11, max:158 },
+  { cod:'M_BOT', nom:'Botas touring', actual:26, min:7, max:161 },
+];
+
+const MONTHS = ['May','Jun','Jul','Ago','Sep','Oct','Nov','Dic','Ene','Feb','Mar','Abr'];
+const VENTAS_TOTAL = [38,42,45,41,44,48,52,55,43,46,50,46];
+const VENTAS_BUNDLE = [12,16,21,20,24,28,33,37,27,30,35,29];
+
+const N = '#0D1B3E', B = '#1A56A0', T = '#0D9488', G = '#F59E0B', GR = '#059669';
+const PALETTE = [B, T, G, '#7C3AED', GR, '#DC2626', '#0891B2', '#D97706', '#6D28D9', '#BE185D', '#065F46', '#9D174D'];
+
+// ── CHART DEFAULTS ────────────────────────────────────────────
+Chart.defaults.font.family = "'DM Sans', sans-serif";
+Chart.defaults.font.size = 11;
+Chart.defaults.color = '#64748B';
+const gridOpts = { color: '#E2E8F0', lineWidth: 0.5 };
+const tickOpts = { color: '#64748B' };
+
+// ── PAGE SWITCH ───────────────────────────────────────────────
+let initialized = {};
+function showPage(id) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+  document.getElementById('page-' + id).classList.add('active');
+  event.target.classList.add('active');
+  if (!initialized[id]) { initialized[id] = true; initPage(id); }
+}
+
+// ── RENDER TABLES ─────────────────────────────────────────────
+function renderBundleTable() {
+  const tb = document.getElementById('bundle-table');
+  tb.innerHTML = BUNDLES.map(b => `
+    <tr>
+      <td><strong>${b.id}</strong></td>
+      <td>${b.nombre}</td>
+      <td><span class="tag ${b.tipo==='carro'?'tag-auto':'tag-moto'}">${b.tipo}</span></td>
+      <td style="color:var(--green);font-weight:600">${b.dcto}%</td>
+      <td>
+        <div class="lift-bar-bg"><div class="lift-bar-fill" style="width:${Math.min(b.lift/5*100,100)}%"></div></div>
+        <span style="margin-left:6px;font-weight:600;color:var(--navy)">${b.lift}</span>
+      </td>
+      <td>${(b.conf*100).toFixed(0)}%</td>
+      <td>
+        <div style="height:6px;width:80px;background:var(--lgray);border-radius:3px;display:inline-block;vertical-align:middle">
+          <div style="height:100%;width:${b.conf*100}%;background:var(--teal);border-radius:3px"></div>
+        </div>
+      </td>
+      <td><span class="tag tag-ok">Activo</span></td>
+    </tr>
+  `).join('');
+}
+
+function renderInvAlerts() {
+  const all = [...INV_CARRO, ...INV_MOTO];
+  const alerts = all.filter(p => p.actual < p.min);
+  const tb = document.getElementById('inv-alert-table');
+  if (alerts.length === 0) {
+    tb.innerHTML = '<tr><td colspan="7" style="text-align:center;color:var(--muted);padding:20px">Sin alertas activas</td></tr>';
+    return;
+  }
+  tb.innerHTML = alerts.map(p => {
+    const pct = Math.round(p.actual / p.min * 100);
+    return `
+    <tr>
+      <td><code style="background:var(--lgray);padding:2px 6px;border-radius:4px;font-size:11px">${p.cod}</code></td>
+      <td><strong>${p.nom}</strong></td>
+      <td style="color:var(--red);font-weight:700">${p.actual}</td>
+      <td>${p.min}</td>
+      <td>${p.max}</td>
+      <td style="color:var(--muted);font-size:12px">${p.cod.startsWith('C') ? 'Sucursal / Bodega' : 'Sucursal Medellín'}</td>
+      <td><span class="tag tag-low">⚠ Bajo mínimo (${pct}%)</span></td>
+    </tr>`;
+  }).join('');
+}
+
+// ── INIT PAGE CHARTS ──────────────────────────────────────────
+function initPage(id) {
+  if (id === 'resumen') return; // already rendered on load
+  if (id === 'ventas') initVentas();
+  if (id === 'inventario') initInventario();
+  if (id === 'modelo') initModelo();
+  if (id === 'fases') initFases();
+}
+
+function makeChart(id, type, data, options) {
+  return new Chart(document.getElementById(id), { type, data, options: { responsive:true, maintainAspectRatio:false, ...options } });
+}
+
+// ── RESUMEN (initial load) ─────────────────────────────────────
+function initResumen() {
+  // Ventas mensuales
+  makeChart('c-ventas-mes', 'bar', {
+    labels: MONTHS,
+    datasets: [
+      { label: 'Sin bundle', data: VENTAS_TOTAL.map((v,i) => v - VENTAS_BUNDLE[i]),
+        backgroundColor: 'rgba(100,116,139,.25)', borderRadius: 4 },
+      { label: 'Con bundle', data: VENTAS_BUNDLE,
+        backgroundColor: B, borderRadius: 4 },
+    ]
+  }, {
+    plugins: { legend: { display: false } },
+    scales: {
+      x: { stacked: true, ticks: tickOpts, grid: { display: false } },
+      y: { stacked: true, ticks: tickOpts, grid: gridOpts, beginAtZero: true }
+    }
+  });
+
+  // Canal donut
+  makeChart('c-canal', 'doughnut', {
+    labels: ['Tienda','Web','Teléfono'],
+    datasets: [{ data:[198,201,101], backgroundColor:[B,T,G], borderWidth:0, hoverOffset:4 }]
+  }, {
+    cutout: '70%',
+    plugins: { legend: { display:false }, tooltip: { callbacks: { label: ctx => ` ${ctx.label}: ${ctx.raw} ventas` } } }
+  });
+
+  // Ticket promedio comparativo
+  makeChart('c-ticket', 'line', {
+    labels: MONTHS,
+    datasets: [
+      { label: 'Sin bundles', data:[195,190,188,192,186,189,194,197,188,185,190,194],
+        borderColor:'#94A3B8', borderWidth:1.5, pointRadius:3, tension:.4, fill:false, borderDash:[4,4] },
+      { label: 'Con bundles', data:[195,203,215,224,232,243,253,266,258,263,269,274],
+        borderColor:B, borderWidth:2.5, pointRadius:4, tension:.4, fill:{ target:'origin', above:'rgba(26,86,160,.06)' } },
+    ]
+  }, {
+    plugins: { legend: { position:'top', labels:{ boxWidth:10, padding:16 } } },
+    scales: {
+      x: { ticks: tickOpts, grid: { display:false } },
+      y: { ticks: { ...tickOpts, callback: v => '$'+v+'k' }, grid: gridOpts }
+    }
+  });
+}
+
+// ── VENTAS ─────────────────────────────────────────────────────
+function initVentas() {
+  renderBundleTable();
+
+  const sorted = [...BUNDLES].sort((a,b) => b.ventas - a.ventas);
+
+  makeChart('c-bundle-ventas', 'bar', {
+    labels: sorted.map(b => b.nombre.replace('Kit ','K. ')),
+    datasets: [{ label:'Ventas', data: sorted.map(b=>b.ventas),
+      backgroundColor: sorted.map(b => b.tipo==='carro' ? B : T), borderRadius:4 }]
+  }, {
+    indexAxis:'y',
+    plugins:{ legend:{ display:false }, tooltip:{ callbacks:{ label: ctx=>' '+ctx.raw+' transacciones' } } },
+    scales:{
+      x:{ ticks:tickOpts, grid:gridOpts, beginAtZero:true },
+      y:{ ticks:{ ...tickOpts, font:{size:10} }, grid:{ display:false } }
+    }
+  });
+
+  makeChart('c-lift', 'bar', {
+    labels: BUNDLES.map(b=>b.id),
+    datasets: [
+      { label:'Lift', data:BUNDLES.map(b=>b.lift), backgroundColor:PALETTE, borderRadius:4 },
+    ]
+  }, {
+    plugins:{ legend:{ display:false } },
+    scales:{
+      x:{ ticks:tickOpts, grid:{ display:false } },
+      y:{ ticks:tickOpts, grid:gridOpts, beginAtZero:true,
+          title:{ display:true, text:'Lift', color:'#64748B', font:{size:10} } }
+    }
+  });
+}
+
+// ── INVENTARIO ────────────────────────────────────────────────
+function initInventario() {
+  renderInvAlerts();
+
+  function invChart(canvasId, data) {
+    const ctx = document.getElementById(canvasId).getContext('2d');
+    const colors = data.map(p => p.actual < p.min ? '#DC2626' : p.actual < p.min*1.5 ? G : T);
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: data.map(p => p.nom),
+        datasets: [
+          { label:'Stock actual', data:data.map(p=>p.actual), backgroundColor:colors, borderRadius:3 },
+          { label:'Stock mínimo', data:data.map(p=>p.min),
+            type:'line', borderColor:'#DC2626', borderWidth:1.5, borderDash:[4,3],
+            pointRadius:0, fill:false },
+        ]
+      },
+      options:{
+        responsive:true, maintainAspectRatio:false,
+        plugins:{ legend:{ position:'top', labels:{ boxWidth:10, padding:12, font:{size:10} } } },
+        scales:{
+          x:{ ticks:{ ...tickOpts, font:{size:9}, maxRotation:35 }, grid:{ display:false } },
+          y:{ ticks:tickOpts, grid:gridOpts, beginAtZero:true }
+        }
+      }
+    });
+  }
+
+  invChart('c-inv-carro', INV_CARRO);
+  invChart('c-inv-moto', INV_MOTO);
+}
+
+// ── MODELO ────────────────────────────────────────────────────
+function initModelo() {
+  makeChart('c-lift-dist', 'bar', {
+    labels: BUNDLES.map(b=>b.id),
+    datasets:[{
+      label:'Lift',
+      data: BUNDLES.map(b=>b.lift),
+      backgroundColor: BUNDLES.map(b=> b.lift>=4?GR : b.lift>=3?B : T),
+      borderRadius:4
+    }]
+  },{
+    plugins:{legend:{display:false}},
+    scales:{
+      x:{ticks:tickOpts,grid:{display:false}},
+      y:{ticks:tickOpts,grid:gridOpts,beginAtZero:true,
+         title:{display:true,text:'Lift (umbral mínimo 1.5)',color:'#64748B',font:{size:10}}}
+    },
+    annotation:{annotations:{line1:{type:'line',yMin:1.5,yMax:1.5,borderColor:'#DC2626',borderDash:[4,3]}}}
+  });
+
+  makeChart('c-scatter', 'scatter', {
+    datasets: BUNDLES.map((b,i)=>({
+      label: b.id,
+      data:[{ x: b.conf, y: b.lift }],
+      backgroundColor: PALETTE[i],
+      pointRadius:8, pointHoverRadius:10,
+    }))
+  },{
+    plugins:{
+      legend:{display:false},
+      tooltip:{ callbacks:{ label: ctx=>`${ctx.dataset.label} — confianza: ${(ctx.parsed.x*100).toFixed(0)}%, lift: ${ctx.parsed.y}` } }
+    },
+    scales:{
+      x:{ title:{display:true,text:'Confianza',color:'#64748B',font:{size:10}}, ticks:{...tickOpts,callback:v=>Math.round(v*100)+'%'}, grid:gridOpts, min:0, max:1.1 },
+      y:{ title:{display:true,text:'Lift',color:'#64748B',font:{size:10}}, ticks:tickOpts, grid:gridOpts, min:1.5, max:5 }
+    }
+  });
+}
+
+// ── FASES ─────────────────────────────────────────────────────
+function initFases() {
+  makeChart('c-entregables', 'bar', {
+    labels: ['Fase 1','Fase 2','Fase 3','Fase 4','Fase 5'],
+    datasets:[{
+      label:'Entregables completados',
+      data:[4,4,3,2,0],
+      backgroundColor:[GR,GR,GR,B,'#E2E8F0'],
+      borderRadius:4
+    }]
+  },{
+    plugins:{legend:{display:false}},
+    scales:{
+      x:{ticks:tickOpts,grid:{display:false}},
+      y:{ticks:{...tickOpts,stepSize:1},grid:gridOpts,beginAtZero:true,max:5}
+    }
+  });
+
+  makeChart('c-progreso', 'radar', {
+    labels: ['Recolección\ndatos','Modelado\nFP-Growth','Diseño\nbundles','Implementación\nPOS','Medición y\noptimización'],
+    datasets:[{
+      label:'Avance real',
+      data:[100,100,100,68,0],
+      backgroundColor:'rgba(26,86,160,.15)',
+      borderColor:B, borderWidth:2, pointBackgroundColor:B
+    },{
+      label:'Meta',
+      data:[100,100,100,100,100],
+      backgroundColor:'rgba(5,150,105,.05)',
+      borderColor:'rgba(5,150,105,.4)', borderWidth:1, borderDash:[4,3], pointRadius:0
+    }]
+  },{
+    plugins:{legend:{position:'bottom',labels:{boxWidth:10,padding:12,font:{size:10}}}},
+    scales:{r:{ticks:{display:false},grid:{color:'#E2E8F0'},pointLabels:{font:{size:9},color:'#64748B'},suggestedMin:0,suggestedMax:100}}
+  });
+}
+
+// ── BOOT ──────────────────────────────────────────────────────
+initialized['resumen'] = true;
+initResumen();
+</script>
+</body>
+</html>
