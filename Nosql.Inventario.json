@@ -1,0 +1,180 @@
+[{
+  "_id": {
+    "$oid": "6a238df5292a843168ee1304"
+  },
+  "codigo_producto": "C_TAP",
+  "nombre": "Tapetes premium silicona",
+  "stock_actual": 95,
+  "stock_minimo": 10,
+  "stock_maximo": 150,
+  "ubicacion": "Bodega-A1",
+  "fecha_ultima_entrada": {
+    "$date": "2025-05-01T00:00:00.000Z"
+  },
+  "fecha_ultima_salida": {
+    "$date": "2025-06-09T00:00:00.000Z"
+  },
+  "alerta_sobrestock": false
+},
+{
+  "_id": {
+    "$oid": "6a238df5292a843168ee1305"
+  },
+  "codigo_producto": "C_SEN",
+  "nombre": "Sensores de reversa 4pts",
+  "stock_actual": 72,
+  "stock_minimo": 10,
+  "stock_maximo": 120,
+  "ubicacion": "Bodega-A2",
+  "fecha_ultima_entrada": {
+    "$date": "2025-04-15T00:00:00.000Z"
+  },
+  "fecha_ultima_salida": {
+    "$date": "2025-06-09T00:00:00.000Z"
+  },
+  "alerta_sobrestock": false
+},
+{
+  "_id": {
+    "$oid": "6a238df5292a843168ee1306"
+  },
+  "codigo_producto": "C_FOR",
+  "nombre": "Forros de asientos cuero eco",
+  "stock_actual": 48,
+  "stock_minimo": 5,
+  "stock_maximo": 80,
+  "ubicacion": "Bodega-B1",
+  "fecha_ultima_entrada": {
+    "$date": "2025-03-20T00:00:00.000Z"
+  },
+  "fecha_ultima_salida": {
+    "$date": "2025-06-08T00:00:00.000Z"
+  },
+  "alerta_sobrestock": false
+},
+{
+  "_id": {
+    "$oid": "6a238df5292a843168ee1307"
+  },
+  "codigo_producto": "C_CAM",
+  "nombre": "Camara de reversa HD",
+  "stock_actual": 65,
+  "stock_minimo": 8,
+  "stock_maximo": 100,
+  "ubicacion": "Bodega-A3",
+  "fecha_ultima_entrada": {
+    "$date": "2025-05-10T00:00:00.000Z"
+  },
+  "fecha_ultima_salida": {
+    "$date": "2025-06-09T00:00:00.000Z"
+  },
+  "alerta_sobrestock": false
+},
+{
+  "_id": {
+    "$oid": "6a238df5292a843168ee1308"
+  },
+  "codigo_producto": "C_LUC",
+  "nombre": "Luces LED interiores RGB",
+  "stock_actual": 200,
+  "stock_minimo": 20,
+  "stock_maximo": 150,
+  "ubicacion": "Bodega-C1",
+  "fecha_ultima_entrada": {
+    "$date": "2025-02-01T00:00:00.000Z"
+  },
+  "fecha_ultima_salida": {
+    "$date": "2025-07-04T00:00:00.000Z"
+  },
+  "alerta_sobrestock": true
+},
+{
+  "_id": {
+    "$oid": "6a238df5292a843168ee1309"
+  },
+  "codigo_producto": "C_ALA",
+  "nombre": "Sistema de alarma con GPS",
+  "stock_actual": 30,
+  "stock_minimo": 5,
+  "stock_maximo": 60,
+  "ubicacion": "Bodega-A4",
+  "fecha_ultima_entrada": {
+    "$date": "2025-04-01T00:00:00.000Z"
+  },
+  "fecha_ultima_salida": {
+    "$date": "2025-06-14T00:00:00.000Z"
+  },
+  "alerta_sobrestock": false
+},
+{
+  "_id": {
+    "$oid": "6a238df5292a843168ee130a"
+  },
+  "codigo_producto": "M_CAS",
+  "nombre": "Casco modular premium",
+  "stock_actual": 40,
+  "stock_minimo": 5,
+  "stock_maximo": 70,
+  "ubicacion": "Bodega-D1",
+  "fecha_ultima_entrada": {
+    "$date": "2025-05-15T00:00:00.000Z"
+  },
+  "fecha_ultima_salida": {
+    "$date": "2025-06-09T00:00:00.000Z"
+  },
+  "alerta_sobrestock": false
+},
+{
+  "_id": {
+    "$oid": "6a238df5292a843168ee130b"
+  },
+  "codigo_producto": "M_GUA",
+  "nombre": "Guantes cuero touring",
+  "stock_actual": 55,
+  "stock_minimo": 10,
+  "stock_maximo": 90,
+  "ubicacion": "Bodega-D2",
+  "fecha_ultima_entrada": {
+    "$date": "2025-05-20T00:00:00.000Z"
+  },
+  "fecha_ultima_salida": {
+    "$date": "2025-06-09T00:00:00.000Z"
+  },
+  "alerta_sobrestock": false
+},
+{
+  "_id": {
+    "$oid": "6a238df5292a843168ee130c"
+  },
+  "codigo_producto": "M_BAU",
+  "nombre": "Baul trasero rigido 45L",
+  "stock_actual": 180,
+  "stock_minimo": 10,
+  "stock_maximo": 100,
+  "ubicacion": "Bodega-E1",
+  "fecha_ultima_entrada": {
+    "$date": "2025-01-10T00:00:00.000Z"
+  },
+  "fecha_ultima_salida": {
+    "$date": "2025-12-08T00:00:00.000Z"
+  },
+  "alerta_sobrestock": true
+},
+{
+  "_id": {
+    "$oid": "6a238df5292a843168ee130d"
+  },
+  "codigo_producto": "M_INT",
+  "nombre": "Intercomunicador Bluetooth",
+  "stock_actual": 25,
+  "stock_minimo": 5,
+  "stock_maximo": 50,
+  "ubicacion": "Bodega-D3",
+  "fecha_ultima_entrada": {
+    "$date": "2025-04-20T00:00:00.000Z"
+  },
+  "fecha_ultima_salida": {
+    "$date": "2025-06-09T00:00:00.000Z"
+  },
+  "alerta_sobrestock": false
+}]

@@ -1,0 +1,38 @@
+[{
+  "_id": {
+    "$oid": "6a238e2e292a843168ee1336"
+  },
+  "sesion_id": "SES-CLI164-20251207",
+  "timestamp": {
+    "$date": "2025-12-07T10:00:00.000Z"
+  },
+  "id_cliente": 164,
+  "canal": "tienda",
+  "tipo_vehiculo": "carro",
+  "productos_en_ticket": [
+    "C_SEN"
+  ],
+  "top3_bundles": [
+    {
+      "id_bundle": "KIT-001",
+      "nombre": "Kit Interior Premium",
+      "probabilidad": 0.78,
+      "descuento_pct": 15
+    },
+    {
+      "id_bundle": "KIT-002",
+      "nombre": "Kit Seguridad Vial Car",
+      "probabilidad": 0.55,
+      "descuento_pct": 18
+    },
+    {
+      "id_bundle": "KIT-005",
+      "nombre": "Kit Confort Premium Car",
+      "probabilidad": 0.42,
+      "descuento_pct": 16
+    }
+  ],
+  "expira_en": {
+    "$date": "2025-12-08T10:00:00.000Z"
+  }
+}]

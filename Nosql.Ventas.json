@@ -1,0 +1,190 @@
+[{
+  "_id": {
+    "$oid": "6a238e3b292a843168ee1339"
+  },
+  "id_venta": 1,
+  "id_cliente": 164,
+  "fecha_venta": {
+    "$date": "2025-07-04T00:00:00.000Z"
+  },
+  "canal": "web",
+  "subtotal": 115000,
+  "descuento_pesos": 0,
+  "total": 115000,
+  "id_bundle": null,
+  "detalle": [
+    {
+      "codigo_producto": "C_LUC",
+      "nombre": "Luces LED interiores RGB",
+      "cantidad": 1,
+      "precio_unitario": 45000,
+      "subtotal_linea": 45000
+    },
+    {
+      "codigo_producto": "M_ALF",
+      "nombre": "Alfombra taller antidesliz",
+      "cantidad": 2,
+      "precio_unitario": 35000,
+      "subtotal_linea": 70000
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a238e3b292a843168ee133a"
+  },
+  "id_venta": 4,
+  "id_cliente": 155,
+  "fecha_venta": {
+    "$date": "2025-09-20T00:00:00.000Z"
+  },
+  "canal": "telefono",
+  "subtotal": 580000,
+  "descuento_pesos": 92800,
+  "total": 487200,
+  "id_bundle": "KIT-001",
+  "detalle": [
+    {
+      "codigo_producto": "C_SEN",
+      "nombre": "Sensores de reversa 4pts",
+      "cantidad": 1,
+      "precio_unitario": 85000,
+      "subtotal_linea": 85000
+    },
+    {
+      "codigo_producto": "C_CAM",
+      "nombre": "Camara de reversa HD",
+      "cantidad": 3,
+      "precio_unitario": 150000,
+      "subtotal_linea": 450000
+    },
+    {
+      "codigo_producto": "M_CAR",
+      "nombre": "Cargador USB moto imperm.",
+      "cantidad": 1,
+      "precio_unitario": 45000,
+      "subtotal_linea": 45000
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a238e3b292a843168ee133b"
+  },
+  "id_venta": 11,
+  "id_cliente": 153,
+  "fecha_venta": {
+    "$date": "2025-06-09T00:00:00.000Z"
+  },
+  "canal": "tienda",
+  "subtotal": 1205000,
+  "descuento_pesos": 171110,
+  "total": 1033890,
+  "id_bundle": "KIT-007",
+  "detalle": [
+    {
+      "codigo_producto": "M_CAS",
+      "nombre": "Casco modular premium",
+      "cantidad": 1,
+      "precio_unitario": 450000,
+      "subtotal_linea": 450000
+    },
+    {
+      "codigo_producto": "M_GUA",
+      "nombre": "Guantes cuero touring",
+      "cantidad": 1,
+      "precio_unitario": 95000,
+      "subtotal_linea": 95000
+    },
+    {
+      "codigo_producto": "M_BAU",
+      "nombre": "Baul trasero rigido 45L",
+      "cantidad": 3,
+      "precio_unitario": 220000,
+      "subtotal_linea": 660000
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a238e3b292a843168ee133c"
+  },
+  "id_venta": 27,
+  "id_cliente": 21,
+  "fecha_venta": {
+    "$date": "2025-12-08T00:00:00.000Z"
+  },
+  "canal": "tienda",
+  "subtotal": 465000,
+  "descuento_pesos": 62775,
+  "total": 402225,
+  "id_bundle": "KIT-009",
+  "detalle": [
+    {
+      "codigo_producto": "M_BAU",
+      "nombre": "Baul trasero rigido 45L",
+      "cantidad": 1,
+      "precio_unitario": 220000,
+      "subtotal_linea": 220000
+    },
+    {
+      "codigo_producto": "M_CAR",
+      "nombre": "Cargador USB moto imperm.",
+      "cantidad": 2,
+      "precio_unitario": 45000,
+      "subtotal_linea": 90000
+    },
+    {
+      "codigo_producto": "M_GPS",
+      "nombre": "Soporte GPS celular moto",
+      "cantidad": 1,
+      "precio_unitario": 60000,
+      "subtotal_linea": 60000
+    },
+    {
+      "codigo_producto": "C_CUS",
+      "nombre": "Cojines lumbar ergonomicos",
+      "cantidad": 1,
+      "precio_unitario": 70000,
+      "subtotal_linea": 70000
+    },
+    {
+      "codigo_producto": "C_FOR",
+      "nombre": "Forros de asientos cuero eco",
+      "cantidad": 1,
+      "precio_unitario": 200000,
+      "subtotal_linea": 200000
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a238e3b292a843168ee133d"
+  },
+  "id_venta": 500,
+  "id_cliente": 78,
+  "fecha_venta": {
+    "$date": "2025-12-20T00:00:00.000Z"
+  },
+  "canal": "telefono",
+  "subtotal": 500000,
+  "descuento_pesos": 80000,
+  "total": 420000,
+  "id_bundle": "KIT-001",
+  "detalle": [
+    {
+      "codigo_producto": "C_SEN",
+      "nombre": "Sensores de reversa 4pts",
+      "cantidad": 1,
+      "precio_unitario": 85000,
+      "subtotal_linea": 85000
+    },
+    {
+      "codigo_producto": "C_CAM",
+      "nombre": "Camara de reversa HD",
+      "cantidad": 1,
+      "precio_unitario": 150000,
+      "subtotal_linea": 150000
+    }
+  ]
+}]

@@ -1,0 +1,95 @@
+[{
+  "_id": {
+    "$oid": "6a238daa292a843168ee12f3"
+  },
+  "id_cliente": 1,
+  "nombres": "Carlos",
+  "apellidos": "Vargas Hernandez",
+  "email": "carlos.vargas32@gmail.com",
+  "telefono": "3129958838",
+  "ciudad": "Cali",
+  "tipo_vehiculo": "moto",
+  "fecha_registro": {
+    "$date": "2023-11-24T00:00:00.000Z"
+  },
+  "ticket_promedio": 0,
+  "total_compras": 0,
+  "rango_precio": "economico",
+  "productos_frecuentes": []
+},
+{
+  "_id": {
+    "$oid": "6a238daa292a843168ee12f4"
+  },
+  "id_cliente": 2,
+  "nombres": "Alejandro",
+  "apellidos": "Perez Garcia",
+  "email": "alejandro.perez4@gmail.com",
+  "telefono": "3112575562",
+  "ciudad": "Barranquilla",
+  "tipo_vehiculo": "carro",
+  "fecha_registro": {
+    "$date": "2023-09-09T00:00:00.000Z"
+  },
+  "ticket_promedio": 0,
+  "total_compras": 0,
+  "rango_precio": "economico",
+  "productos_frecuentes": []
+},
+{
+  "_id": {
+    "$oid": "6a238daa292a843168ee12f5"
+  },
+  "id_cliente": 21,
+  "nombres": "Diego",
+  "apellidos": "Moreno Rodriguez",
+  "email": "diego.moreno17@gmail.com",
+  "telefono": "3188550256",
+  "ciudad": "Cartagena",
+  "tipo_vehiculo": "ambos",
+  "fecha_registro": {
+    "$date": "2022-06-19T00:00:00.000Z"
+  },
+  "ticket_promedio": 0,
+  "total_compras": 0,
+  "rango_precio": "economico",
+  "productos_frecuentes": []
+},
+{
+  "_id": {
+    "$oid": "6a238daa292a843168ee12f6"
+  },
+  "id_cliente": 30,
+  "nombres": "Sofia",
+  "apellidos": "Martinez Garcia",
+  "email": "sofia.martinez84@gmail.com",
+  "telefono": "3172556484",
+  "ciudad": "Bogota",
+  "tipo_vehiculo": "ambos",
+  "fecha_registro": {
+    "$date": "2024-02-11T00:00:00.000Z"
+  },
+  "ticket_promedio": 0,
+  "total_compras": 0,
+  "rango_precio": "economico",
+  "productos_frecuentes": []
+},
+{
+  "_id": {
+    "$oid": "6a238daa292a843168ee12f7"
+  },
+  "id_cliente": 200,
+  "nombres": "Diego",
+  "apellidos": "Jimenez Martinez",
+  "email": "diego.jimenez37@gmail.com",
+  "telefono": "3111257528",
+  "ciudad": "Cali",
+  "tipo_vehiculo": "carro",
+  "fecha_registro": {
+    "$date": "2023-06-10T00:00:00.000Z"
+  },
+  "ticket_promedio": 0,
+  "total_compras": 0,
+  "rango_precio": "economico",
+  "productos_frecuentes": []
+}]

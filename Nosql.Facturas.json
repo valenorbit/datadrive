@@ -1,0 +1,42 @@
+[{
+  "_id": {
+    "$oid": "6a238dc9292a843168ee12fc"
+  },
+  "id_factura": 1,
+  "numero_factura": "FAC-2025-0001",
+  "id_venta": 4,
+  "fecha_emision": {
+    "$date": "2025-09-20T00:00:00.000Z"
+  },
+  "estado": "pagada",
+  "metodo_pago": "tarjeta_credito",
+  "total_factura": 487200
+},
+{
+  "_id": {
+    "$oid": "6a238dc9292a843168ee12fd"
+  },
+  "id_factura": 2,
+  "numero_factura": "FAC-2025-0002",
+  "id_venta": 11,
+  "fecha_emision": {
+    "$date": "2025-06-09T00:00:00.000Z"
+  },
+  "estado": "pagada",
+  "metodo_pago": "efectivo",
+  "total_factura": 1033890
+},
+{
+  "_id": {
+    "$oid": "6a238dc9292a843168ee12fe"
+  },
+  "id_factura": 3,
+  "numero_factura": "FAC-2025-0003",
+  "id_venta": 1,
+  "fecha_emision": {
+    "$date": "2025-07-04T00:00:00.000Z"
+  },
+  "estado": "pagada",
+  "metodo_pago": "transferencia",
+  "total_factura": 115000
+}]
